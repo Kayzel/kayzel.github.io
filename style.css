@@ -4,21 +4,12 @@ body{
  	
 }
 .megaBlock{
-	/*width: 760px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;*/
 	background: #f3ead9;
 	margin-bottom: 20px;
 	box-shadow: 1px 1px 3px 0 #7d7676;
 }
 .myName{
-/*	width: 100%;*/
 	background: #ad775c;
-/*	margin: 20px 30px;
-	padding: 10px;*/
 }
 .marginBottom{
 	margin-bottom: 0.2rem;
@@ -35,13 +26,8 @@ body{
     width: 200px;
     height: 200px;
     background: black;
-/*    float: left;
-    display: inline-block;*/
 }
-.contacts{
-/*	padding: 0 20px;
-    display: inline-block;*/
-}
+
 .labelRadio{
 	border: solid 1px #d0c4c4;
 	width: 100px;
@@ -89,20 +75,4 @@ body{
 }
 a{
 	color: #a5cac2;
-}
-
-@media only screen and (max-width: 320px) {
-/*	.myName{
-		width: 300px;
-		margin: 20px 0;
-	}
-	.megaBlock{
-		width: 320px;
-		margin: 0;
-	}
-	.photo{
-		display: block;
-  		margin: auto;
-  		float: none;
-	}*/
 }
