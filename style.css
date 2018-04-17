@@ -1,0 +1,108 @@
+body{
+	padding-top: 20px;
+	background: url(http://olegastanin.ru/wp-content/uploads/2014/02/Gotoviy-fon.jpg) repeat-x;
+ 	
+}
+.megaBlock{
+	/*width: 760px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;*/
+	background: #f3ead9;
+	margin-bottom: 20px;
+	box-shadow: 1px 1px 3px 0 #7d7676;
+}
+.myName{
+/*	width: 100%;*/
+	background: #ad775c;
+/*	margin: 20px 30px;
+	padding: 10px;*/
+}
+.marginBottom{
+	margin-bottom: 0.2rem;
+}
+.padding{
+	padding: 10px 0;
+	float: left;
+}
+.firstBlock{
+	background: #ad775c;
+	width: 70%;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    background: black;
+/*    float: left;
+    display: inline-block;*/
+}
+.contacts{
+/*	padding: 0 20px;
+    display: inline-block;*/
+}
+.labelRadio{
+	border: solid 1px #d0c4c4;
+	width: 100px;
+	padding: 5px;
+	text-align: center;
+	box-shadow: 0 1px 2px -2px;
+}
+.invis{
+	display: none;
+	background: #eae1cf;
+}
+#firstRadio:checked ~ #firstText{
+	display: block;
+	padding-top: 10px;
+    box-shadow: 0 2px 4px 0 #a2a2a2;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+}
+#secondRadio:checked ~ #secondText{
+	display: block;
+    padding-top: 10px;
+    box-shadow: 0 2px 4px 0 #a2a2a2;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+}
+#trieRadio:checked ~ #trieText{
+	display: block;
+    background: #f3ead9;
+    margin-bottom: .5rem;
+}
+.labelRadio:hover{
+	background: #e4c4c4;
+}
+.labelRadio:active{
+	    box-shadow: 0 2px 8px -2px inset;
+}
+#firstRadio:checked + .labelRadio{
+	background: #cdbda8;
+}
+#secondRadio:checked + .labelRadio{
+	background: #a8c1cd;
+}
+#trieRadio:checked + .labelRadio{
+	background: #a8cdc5;
+}
+a{
+	color: #a5cac2;
+}
+
+@media only screen and (max-width: 320px) {
+/*	.myName{
+		width: 300px;
+		margin: 20px 0;
+	}
+	.megaBlock{
+		width: 320px;
+		margin: 0;
+	}
+	.photo{
+		display: block;
+  		margin: auto;
+  		float: none;
+	}*/
+}
