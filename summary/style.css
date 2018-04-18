@@ -32,7 +32,7 @@ h4{
 .photo{
     width: 200px;
     height: 200px;
-    box-shadow: 0 0 5px 1px #656565;
+    box-shadow: 0 0 0 5px #f5eede, 0 0 5px 4px;
 }
 .labelRadio{
 	
