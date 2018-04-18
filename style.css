@@ -1,108 +1,719 @@
-body{
-	padding-top: 20px;
-	background: url(http://olegastanin.ru/wp-content/uploads/2014/02/Gotoviy-fon.jpg) repeat-x;
- 	
-}
-.megaBlock{
-	/*width: 760px;
+#wh1skasGeneratorHover{
 	position: absolute;
 	top: 0;
-	left: 0;
+	bottom: 0;
+	left:0;
 	right: 0;
-	bottom: 0;*/
-	background: #f3ead9;
-	margin-bottom: 20px;
-	box-shadow: 1px 1px 3px 0 #7d7676;
+	margin: auto;
+	width: 67px;
+	height: 22px;
 }
-.myName{
-/*	width: 100%;*/
-	background: #ad775c;
-/*	margin: 20px 30px;
-	padding: 10px;*/
+#wh1skasGeneratorActive{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	margin: auto;
+	width: 67px;
+	height: 22px;
 }
-.marginBottom{
-	margin-bottom: 0.2rem;
-}
-.padding{
-	padding: 10px 0;
-	float: left;
-}
-.firstBlock{
-	background: #ad775c;
-	width: 70%;
-}
-.photo{
-    width: 200px;
-    height: 200px;
-    background: black;
-/*    float: left;
-    display: inline-block;*/
-}
-.contacts{
-/*	padding: 0 20px;
-    display: inline-block;*/
-}
-.labelRadio{
-	border: solid 1px #d0c4c4;
-	width: 100px;
-	padding: 5px;
-	text-align: center;
-	box-shadow: 0 1px 2px -2px;
-}
-.invis{
-	display: none;
-	background: #eae1cf;
-}
-#firstRadio:checked ~ #firstText{
-	display: block;
-	padding-top: 10px;
-    box-shadow: 0 2px 4px 0 #a2a2a2;
-    margin-bottom: .5rem;
-    border-radius: 10px;
-}
-#secondRadio:checked ~ #secondText{
-	display: block;
-    padding-top: 10px;
-    box-shadow: 0 2px 4px 0 #a2a2a2;
-    margin-bottom: .5rem;
-    border-radius: 10px;
-}
-#trieRadio:checked ~ #trieText{
-	display: block;
-    background: #f3ead9;
-    margin-bottom: .5rem;
-}
-.labelRadio:hover{
-	background: #e4c4c4;
-}
-.labelRadio:active{
-	    box-shadow: 0 2px 8px -2px inset;
-}
-#firstRadio:checked + .labelRadio{
-	background: #cdbda8;
-}
-#secondRadio:checked + .labelRadio{
-	background: #a8c1cd;
-}
-#trieRadio:checked + .labelRadio{
-	background: #a8cdc5;
-}
-a{
-	color: #a5cac2;
+#wh1skasGeneratorStandart{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	margin: auto;
+	width: 67px;
+	height: 22px;
 }
 
-@media only screen and (max-width: 320px) {
-/*	.myName{
-		width: 300px;
-		margin: 20px 0;
-	}
-	.megaBlock{
-		width: 320px;
-		margin: 0;
-	}
-	.photo{
-		display: block;
-  		margin: auto;
-  		float: none;
-	}*/
+#iconButton1{
+	position: absolute;
+}
+#iconButton2{
+	position: absolute;
+}
+#iconButton3{
+	position: absolute;
+}
+
+#wh1skasGenerator:focus{
+	outline: none;
+}
+/*
+<p id="inquiryTextShadow" class="helpQuest">?</p>
+<div id="helpTextShadow" class="help">Noooy Hello World</div>
+*/
+#br{
+	/*display: inline-block;*/
+	width: 410px;
+	text-align: center;
+	color: #fff; 
+	/*margin-top: 20px;*/
+    margin-left: 10px;
+    margin-top: 30px;
+    background: #28696b;
+    border-radius: 5px;
+    padding: 5px;
+}
+.h2class{
+	font-size: 14px;
+	margin: 0;
+    font-weight: 100;
+}
+#rezbr{
+	z-index: -2;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 800px;
+    height: 300px;
+    display: inline-block;
+    width: 400px;
+    border: solid 1px black;
+    background: #fff;
+}
+#codgener{
+	margin: 0 auto;
+    width: 380px;
+	height: 150px;
+}
+
+#htmltag{
+	display: block;
+	margin: 0 auto;
+    width: 380px;
+	height: 62px;
+}
+.checSection{
+	display: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	margin: 0;
+	background: #92929233;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13.5px;
+}
+.WindowSetting{
+	/*background: #36818a3d;*/
+	position: relative;
+	background: #326a6f;/*#224c50;*/
+	padding: 10px 0;
+	display: none;
+	box-shadow: rgba(9, 41, 41, 0.5) 0px 0px 10px 1px inset;
+	border: solid 2px #153d42a8;
+}
+.labelbutton{
+	cursor: pointer;
+	padding: 5px 0px;
+	display: block;
+	background: #153d42;
+	margin: 2px 0;
+	background: radial-gradient(#1a656b 1%, #398284 70%);/*radial-gradient(#1f575d 1%, #197d8212 70%);*/
+	border: solid 1px #19464c;
+}
+.labelbutton:hover{
+	box-shadow: rgba(9, 41, 41, 0.5) 0px 0px 20px 0px inset;
+}
+.checSection:checked + .labelbutton{
+	margin-bottom: 0;
+}
+
+.windowShow{
+	/*width: 760px;*/
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	/*background: #17494e;*/
+	min-height: 700px;
+	/*background: #176b6f;*/
+}
+.buttonMenu{
+	color: #153d42;
+	width: 400px;
+	margin: auto;
+
+}
+.buttonSelect{
+	cursor: pointer;
+	background: #add9de9e;
+	display: block;
+	margin: 2px 0;
+	padding: 5px 0;
+}
+.buttonSelect:hover{
+	background: #e0dcdc;
+}
+.buttonSelect:active{
+	background: #36818a3d;
+	color: #ffffff;
+}
+.buttonMenu input{
+	display: none;
+}
+#celectStandartInput:checked + #celectStandart{
+	background: #36818a; 
+	color: #ffffff;
+}
+#celectHoverInput:checked + #celectHover{
+	background: #36818a; 
+	color: #ffffff;
+}
+#celectActiveInput:checked + #celectActive{
+	background: #36818a; 
+	color: #ffffff;
+}
+
+#divFuter{
+	width: 10px; 
+	height: 300px;
+}
+
+.footergen{
+	color: #acdff380;
+	text-align: center;
+	/*background: #185056;*/
+	padding: 15px 0;
+	margin: 0px;
+	border-radius: 5px;
+    border: 1px solid;
+    margin: 10px;
+    background: radial-gradient(#1a656b 1%, #398284 70%);
+}
+.colorFon{
+	cursor: pointer;
+    background: #7cafb3;
+    color: #043d43;
+	display: block;
+	margin: 2px 0;
+	padding: 5px 0;
+	border-radius: 5px;
+}
+.hoverColorFon:active{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#colorBackground:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#colorGradient:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#colorImage:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+/*.colorSelect{
+	display: none;
+}
+.gradientSelect{
+	display: none;
+}*/
+.gradientFont{
+	display: none;
+}
+/*#colorBackground:checked ~ .colorSelect{
+	display: block;
+}
+#colorGradient:checked ~ .gradientSelect{
+	display: block;
+}*/
+#intupColorRACF:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputGradientRACF:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+/*#intupColorRACF:checked ~ #selectorColorOpen{
+	display: block;
+}*/
+#selectorColorOpen{
+	display: block;
+}
+#inputGradientRACF:checked ~ .gradientFont{
+	display: block;
+}
+#shadowOne:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#shadowTwo:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#shadowbutton1{
+	display: none;
+}
+#shadowbutton2{
+	display: none;
+}
+#shadowOne:checked ~ #shadowbutton1{
+	display: block;
+}
+#shadowTwo:checked ~ #shadowbutton2{
+	display: block;
+}
+#borderColorRadio:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#borderColorGradient:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+.borderTypeColor{
+	display: none;
+}
+#borderColorRadio:checked ~ #borderTypeColorOne{
+	display: block;
+}
+#borderColorGradient:checked ~ #borderTypeColorTwo{
+	display: block;
+}
+hr{
+	border: none; /* Убираем границу для браузера Firefox */
+    color: #153d42a8; /* Цвет линии для остальных браузеров */
+    background-color: #153d42a8; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+}
+.googleFont{
+	display: none;
+}
+#googleFontStyle:checked ~ .googleFont{
+	display: block;
+}
+#googleFontStyle:checked + .labelButtonFont{
+    background: #043d43;
+    color: #7cafb3;
+}
+.labelButtonFont{
+	cursor: pointer;
+	padding: 5px 0px;
+	display: block;
+	background: #7cafb3;
+	margin: 2px 0;
+	color: #153d42;
+	border-radius: 5px;
+}
+.fonts{
+	float: left;
+}
+.spanFont{
+	text-align: center;
+	margin: 0;
+	margin-top: 2px;
+}
+.pFont1{
+	font-family: "Arial";
+}
+.pFont2{
+	font-family: "Arial Black";
+}
+.pFont3{
+	font-family: "Comic Sans MS";
+}
+.pFont4{
+	font-family: "Courier New";
+}
+.pFont5{
+	font-family: "Georgia";
+}
+.pFont6{
+	font-family: "Impact";
+}
+.pFont7{
+	font-family: "Times New Roman";
+}
+.pFont8{
+	font-family: "Trebuchet MS";
+}
+.pFont9{
+	font-family: "Verdana";
+}
+.labelInline{
+	cursor: pointer;
+	display: block;
+	padding: 5px 0;
+}
+/*.buttonInline{
+	cursor: pointer;
+	background: #407379;
+	display: block;
+	margin: 2px 0;
+	padding: 5px 0;
+}*/
+.tableButton{
+	display: none;
+	width: 100%;
+}
+/*.checSection:checked + .buttonInline{
+	background: #227680;
+}*/
+#sizeColorDiv{
+	display: block;
+}
+.fontShadow:active{
+	background: #36818a3d;
+    color: #ffffff;
+}
+#textShadowWrapper{
+	padding: 0;
+}
+/*#LonGradientTEST{
+	display: none;
+}*/
+.invisButton{
+	display: none;
+}
+#rotateDiv{
+	display: none;
+}
+
+#rotateDiv span{
+	padding-left: 2px;
+}
+#rotateInput:checked + .labelButtonFont{
+    background: #043d43;
+    color: #7cafb3;
+}
+#italicStyle:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+/*.buttonInline{
+	background: #407379;
+}*/
+#inlineTop:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inlineMiddle:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inlineBottom:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#underlineStyle:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#scaleDiv{
+	display: none;
+}
+
+#scaleInput:checked + .labelButtonFont{
+    background: #043d43;
+    color: #7cafb3;
+}
+#skewDiv{
+	display: none;
+}
+
+#skewInput:checked + .labelButtonFont{
+    background: #043d43;
+    color: #7cafb3;
+}
+#rotate2D:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#rotate3D:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#scale2D:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#scale3D:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#transitionInput:checked ~ #transitionWrapper{
+	display: block;
+}
+#functionsTransition:checked + .labelButtonFont{
+    background: #043d43;
+    color: #7cafb3;
+}
+#functionTransition:checked + .labelButtonFont{
+    background: #043d43;
+    color: #7cafb3;
+}
+.labelTransition{
+	cursor: pointer;
+	float: left;
+	margin: 0 2px;
+	background: #227680;
+	width: 150px;
+	height: 20px;
+	text-align: left;
+	padding-left: 8px;
+}
+.labelTransition:hover{
+	width: 97%;
+	background: #d28059;
+}
+#labelEase{
+	transition: all ease 1s;
+}
+#labelLinear{
+	transition: all linear 1s;
+}
+#labelEaseIn{
+	transition: all ease-in 1s;
+}
+#labelEaseOut{
+	transition: all ease-out 1s;
+}
+#labelEaseInOut{
+	transition: all ease-in-out 1s;
+}
+#labelEaseInSine{
+	transition: all cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+}
+#labelEaseOutSine{
+	transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 1s;
+}
+#labelEaseInOutSine{
+	transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+#labelEaseInQuad{
+	transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s;
+}
+#labelEaseOutQuad{
+	transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+}
+#labelEaseInOutQuad{
+	transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
+}
+#labelEaseInCubic{
+	transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
+}
+#labelEaseOutCubic{
+	transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+}
+#labelEaseInOutCubic{
+	transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
+}
+#labelEaseInQuart{
+	transition: all cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s;
+}
+#labelEaseOutQuart{
+	transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+#labelEaseInOutQuart{
+	transition: all cubic-bezier(0.77, 0, 0.175, 1) 1s;
+}
+#labelEaseInQuint{
+	transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06) 1s;
+}
+#labelEaseOutQuint{
+	transition: all cubic-bezier(0.23, 1, 0.32, 1) 1s;
+}
+#labelEaseInOutQuint{
+	transition: all cubic-bezier(0.86, 0, 0.07, 1) 1s;
+}
+#labelEaseInExpo{
+	transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+}
+#labelEaseOutExpo{
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#labelEaseInOutExpo{
+	transition: all cubic-bezier(1, 0, 0, 1) 1s;
+}
+#labelEaseInCirc{
+	transition: all cubic-bezier(0.6, 0.04, 0.98, 0.335) 1s;
+}
+#labelEaseOutCirc{
+	transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+#labelEaseInOutCirc{
+	transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
+}
+#labelEaseInBack{
+	transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s;
+}
+#labelEaseOutBack{
+	transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+#labelEaseInOutBack{
+	transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
+}
+#labelNone{
+	transition: all 1s;
+}
+.inputTransition:checked + .labelTransition{
+	background: #06887c;
+}
+.divNewFunction{
+	display: none;
+}
+#functionTransition:checked ~ .divNewFunction{
+	display: block;
+}
+.newFunctionLable{
+	margin-left: 4px;
+    width: 98%;
+}
+#inputCode:checked ~ #codeWrapper{
+	display: block;
+}
+#codeWrapper{
+	display: none;
+}
+.inputRange{
+	-webkit-appearance: button;
+    background: linear-gradient(to right, #D73B77 100%, white 0%);
+    border-radius: 10px;
+    transition: all ease 1s;
+    box-shadow: black 0 -5px 20px -10px inset;
+    float: left;
+    outline:none;
+    width: 129px;
+	height: 21px;
+	-moz-appearance: button;
+	margin: 2px;
+}
+#inputIcon:checked ~ #iconButtonWrapper{
+	display: block;
+}
+#labelRepeat:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#repeatDiv{
+	display: none;
+}
+#labelRepeat:checked ~ #repeatDiv{
+	display: block;
+}
+#inputNoRepeat:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputRepeat:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputRepeatX:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputRepeatY:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#labelRepeatBack:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#repeatDivBack{
+	display: none;
+}
+#labelRepeatBack:checked ~ #repeatDivBack{
+	display: block;
+}
+#inputNoRepeatBack:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputRepeatBack:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputRepeatXBack:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+#inputRepeatYBack:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
+}
+.inputTextStyle{
+    width: 30px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 11px -3px inset;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: radial-gradient(#e9e9e9 0%, #d2d5d6 90%);
+    outline:none;
+}
+#textButtonLable:checked ~ #textButtonWrapper{
+	display: block;
+}
+#styleFontLable:checked ~ #styleFontWrapper{
+	display: block;
+	padding-bottom: 0;
+}
+#sizeColorFont:checked ~ #SACWrapper{
+	display: block;
+}
+#textShadowLabel:checked ~ #textShadowWrapper{
+	display: block;
+}
+#sizeLable:checked ~ #sizeWrapper{
+	display: block;
+}
+#inputIcon:checked ~ #iconButtonWrapper{
+	display: block;
+}
+#borderRadiusLable:checked ~ #borderRadiusWrapper{
+	display: block;
+}
+#borderLable:checked ~ #borderWrapper{
+	display: block;
+}
+#transformLable:checked ~ #transformWrapper{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#boxShadowLable:checked ~ #boxShadowWrapper{
+	display: block;
+}
+#transitionInput:checked ~ #transitionWrapper{
+	display: block;
+}
+#inputCode:checked ~ #codeWrapper{
+	display: block;
+}
+/*.checSection:checked ~ #textButtonWrapper{
+	display: block;
+}
+.checSection:checked ~ #textButtonWrapper{
+	display: block;
+}
+.checSection:checked ~ #textButtonWrapper{
+	display: block;
+}*/
+.tableSize{
+	margin: 0 auto;
+	width: 181px;
+}
+.iconButton{
+	position: absolute;
+}
+textarea {
+	outline:none;
+}
+.divOpenSettingIcon{
+	display: none;
+}
+#shadowInset:checked + .colorFon{
+	background: #043d44;
+	color: #a5cdd0;
 }
