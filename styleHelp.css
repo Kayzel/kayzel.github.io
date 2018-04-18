@@ -26,6 +26,7 @@
 }
 .helpQuest{
 	position: absolute;
+	z-index: 999; 
     top: 3px;
     right: 3px;
 	text-align: right; 
