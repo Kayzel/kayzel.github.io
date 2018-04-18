@@ -6,10 +6,12 @@ var helper = {
 		firID.addEventListener("mouseover", function(){
 			secId.style.left = 420+'px';
 			secId.style.opacity = 1;
+			secId.style.zIndex = 10;
 		}, false);
 		firID.addEventListener("mouseout", function(){
 			secId.style.left = 0+'px';
 			secId.style.opacity = 0;
+			secId.style.zIndex = -1;
 		}, false);
 	},
 }
