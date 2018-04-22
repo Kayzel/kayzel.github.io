@@ -20,6 +20,20 @@ body{
 	background: linear-gradient(0deg, #a4b15f, #55bbbb);
 	box-shadow: -10px 0 130px -35px;
 }
+a:link { 
+	color: #000000c7;
+	text-decoration: none; 
+}
+a:hover {
+ color: #ee9063;
+ /*#a4b15f; */
+ text-decoration: underline; 
+ transition: ease all 2s;
+}
+.link {
+	
+  color: #000000c7; 
+}
 .size-top-block{
 	height: 100px;
 }
