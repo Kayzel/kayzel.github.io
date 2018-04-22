@@ -3,10 +3,6 @@ body{
 	font-family: 'Comfortaa', cursive;
 	background: #80808033;
 }
-/*.contacts{
-	float: right;
-	font-family: 'Ubuntu', sans-serif;
-}*/
 .frame{
 	margin: 0;
 	position: relative;
@@ -26,7 +22,6 @@ a:link {
 }
 a:hover {
  color: #ee9063;
- /*#a4b15f; */
  text-decoration: underline; 
  transition: ease all 2s;
 }
@@ -72,7 +67,6 @@ a:hover {
 	padding: 5px 10px;
 }
 .second-col p{
-	/*text-align: center;*/
 	color: white;
 	padding: 5px 5px;
 }
@@ -94,7 +88,6 @@ a:hover {
 .color-b{
 	color: #55bbbb;
 }
-
 .padding-paint{
 	padding-right: 0;
 	padding-left: 0;
@@ -105,13 +98,6 @@ a:hover {
 	border: solid 10px #3535354d;
 	border-radius: 150px;
 }
-/*.after-class:before{
-	content: '';
-	height: 20px;
-	width: 200px;
-	background: red;
-	display: block;
-}*/
 .after-class h3{
 	background: white;
 	padding: 5px 10px;
