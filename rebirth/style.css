@@ -23,10 +23,9 @@ a:link {
 a:hover {
  color: #ee9063;
  text-decoration: underline; 
- transition: ease all 2s;
+ transition: ease all 1.5s;
 }
 .link {
-	
   color: #000000c7; 
 }
 .size-top-block{
