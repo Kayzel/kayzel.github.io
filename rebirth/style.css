@@ -56,7 +56,7 @@ a:hover {
 	padding: 20px;
 }
 .bg-photo{
-	background: linear-gradient(180deg, black 70%, #ffffff00 50%);
+	background: linear-gradient(180deg, #000000c7 70%, #ffffff00 50%);
 }
 .size-block{
 	min-height: 100px;
@@ -67,7 +67,7 @@ a:hover {
 }
 .second-col h3{
 	text-align: center;
-	background: black;
+	background: #000000c7;
 	color: white;
 	padding: 5px 10px;
 }
