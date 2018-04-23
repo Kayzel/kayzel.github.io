@@ -38,15 +38,15 @@ a:hover {
 	padding: 20px;
 	position: relative;
 }
-.box-center{
+
+.p--0{
 	padding-right: 0;
   padding-left: 0;
 }
 .block{
 	display: none;
 }
-.heads-display{
-	display: block;
+.p-top{
 	padding: 20px;
 }
 .bg-photo{
@@ -132,12 +132,6 @@ a:hover {
   box-shadow: 0 0 0 2px inset;
 }
 @media (min-width: 768px) {
-	.block{
-		display: block;
-	}
-	.heads-display{
-		display: none;
-	}
 	.bg-photo{
 		background: none;
 	}
