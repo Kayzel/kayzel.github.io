@@ -120,6 +120,17 @@ a:hover {
 .ta{
 	text-align: center;
 }
+.icon-self:after{
+	content: 'О себе';
+  background: #54bcbb;
+  border-radius: 150px;
+  position: absolute;
+  padding: 15px 12px;
+  right: 20px;
+  top: -15px;
+  color: white;
+  box-shadow: 0 0 0 2px inset;
+}
 .css-icon:after{
   content: 'css';
   background: #54bcbb;
