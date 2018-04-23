@@ -142,6 +142,21 @@ a:hover {
   color: white;
   box-shadow: 0 0 0 2px inset;
 }
+ul{
+	padding-left: 10px;
+}
+.li-float{
+	display: table;
+	list-style-type: none;
+}
+.li-float img{
+  display: table-column;
+  padding: 20px 15px;
+}
+.li-float p{
+	vertical-align: middle;
+	display: table-cell;
+}
 @media (min-width: 768px) {
 	.bg-photo{
 		background: none;
