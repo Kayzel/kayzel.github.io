@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/> 
-  <script src="javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
   <div id="boxFierwork"></div>
@@ -16,16 +15,18 @@
   xhr.open('GET', 'dub.php', false);
   var dive = document.getElementById('boxFierwork');
   // 3. Отсылаем запрос
-  xhr.send();
-
+  function func(){
+    xhr.send();
+  }
+setInerval(func, 1000);
   // 4. Если код ответа сервера не 200, то это ошибка
   if (xhr.status != 200) {
     // обработать ошибку
-    alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+    console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
   } else {
     // вывести результат
     dive.innerHTML = xhr.responseText;
-    //alert( xhr.responseText ); // responseText -- текст ответа.
+    console.log( xhr.responseText ); // responseText -- текст ответа.
   }
   </script>
 </body>
