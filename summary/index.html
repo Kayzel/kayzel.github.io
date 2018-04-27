@@ -18,7 +18,7 @@
   function func(){
     xhr.send();
   }
-setInerval(func, 1000);
+setInterval(func, 1000);
   // 4. Если код ответа сервера не 200, то это ошибка
   if (xhr.status != 200) {
     // обработать ошибку
