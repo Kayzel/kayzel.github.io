@@ -1,0 +1,34 @@
+Host: mastersite24.ru.ru
+
+User-agent: Yandex
+Disallow: /NewMobileSnake
+Disallow: /fier
+Disallow: /generator_css_code
+Disallow: /img
+Disallow: /php
+Disallow: /snaki_igra
+Disallow: /sprit
+Disallow: /testajax
+Disallow: /testgencss
+
+User-Agent: googlebot
+Disallow: /NewMobileSnake
+Disallow: /fier
+Disallow: /generator_css_code
+Disallow: /img
+Disallow: /php
+Disallow: /snaki_igra
+Disallow: /sprit
+Disallow: /testajax
+Disallow: /testgencss
+
+User-Agent: *
+Disallow: /NewMobileSnake
+Disallow: /fier
+Disallow: /generator_css_code
+Disallow: /img
+Disallow: /php
+Disallow: /snaki_igra
+Disallow: /sprit
+Disallow: /testajax
+Disallow: /testgencss
