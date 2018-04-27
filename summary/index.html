@@ -12,10 +12,11 @@
   var xhr = new XMLHttpRequest();
 
   // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-  xhr.open('GET', 'dub.php', false);
+ // xhr.open('GET', 'dub.php', false);
   var dive = document.getElementById('boxFierwork');
   // 3. Отсылаем запрос
   function func(){
+    xhr.open('GET', 'dub.php', false);
     xhr.send();
   }
 setInterval(func, 1000);
