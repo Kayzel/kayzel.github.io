@@ -16,6 +16,8 @@
   var dive = document.getElementById('boxFierwork');
   // 3. Отсылаем запрос
   function func(){
+    var i = 0;
+    console.log( i++ );
     xhr.open('GET', 'dub.php', false);
     xhr.send();
   }
@@ -27,6 +29,7 @@ setInterval(func, 1000);
     console.log(xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
   } else {
     // вывести результат
+      // innerHTML 
     dive.innerHTML = xhr.responseText;
     console.log( xhr.responseText ); // responseText -- текст ответа.
   }
