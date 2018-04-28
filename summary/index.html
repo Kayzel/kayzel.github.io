@@ -2,37 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap-grid.css"/>
   <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>Resume</title>
 </head>
 <body>
-  <div id="boxFierwork"></div>
-  <script>
-      // 1. Создаём новый объект XMLHttpRequest
-  var xhr = new XMLHttpRequest();
-
-  // 2. Конфигурируем его: GET-запрос на URL 'phones.json'
- // xhr.open('GET', 'dub.php', false);
-  var dive = document.getElementById('boxFierwork');
-  // 3. Отсылаем запрос
-  function func(){
-    var i = 0;
-    console.log( i++ );
-    xhr.open('GET', 'dub.php', false);
-    xhr.send();
-  }
-setInterval(func, 1000);
-  // 4. Если код ответа сервера не 200, то это ошибка
-  if (xhr.status != 200) {
-    // обработать ошибку
-    console.log(xhr);
-    console.log(xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-  } else {
-    // вывести результат
-      // innerHTML 
-    dive.innerHTML = xhr.responseText;
-    console.log( xhr.responseText ); // responseText -- текст ответа.
-  }
-  </script>
+  <article class="container bg-w">
+    <section class="row p-top">
+      <article class="col-12 col-md-5 col-lg-4 style-left-col">
+        <img src="img/photo.jpg" alt="" class="photo">
+        <h1 class="alain-right">Терешенков Александр</h1>
+        <p class="alain-right"><span>Год рождения </span>26 06 1991</p>
+        <h2 class="alain-right">Контакты</h2>
+        <p class="alain-right">+7 906 552 99 86</p>
+        <p class="alain-right"><a href="mailto:blacklucifieroff@gmail.com">blacklucifieroff@gmail.com</a></p>
+        <h2 class="alain-right">О себе</h2>
+      </article>
+      <article class="col-12 col-md-7 col-lg-8">
+        <p>sdgsdgsdfg</p>
+      </article>
+    </section>
+  </article>
 </body>
 </html>
