@@ -23,7 +23,7 @@ setInterval(func, 1000);
   // 4. Если код ответа сервера не 200, то это ошибка
   if (xhr.status != 200) {
     // обработать ошибку
-    console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+    console.log(xhr+' = '+ xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
   } else {
     // вывести результат
     dive.innerHTML = xhr.responseText;
