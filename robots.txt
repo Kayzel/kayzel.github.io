@@ -1,4 +1,4 @@
-Host: mastersite24.ru.ru
+Host: http://barklow.github.io/
 
 User-agent: Yandex
 Disallow: /NewMobileSnake
