@@ -45,6 +45,7 @@
 /*
 <p id="inquiryTextShadow" class="helpQuest">?</p>
 <div id="helpTextShadow" class="help">Noooy Hello World</div>
+width: 410px;
 */
 #br{
 	/*display: inline-block;*/
@@ -58,6 +59,21 @@
     border-radius: 5px;
     padding: 5px;
 }
+@media (min-width: 410px) {
+	.br{
+    width: auto;
+	}
+	.rezbr{
+		position: static;
+		width: auto;
+	}
+	/*.photo{
+		margin-right: 0;
+	}
+	.alain-left{
+		margin-right: 0;
+	}*/
+}
 .h2class{
 	font-size: 14px;
 	margin: 0;
@@ -65,21 +81,21 @@
 }
 #rezbr{
 	z-index: 1;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 800px;
-    height: 300px;
-    display: inline-block;
-    width: 400px;
-    border: solid 1px black;
-    background: #fff;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 800px;
+  height: 300px;
+  display: inline-block;
+  width: 400px;
+  border: solid 1px black;
+  background: #fff;
 }
 #codgener{
 	margin: 0 auto;
-    width: 380px;
+  width: 380px;
 	height: 150px;
 }
 
