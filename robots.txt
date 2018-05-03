@@ -1,4 +1,4 @@
-Host: http://barklow.github.io/
+Host: https://barklow.github.io/
 
 User-agent: Yandex
 Disallow: /NewMobileSnake
