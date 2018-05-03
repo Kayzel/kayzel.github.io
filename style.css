@@ -47,67 +47,37 @@
 <div id="helpTextShadow" class="help">Noooy Hello World</div>
 width: 410px;
 */
-#br{
-	/*display: inline-block;*/
-	width: 410px;
-	text-align: center;
-	color: #fff;
-	/*margin-top: 20px;*/
-  margin-left: 10px;
-  margin-top: 30px;
-  background: #28696b;
-  border-radius: 5px;
-  padding: 5px;
-}
-@media (min-width: 410px) {
-	.br{
+
+	#br{
+		text-align: center;
+		color: #fff;
+	  background: #28696b;
+	  border-radius: 5px;
+	  padding: 5px;
+
     width: auto;
     margin-top: 0; 
   	margin-left: 0; 
 	}
-	.buttonMenu{
-		width: auto;
-	}
-	.WindowSetting{
-		overflow: hidden;
-	}
-	.rezbr{
-		position: relative;
-		width: auto;
-    bottom: auto;
-    right: auto;
-    left: auto;
-	  left: 800px;
-	}
-	.tableSize{
-		width: auto;
-	}
-	#divFuter{
-		display: inline;
-	}
-	/*.photo{
-		margin-right: 0;
-	}
-	.alain-left{
-		margin-right: 0;
-	}*/
-}
+
 .h2class{
 	font-size: 14px;
 	margin: 0;
     font-weight: 100;
 }
 #rezbr{
+	display: block;
+	position: relative;
+	width: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+
 	z-index: 1;
   margin: auto;
-  position: fixed;
   top: 0;
-  bottom: 0;
-  right: 0;
-  left: 800px;
   height: 300px;
-  display: inline-block;
-  width: 400px;
+  
   border: solid 1px black;
   background: #fff;
 }
@@ -134,6 +104,7 @@ body{
 	font-size: 13.5px;
 }
 .WindowSetting{
+	overflow: hidden;
 	/*background: #36818a3d;*/
 	position: relative;
 	background: #326a6f;/*#224c50;*/
@@ -170,7 +141,6 @@ body{
 }
 .buttonMenu{
 	color: #153d42;
-	width: 400px;
 	margin: auto;
 
 }
@@ -205,8 +175,7 @@ body{
 }
 
 #divFuter{
-	width: 10px;
-	height: 300px;
+	display: inline; 
 }
 
 .footergen{
@@ -736,7 +705,6 @@ hr{
 }*/
 .tableSize{
 	margin: 0 auto;
-	width: 181px;
 }
 .iconButton{
 	position: absolute;
@@ -750,4 +718,39 @@ textarea {
 #shadowInset:checked + .colorFon{
 	background: #043d44;
 	color: #a5cdd0;
+}
+@media (min-width: 410px) {
+	#br{
+		/*display: inline-block;*/
+		width: 410px;
+		text-align: center;
+		color: #fff;
+		/*margin-top: 20px;*/
+	  margin-left: 10px;
+	  margin-top: 30px;
+	  background: #28696b;
+	  border-radius: 5px;
+	  padding: 5px;
+	}
+	#rezbr{
+		position: fixed;
+		width: 400px;
+		bottom: 0;
+		right: 0;
+		left: 800px;
+		
+  display: inline-block;
+  }
+	
+	#divFuter{
+		width: 10px;
+		height: 300px;
+		display: block;
+	}
+	/*.photo{
+		margin-right: 0;
+	}
+	.alain-left{
+		margin-right: 0;
+	}*/
 }
