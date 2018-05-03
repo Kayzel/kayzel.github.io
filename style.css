@@ -53,19 +53,37 @@ width: 410px;
 	text-align: center;
 	color: #fff;
 	/*margin-top: 20px;*/
-    margin-left: 10px;
-    margin-top: 30px;
-    background: #28696b;
-    border-radius: 5px;
-    padding: 5px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background: #28696b;
+  border-radius: 5px;
+  padding: 5px;
 }
 @media (min-width: 410px) {
 	.br{
     width: auto;
+    margin-top: 0; 
+  	margin-left: 0; 
+	}
+	.buttonMenu{
+		width: auto;
+	}
+	.WindowSetting{
+		overflow: hidden;
 	}
 	.rezbr{
-		position: static;
+		position: relative;
 		width: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+	  left: 800px;
+	}
+	.tableSize{
+		width: auto;
+	}
+	#divFuter{
+		display: inline;
 	}
 	/*.photo{
 		margin-right: 0;
