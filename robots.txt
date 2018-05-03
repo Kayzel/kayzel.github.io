@@ -10,6 +10,7 @@ Disallow: /snaki_igra
 Disallow: /sprit
 Disallow: /testajax
 Disallow: /testgencss
+Disallow: /summary
 
 User-Agent: googlebot
 Disallow: /NewMobileSnake
@@ -21,6 +22,7 @@ Disallow: /snaki_igra
 Disallow: /sprit
 Disallow: /testajax
 Disallow: /testgencss
+Disallow: /summary
 
 User-Agent: *
 Disallow: /NewMobileSnake
@@ -32,3 +34,4 @@ Disallow: /snaki_igra
 Disallow: /sprit
 Disallow: /testajax
 Disallow: /testgencss
+Disallow: /summary
