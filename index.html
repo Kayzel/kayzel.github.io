@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="yandex-verification" content="65c87b1cf9b6dafe" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113908395-1"></script>
 <script>
@@ -38,43 +37,33 @@
 	</style>
 </head>
 <body>
-		<div style="color: #fff; background: radial-gradient(#1a656b 1%, #398284 70%); border-radius: 5px; border: 1px solid; margin: 10px; text-align: center;">
+		<header style="color: #fff; background: radial-gradient(#1a656b 1%, #398284 70%); border-radius: 5px; border: 1px solid; margin: 10px; text-align: center;">
 		<h1 title="CSS Generator Button">CSS Генератор кнопки</h1>
-		</div>
+		</header>
 	<div class="windowShow">
 		
-	<div id="br">
+	<main id="br">
 		<input id="textButtonLable" class="checSection"  type="checkbox" name="" onclick="myFunctionChec()">
 		<label class="labelbutton" for="textButtonLable" title="Text and CSS class button"><h2 class="h2class">Текст и CSS класс кнопки</h2></label>
-		<div class="WindowSetting" id="textButtonWrapper">
+		<section class="WindowSetting" id="textButtonWrapper">
 			<label id="inquiryClass" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span title="Text button">Текст:</span>
 			<input id="textButtonFont" type="text" name="" title="Enter the name of the button" placeholder="Введите название кнопки" oninput="myFunction4()"><hr>
 			<span title="CSS class for button">Класс:</span>
 			<input type="text" name="" id="textClassName" title="Enter the name of the class" value="" placeholder="Введите название класса" oninput="myFunction4()">
-			<div id="helpClass" class="help"><p class="pHelp">	Классы используются, когда необходимо определить стиль для отдельного элемента веб-страницы.</p> <p class="pHelp">Имена классов должны начинаться с латинского символа и могут содержать символ дефиса (-) и подчеркивания (_).</p> <p class="pHelp">Чтобы указать в HTML-коде, что тег используется с определенным классом, атрибут добавляется в тег class = "Имя класса".</p> </div>
-		</div>
+			<article id="helpClass" class="help"><h2>Классы</h2><p class="pHelp">используются, когда необходимо определить стиль для отдельного элемента веб-страницы.</p> <p class="pHelp">Имена классов должны начинаться с латинского символа и могут содержать символ дефиса (-) и подчеркивания (_).</p> <p class="pHelp">Чтобы указать в HTML-коде, что тег используется с определенным классом, атрибут добавляется в тег class = "Имя класса".</p> </article>
+		</section>
 	<div class="buttonMenu">
-		<table style="width: 100%;">
-			<tr>
-				<td style="width: 33.3%;">
-					<input id="celectStandartInput" type="radio" name="style" checked onclick="saveSetting('load')">
-					<label class="buttonSelect" id="celectStandart" for="celectStandartInput">Стандарт</label>
-				</td>
-				<td>
-					<input id="celectHoverInput" type="radio" name="style" onclick="saveSetting('load')">
-					<label class="buttonSelect" id="celectHover" for="celectHoverInput">При наведении</label>
-				</td>
-				<td>
-					<input id="celectActiveInput" type="radio" name="style" onclick="saveSetting('load')">
-					<label class="buttonSelect" id="celectActive" for="celectActiveInput">При нажатии</label>
-				</td>
-			</tr>
-		</table>
+		<input id="celectStandartInput" type="radio" name="style" checked onclick="saveSetting('load')">
+		<label class="buttonSelect" id="celectStandart" for="celectStandartInput">Стандарт</label>
+		<input id="celectHoverInput" type="radio" name="style" onclick="saveSetting('load')">
+		<label class="buttonSelect" id="celectHover" for="celectHoverInput">При наведении</label>
+		<input id="celectActiveInput" type="radio" name="style" onclick="saveSetting('load')">
+		<label class="buttonSelect" id="celectActive" for="celectActiveInput">При нажатии</label>
 	</div>
 		<input type="checkbox" name="" id="styleFontLable" class="checSection">
 		<label class="labelbutton" for="styleFontLable"><h2 class="h2class">Стиль шрифта</h2></label>
-		<div class="WindowSetting" id="styleFontWrapper">
+		<section class="WindowSetting" id="styleFontWrapper">
 			<label id="inquiryStyleFont" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>Насыщенность</span>
 			<table class="tableSize">
@@ -174,13 +163,13 @@
 				</tr>
 				</table>
 			</div>
-			<div id="helpStyleFont" class="help"><h2>Насыщенность - font-weight CSS</h2><p class="pHelp">Устанавливает насыщенность(жирность) шрифта. Стандартная жирность шрифта равна 400.</p><hr><h2>Курсив - font-style CSS</h2><hr><h2>Подчеркивание - text-decoration CSS</h2><p class="pHelp">
+			<article id="helpStyleFont" class="help"><h2>Насыщенность - font-weight CSS</h2><p class="pHelp">Устанавливает насыщенность(жирность) шрифта. Стандартная жирность шрифта равна 400.</p><hr><h2>Курсив - font-style CSS</h2><hr><h2>Подчеркивание - text-decoration CSS</h2><p class="pHelp">
  			Добавляет оформление текста в виде его подчеркивания(underline), перечеркивания(line-through) и линии над текстом(overline).</p>
-			</div>
-		</div>
+			</article>
+		</section>
 	<input type="checkbox" name="" class="checSection" id="sizeColorFont" onclick="myFunctionChec()">	
 	<label class="labelbutton" for="sizeColorFont"><h2 class="h2class">Размер, цвет и градиент шрифта</h2></label>
-		<div class="WindowSetting" id="SACWrapper">
+		<section class="WindowSetting" id="SACWrapper">
 			<label id="inquirySCG" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span><h2 class="h2class">Размер шрифта</h2></span>
 			<table class="tableSize">
@@ -207,7 +196,6 @@
 				<input id="fontColor" type="color" value="#000000" name="" oninput="myFunctionFontColor()" onclick="myFunctionFontColor()">
 			</div>
 				<div class="gradientFont">
-					
 					<table class="tableSize">
 						<tr>
 							<td>
@@ -249,7 +237,6 @@
 										</td>
 									</tr>
 								</table>
-								
 							</td>
 							<td>
 								<table class="tableSize">
@@ -263,12 +250,12 @@
 							</td>
 						</tr>
 					</table>
-				</div> <span> </span>
-				<div id="helpSCG" class="help"><h2>Размер шрифта - font-size CSS</h2><hr><h2>Цвет текста - color CSS</h2><hr><h2>Градиент текста - CSS background: linear-gradient</h2><p class="boldP"><span>background: linear-gradient</span>(угол градиента(deg), <br>первый цвет градиента(rgb) процент первого цвета(%), второй цвет градиента(rgb) процент второго цвета(%)); <br> Свойство <span>-webkit-background-clip: text;</span> обрезает любой  <br>фон(в том числе градиентный) по границе текста. <br>Используется в сочетании с css-свойством <br> <span>-webkit-text-fill-color: transparent;</span> которое обеспечивает прозрачность букв текста, за счет чего фон проглядывает через него.</p></div>
-		</div>
+				</div>
+				<article id="helpSCG" class="help"><h2>Размер шрифта - font-size CSS</h2><hr><h2>Цвет текста - color CSS</h2><hr><h2>Градиент текста - CSS background: linear-gradient</h2><p class="boldP"><span>background: linear-gradient</span>(угол градиента(deg), <br>первый цвет градиента(rgb) процент первого цвета(%), второй цвет градиента(rgb) процент второго цвета(%)); <br> Свойство <span>-webkit-background-clip: text;</span> обрезает любой  <br>фон(в том числе градиентный) по границе текста. <br>Используется в сочетании с css-свойством <br> <span>-webkit-text-fill-color: transparent;</span> которое обеспечивает прозрачность букв текста, за счет чего фон проглядывает через него.</p></article>
+		</section>
 		<input type="checkbox" name="" class="checSection" id="textShadowLabel" onclick="myFunctionChec()">
 		<label class="labelbutton" for="textShadowLabel"><h2 class="h2class">Тень текста</h2></label>
-		<div class="WindowSetting" id="textShadowWrapper">
+		<section class="WindowSetting" id="textShadowWrapper">
 			<table style="width: 100%;">
 				<tr>
 					<td style="width: 50%;">
@@ -353,7 +340,6 @@
 				<span>Цвет тени</span>
 				<input type="color" name="" id="leftFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
 				</td>
-
 				<td>
 				<span>Сдвиг по X</span>
 				<table>
@@ -390,11 +376,11 @@
 			</div><br>
 				<input type="checkbox" name="" class="checSection" id="noneFontShadow" onclick="myFunctionNoneFontShadow()">
 				<label class="colorFon fontShadow" for="noneFontShadow">Удалить тень</label>
-				<div id="helpTextShadow" class="help"><h2>Тень текста - text-shadow CSS</h2><p class="pHelp">Параметры: цвет тени(rgb), смещение по горизонтали <br>(сдвиг по X), смещение по вертикали(сдвиг по Y) и радиус размытия. Чем больше радиус размытия, тем сильнее тень сглаживается, становится шире и светлее.</p></div>
-		</div>
+				<article id="helpTextShadow" class="help"><h2>Тень текста - text-shadow CSS</h2><p class="pHelp">Параметры: цвет тени(rgb), смещение по горизонтали <br>(сдвиг по X), смещение по вертикали(сдвиг по Y) и радиус размытия. Чем больше радиус размытия, тем сильнее тень сглаживается, становится шире и светлее.</p></article>
+		</section>
 				<input id="sizeLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
 				<label class="labelbutton" for="sizeLable"><h2 class="h2class">Размер и цвет заднего фона</h2></label>
-		<div class="WindowSetting" id="sizeWrapper">
+		<section class="WindowSetting" id="sizeWrapper">
 			<label id="inquiryBackground" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>Ширина</span>
 			<table class="tableSize">
@@ -572,15 +558,14 @@
 				<hr>
 				<input type="checkbox" name="" id="deleteImage" class="checSection" onclick="imgDeath()">
 				<label for="deleteImage" title="Delete" class="colorFon hoverColorFon">Удалить изображения</label>
-		
 			</div>
-			<div id="helpBackground" class="help"><h2>Ширина - width CSS.</h2><hr><h2>Высота - height CSS.</h2><hr><h2>Непрозрачность - opacity CSS </h2><p>Значение 0 соответствует прозрачности элемента, значение 1 - непрозрачности элемента.</p><hr><h2>Задний фон - background CSS</h2><p class="boldP">Устанавливает цвет заднего фона: <br> 1) сплошной цвет(rgb); <br> 2) градиент - linear-gradient(угол(deg), цвет(rgb) процент цвета(%), цвет(rgb) процент цвета(%)); <br> 3) Изображение для заднего фона может устанавливаться как в свойстве background-image, так и в свойстве background.</p><hr><p class="boldP"><span>background-position CSS</span> определяет расположение изображения внутри элемента по горизонтали и по вертикали. <br>
+			<article id="helpBackground" class="help"><h2>Ширина - width CSS.</h2><hr><h2>Высота - height CSS.</h2><hr><h2>Непрозрачность - opacity CSS </h2><p>Значение 0 соответствует прозрачности элемента, значение 1 - непрозрачности элемента.</p><hr><h2>Задний фон - background CSS</h2><p class="boldP">Устанавливает цвет заднего фона: <br> 1) сплошной цвет(rgb); <br> 2) градиент - linear-gradient(угол(deg), цвет(rgb) процент цвета(%), цвет(rgb) процент цвета(%)); <br> 3) Изображение для заднего фона может устанавливаться как в свойстве background-image, так и в свойстве background.</p><hr><p class="boldP"><span>background-position CSS</span> определяет расположение изображения внутри элемента по горизонтали и по вертикали. <br>
 <span>background-size CSS</span> задает ширину и высоту изображения внутри элемента. <br>
- <span>background-repeat CSS</span> указывает будет ли повторяться изображение.</p></div>
-		</div>
+ <span>background-repeat CSS</span> указывает будет ли повторяться изображение.</p></article>
+		</section>
 				<input id="inputIcon" type="checkbox" name="" class="checSection" onclick="myFunctionChec()">
 				<label for="inputIcon" class="labelbutton"><h2 class="h2class">Иконка на кнопку</h2></label>
-		<div class="WindowSetting" id="iconButtonWrapper">
+		<section class="WindowSetting" id="iconButtonWrapper">
 			<label id="inquiryIcon" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 				<span title="CSS class for icon">Класс для иконки:</span><br>
 				<input type="text" id="classIcon" name="" value="" style="width: 370px;" placeholder="Введите название класса для иконки" oninput="myFunctionIconClass()"><hr>
@@ -642,11 +627,11 @@
 				<input type="checkbox" name="" id="deleteIcon" class="checSection" onclick="delIcon()">
 				<label for="deleteIcon" title="Delete" class="colorFon hoverColorFon">Удалить иконку</label>
 				</div>
-				<div id="helpIcon" class="help"><h2>Тег img в HTML</h2><p class="boldP"><span>&ltimg class="Имя класса" src="Адрес изображения"&gt</span>. Чтобы стилизовать иконку, нужно добавить класс и адрес изображения.</p><p class="boldP">Свойство <span>position: absolute;</span> позволит изменить расположение картинки внутри элемента с помощью свойств left(от левого края) и top(от верхнего края).</p><hr><p class="boldP"><span>width CSS</span> задает ширину элемента. <br><span>height CSS</span> задает высоту элемента.</p></div>
-		</div>
+				<article id="helpIcon" class="help"><h2>Тег img в HTML</h2><p class="boldP"><span>&ltimg class="Имя класса" src="Адрес изображения"&gt</span>. Чтобы стилизовать иконку, нужно добавить класс и адрес изображения.</p><p class="boldP">Свойство <span>position: absolute;</span> позволит изменить расположение картинки внутри элемента с помощью свойств left(от левого края) и top(от верхнего края).</p><hr><p class="boldP"><span>width CSS</span> задает ширину элемента. <br><span>height CSS</span> задает высоту элемента.</p></article>
+		</section>
 				<input id="borderRadiusLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
 				<label class="labelbutton" for="borderRadiusLable"><h2 class="h2class">Закругление углов</h2></label>
-		<div class="WindowSetting" id="borderRadiusWrapper">
+		<section class="WindowSetting" id="borderRadiusWrapper">
 			<label id="inquiryBorderRadius" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<table style="width: 100%;">
 				<tr>
@@ -692,12 +677,12 @@
 					</td>
 				</tr>
 			</table>
-			<div id="helpBorderRadius" class="help"><h2>border-radius CSS</h2><p> устанавливает радиус скругления углов рамки. Если рамка не задана, то скругление также происходит и с фоном.</p></div>
-		</div>
+			<article id="helpBorderRadius" class="help"><h2>border-radius CSS</h2><p> устанавливает радиус скругления углов рамки. Если рамка не задана, то скругление также происходит и с фоном.</p></article>
+		</section>
 
 			<input id="borderLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
 			<label class="labelbutton" for="borderLable"><h2 class="h2class">Рамка</h2></label>
-		<div class="WindowSetting" id="borderWrapper">
+		<section class="WindowSetting" id="borderWrapper">
 			<label id="inquiryBorder" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>Типы</span><br>
 			<select id="borderStyle" onclick="myFunctionBorder()">
@@ -734,11 +719,11 @@
 				<input type="color" name="" value="#ffffff" id="firstBorderColor" oninput="myFunctionBorderGradientColor()">
 				<input type="color" name="" value="#000000" id="secondBorderColor" oninput="myFunctionBorderGradientColor()">
 			</div> --><span></span>
-			<div id="helpBorder" class="help"><h2>border CSS</h2><p>Позволяет установить толщину, тип и цвет границы вокруг элемента.</p><img src="img/Dotted.PNG"><img src="img/Groove.PNG"></div>
-		</div>
+			<article id="helpBorder" class="help"><h2>border CSS</h2><p>Позволяет установить толщину, тип и цвет границы вокруг элемента.</p><img src="img/Dotted.PNG"><img src="img/Groove.PNG"></article>
+		</section>
 			<input id="transformLable" type="checkbox" class="checSection" name="" onclick="myFunctionChec()">
 			<label class="labelbutton" for="transformLable"><h2 class="h2class">Трансформация блока</h2></label>
-		<div class="WindowSetting" id="transformWrapper">
+		<section class="WindowSetting" id="transformWrapper">
 			<label id="inquiryTransform" class="helpQuest helpQuestTrans"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<input type="checkbox" name="" id="rotateInput" class="checSection" onclick="openTransform()">
 			<label for="rotateInput" class="labelButtonFont"><h2 class="h2class">Вращение</h2></label>
@@ -877,11 +862,11 @@
 					</tr>
 				</table>
 			</div>
-			<div id="helpTransform" class="help"><h2>Вращение - transform: rotate (угол) CSS</h2><p>поворачивает элемент на заданный угол относительно точки трансформации.</p><hr><h2>Масштаб - transform: scale CSS</h2><p>масштабирует элемент по горизонтали и по вертикали.</p><hr><h2>Искажение - transform: skew (угол) CSS</h2><p>наклоняет элемент на заданный угол по вертикали и по горизонтали.</p></div>
-		</div>
+			<article id="helpTransform" class="help"><h2>Вращение - transform: rotate (угол) CSS</h2><p>поворачивает элемент на заданный угол относительно точки трансформации.</p><hr><h2>Масштаб - transform: scale CSS</h2><p>масштабирует элемент по горизонтали и по вертикали.</p><hr><h2>Искажение - transform: skew (угол) CSS</h2><p>наклоняет элемент на заданный угол по вертикали и по горизонтали.</p></article>
+		</section>
 			<input id="boxShadowLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
 			<label class="labelbutton" for="boxShadowLable" title="Box-shadow"><h2 class="h2class">Тень блока</h2></label>
-		<div class="WindowSetting" id="boxShadowWrapper">
+		<section class="WindowSetting" id="boxShadowWrapper">
 			<label id="inquiryBoxShadow" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>Сдвиг по X</span>
 			<table class="tableSize">
@@ -923,11 +908,11 @@
 			<input id="boxShadowColor" type="color" name="" oninput="myFunctionBS()"><hr>
 			<input id="shadowInset" type="checkbox" class="checSection" name="" onclick="myFunctionBS()">
 			<label for="shadowInset" class="colorFon">Внутренняя тень</label>
-			<div id="helpBoxShadow" class="help"><h2>Тень элемента - box-shadow CSS</h2><p class="boldP"><span>box-shadow:</span> сдвиг по X, сдвиг по Y, радиус размытия, растяжение, цвет; <br><span>inset CSS</span> добавляет тень внутри элемента.</p></div>
-		</div>
+			<article id="helpBoxShadow" class="help"><h2>Тень элемента - box-shadow CSS</h2><p class="boldP"><span>box-shadow:</span> сдвиг по X, сдвиг по Y, радиус размытия, растяжение, цвет; <br><span>inset CSS</span> добавляет тень внутри элемента.</p></article>
+		</section>
 			<input class="checSection" type="checkbox" name="" id="transitionInput">
 			<label class="labelbutton" for="transitionInput"><h2 class="h2class">Анимация кнопки</h2></label>
-		<div class="WindowSetting" id="transitionWrapper">
+		<section class="WindowSetting" id="transitionWrapper">
 			<label id="inquiryTransition" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>Тип</span>
 			<select id="styleTransist" onclick="testCheckTransist()">
@@ -1151,24 +1136,22 @@
 					</td>
 				</tr>
 			</table>
-			<div id="helpTransition" class="help"><h2>Анимация перехода - transition CSS</h2><p class="boldP">устанавливает эффект перехода между двумя состояниями элемента. <br><span>transition:</span> тип, время анимации, функция;</p></div>
-		</div>
+			<article id="helpTransition" class="help"><h2>Анимация перехода - transition CSS</h2><p class="boldP">устанавливает эффект перехода между двумя состояниями элемента. <br><span>transition:</span> тип, время анимации, функция;</p></article>
+		</section>
 
 			<input type="checkbox" name="" id="inputCode" class="checSection" checked>
 			<label for="inputCode" class="labelbutton"><h2 class="h2class">HTML и CSS код</h2></label>
-		<div class="WindowSetting" id="codeWrapper">
+		<section class="WindowSetting" id="codeWrapper">
 			<label id="inquiryHTML" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>HTML код</span>
 			<textarea id="htmltag"></textarea><hr><label id="inquiryCSS" class="helpQuest" style="top: 105px;"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label><span>CSS код</span>
 			<textarea id="codgener"></textarea>
-			<div id="helpHTML" class="help"><p class="pHelp">Чтобы перенести кнопку на свой сайт, в файле «file-name.html» вам нужно добавить тег и назначить подходящий класс. Вы можете использовать тег из формы «HTML код».</p></div>
-			<div id="helpCSS" class="help helpcss"><p class="pHelp">Вы можете назначить свойства элементу сайта несколькими способами:</p><p class="pHelp">1. Создайте файл «file-name.css» и добавьте содержимое формы «CSS-код»</p><p class="pHelp">2. В файле «file-name.html» добавьте все свойства из формы в тег &ltstyle&gt here &lt/style&gt</p>
-				
-				</div>
-		</div>
+			<article id="helpHTML" class="help"><p class="pHelp">Чтобы перенести кнопку на свой сайт, в файле «file-name.html» вам нужно добавить тег и назначить подходящий класс. Вы можете использовать тег из формы «HTML код».</p></article>
+			<article id="helpCSS" class="help helpcss"><p class="pHelp">Вы можете назначить свойства элементу сайта несколькими способами:</p><p class="pHelp">1. Создайте файл «file-name.css» и добавьте содержимое формы «CSS-код»</p><p class="pHelp">2. В файле «file-name.html» добавьте все свойства из формы в тег &ltstyle&gt here &lt/style&gt</p></article>
+			</section>
 		
 		
-	</div><div id="divFuter"></div>
+	</main><div id="divFuter"></div>
 	<div id="rezbr">
 		<!-- <div id="block"></div> -->
 		<div class="invisButton">

@@ -104,7 +104,6 @@ body{
 	font-size: 13.5px;
 }
 .WindowSetting{
-	overflow: hidden;
 	/*background: #36818a3d;*/
 	position: relative;
 	background: #326a6f;/*#224c50;*/
@@ -140,16 +139,22 @@ body{
 	/*background: #176b6f;*/
 }
 .buttonMenu{
-	color: #153d42;
-	margin: auto;
-
+  color: #153d42;
+  margin: auto;
+  display: table;
+  width: 100%;
+  height: 30px;
 }
 .buttonSelect{
-	cursor: pointer;
-	background: #add9de9e;
-	display: block;
-	margin: 2px 0;
-	padding: 5px 0;
+  cursor: pointer;
+  background: #add9de9e;
+  display: block;
+  margin: 2px 2px;
+  padding: 5px 5px;
+  min-width: 96px;
+  width: 29%;
+  display: inline-table;
+  box-sizing: content-box;
 }
 .buttonSelect:hover{
 	background: #e0dcdc;
