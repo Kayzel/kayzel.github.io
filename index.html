@@ -65,15 +65,12 @@
 		<label class="labelbutton" for="styleFontLable"><h2 class="h2class">Стиль шрифта</h2></label>
 		<section class="WindowSetting" id="styleFontWrapper">
 			<label id="inquiryStyleFont" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<span>Насыщенность</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" type="range" id="fontSaturation" name="" min="100" max="900" value="400" step="100" oninput="myFunctionFontStyle(this)">
-						<input type="text" id="fontSaturationText" name="" value="400" class="inputTextStyle" oninput="myFunctionFontStyleText()">
-					</td>
-				</tr>
-			</table>
+			<h2 class="h2class">Насыщенность</h2>
+			<div class="wrap-pos">
+				
+				<input class="inputRange" type="range" id="fontSaturation" name="" min="100" max="900" value="400" step="100" oninput="myFunctionFontStyle(this)">
+				<input type="text" id="fontSaturationText" name="" value="400" class="inputTextStyle" oninput="myFunctionFontStyleText()">
+			</div>		
 			<table style="width: 100%;">
 			<tr>
 				<td style="width: 50%;">
@@ -106,62 +103,41 @@
 			<input type="checkbox" name="" id="googleFontStyle" class="checSection">
 			<label title="Font" for="googleFontStyle" class="labelButtonFont"><h2 class="h2class">Шрифт</h2></label>
 			<div class="googleFont">
-				<table style="width: 100%;">
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()" checked>Arial</label><br>
-					</td>
-					<td><p class="spanFont pFont1">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Arial Black</label><br>
-					</td>
-					<td><p class="spanFont pFont2">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Comic Sans MS</label><br>
-					</td>
-					<td><p class="spanFont pFont3">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Courier New</label><br>
-					</td>
-					<td><p class="spanFont pFont4">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Georgia</label><br>
-					</td>
-					<td><p class="spanFont pFont5">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Impact</label><br>
-					</td>
-					<td><p class="spanFont pFont6">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Times New Roman</label><br>
-					</td>
-					<td><p class="spanFont pFont7">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Trebuchet MS</label><br>
-					</td>
-					<td><p class="spanFont pFont8">Кнопка</p></td>
-				</tr>
-				<tr>
-					<td>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Verdana</label><br>
-					</td>
-					<td><p class="spanFont pFont9">Кнопка</p></td>
-				</tr>
-				</table>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()" checked>Arial</label>
+					<span class="spanFont pFont1">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Arial Black</label><span class="spanFont pFont2">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Comic Sans MS</label>
+					<span class="spanFont pFont3">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Courier New</label>
+					<span class="spanFont pFont4">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Georgia</label>
+					<span class="spanFont pFont5">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Impact</label>
+					<span class="spanFont pFont6">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Times New Roman</label>
+					<span class="spanFont pFont7">Кнопка</span>
+				</div>
+				<div>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Trebuchet MS</label>
+					<span class="spanFont pFont8">Кнопка</span>
+				</div>	
+				<div>
+						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Verdana</label>
+						<span class="spanFont pFont9">Кнопка</span>
+				</div>	
 			</div>
 			<article id="helpStyleFont" class="help"><h2>Насыщенность - font-weight CSS</h2><p class="pHelp">Устанавливает насыщенность(жирность) шрифта. Стандартная жирность шрифта равна 400.</p><hr><h2>Курсив - font-style CSS</h2><hr><h2>Подчеркивание - text-decoration CSS</h2><p class="pHelp">
  			Добавляет оформление текста в виде его подчеркивания(underline), перечеркивания(line-through) и линии над текстом(overline).</p>
@@ -171,521 +147,337 @@
 	<label class="labelbutton" for="sizeColorFont"><h2 class="h2class">Размер, цвет и градиент шрифта</h2></label>
 		<section class="WindowSetting" id="SACWrapper">
 			<label id="inquirySCG" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<span><h2 class="h2class">Размер шрифта</h2></span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input id="fontSizeRange" type="range" class="inputRange" name="" min="0" max="100" value="16" oninput="myFunctionFontSize()">
-						<input id="fontSizeText" type="text" name="" value="16" class="inputTextStyle" oninput="myFunctionFontSize2()">
-					</td>
-				</tr>
-			</table>
-		<table style="width: 100%;">
-			<tr>
-				<td style="width: 50%;">
-					<input type="radio" name="textSelect" id="intupColorRACF" class="checSection" checked onclick="blockColorFont()">
-					<label class="colorFon" for="intupColorRACF"><h2 class="h2class">Цвет текста</h2></label>
-				</td>
-				<td>
-					<input type="radio" name="textSelect" id="inputGradientRACF" class="checSection" onclick="blockColorFont()">
-					<label class="colorFon" id="LonGradientTEST" for="inputGradientRACF"><h2 class="h2class">Градиент текста</h2></label>
-				</td>
-			</tr>
-		</table>
+			<h2  class="h2class">Размер шрифта</h2>
+			<div class="wrap-pos">
+				<input id="fontSizeRange" type="range" class="inputRange" name="" min="0" max="100" value="16" oninput="myFunctionFontSize()">
+				<input id="fontSizeText" type="text" name="" value="16" class="inputTextStyle" oninput="myFunctionFontSize2()">
+			</div>
+			<div class="wrap-button-lin wid-2">
+				<input type="radio" name="textSelect" id="intupColorRACF" class="checSection" checked onclick="blockColorFont()">
+				<label class="colorFon" for="intupColorRACF"><h2 class="h2class">Цвет текста</h2></label>
+				<input type="radio" name="textSelect" id="inputGradientRACF" class="checSection" onclick="blockColorFont()">
+				<label class="colorFon" id="LonGradientTEST" for="inputGradientRACF"><h2 class="h2class">Градиент текста</h2></label>
+			</div>
 			<div class="colorSelect" id="selectorColorOpen">
 				<input id="fontColor" type="color" value="#000000" name="" oninput="myFunctionFontColor()" onclick="myFunctionFontColor()">
 			</div>
-				<div class="gradientFont">
-					<table class="tableSize">
-						<tr>
-							<td>
-								<span title="Deg">Угол</span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input class="inputRange" type="range" name="" min="0" max="360" value="0" id="fontRangeID" oninput="myFunctionFontGradient()">
-								<input type="text" name="" value="0" id="fontTextID" class="inputTextStyle" oninput="textGradDeg()">
-							</td>
-						</tr>
-					</table>
-					<hr>
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<span>Процент цвета</span>
-							</td>
-							<td>
-								<span>Процент цвета</span>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="color" name="" id="firstColorfont" value="#ffffff" oninput="myFunctionFontGradient()">
-							</td>
-							<td>
-								<input type="color" name="" id="secondColorFont" value="#000000" oninput="myFunctionFontGradient()">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<table class="tableSize">
-									<tr>
-										<td>
-											<input class="inputRange" type="range" name="" min="0" max="100" value="0" id="fontRCPO" class="inputRangeColorPer" oninput="myFunctionFontGradient()">
-											<input type="text" name="" value="0" id="fontTCPO" class="inputTextStyle" oninput="textGradFirst()">
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<table class="tableSize">
-									<tr>
-										<td>
-											<input class="inputRange" type="range" name="" min="0" max="100" value="100" id="fontRCPT" class="inputRangeColorPer" oninput="myFunctionFontGradient()">
-											<input type="text" name="" value="100" id="fontTCPT" class="inputTextStyle" oninput="textGradSecond()">
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
+			<div class="gradientFont">
+				<h2 title="Deg" class="h2class">Угол</h2>
+				<div class="wrap-pos">
+					<input class="inputRange" type="range" name="" min="0" max="360" value="0" id="fontRangeID" oninput="myFunctionFontGradient()">
+					<input type="text" name="" value="0" id="fontTextID" class="inputTextStyle" oninput="textGradDeg()">
 				</div>
-				<article id="helpSCG" class="help"><h2>Размер шрифта - font-size CSS</h2><hr><h2>Цвет текста - color CSS</h2><hr><h2>Градиент текста - CSS background: linear-gradient</h2><p class="boldP"><span>background: linear-gradient</span>(угол градиента(deg), <br>первый цвет градиента(rgb) процент первого цвета(%), второй цвет градиента(rgb) процент второго цвета(%)); <br> Свойство <span>-webkit-background-clip: text;</span> обрезает любой  <br>фон(в том числе градиентный) по границе текста. <br>Используется в сочетании с css-свойством <br> <span>-webkit-text-fill-color: transparent;</span> которое обеспечивает прозрачность букв текста, за счет чего фон проглядывает через него.</p></article>
+				<hr>
+				<div class="wrap-row2">
+					<div class="wrap-colum">
+						<h2 class="h2class">Процент цвета</h2>
+						<input type="color" name="" id="firstColorfont" value="#ffffff" oninput="myFunctionFontGradient()">
+						<div class="wrap-row1">
+							<input class="inputRange" type="range" name="" min="0" max="100" value="0" id="fontRCPO" class="inputRangeColorPer" oninput="myFunctionFontGradient()">
+							<input type="text" name="" value="0" id="fontTCPO" class="inputTextStyle" oninput="textGradFirst()">
+						</div>
+					</div>
+					<div class="wrap-colum">
+						<h2 class="h2class">Процент цвета</h2>
+						<input type="color" name="" id="secondColorFont" value="#000000" oninput="myFunctionFontGradient()">	
+						<div class="wrap-row1">
+							<input class="inputRange" type="range" name="" min="0" max="100" value="100" id="fontRCPT" class="inputRangeColorPer" oninput="myFunctionFontGradient()">
+							<input type="text" name="" value="100" id="fontTCPT" class="inputTextStyle" oninput="textGradSecond()">			
+						</div>		
+					</div>
+				</div>		
+			</div>
+			<article id="helpSCG" class="help"><h2>Размер шрифта - font-size CSS</h2><hr><h2>Цвет текста - color CSS</h2><hr><h2>Градиент текста - CSS background: linear-gradient</h2><p class="boldP"><span>background: linear-gradient</span>(угол градиента(deg), <br>первый цвет градиента(rgb) процент первого цвета(%), второй цвет градиента(rgb) процент второго цвета(%)); <br> Свойство <span>-webkit-background-clip: text;</span> обрезает любой  <br>фон(в том числе градиентный) по границе текста. <br>Используется в сочетании с css-свойством <br> <span>-webkit-text-fill-color: transparent;</span> которое обеспечивает прозрачность букв текста, за счет чего фон проглядывает через него.</p></article>
 		</section>
 		<input type="checkbox" name="" class="checSection" id="textShadowLabel" onclick="myFunctionChec()">
 		<label class="labelbutton" for="textShadowLabel"><h2 class="h2class">Тень текста</h2></label>
 		<section class="WindowSetting" id="textShadowWrapper">
-			<table style="width: 100%;">
-				<tr>
-					<td style="width: 50%;">
-						<input type="radio" name="shadowtext" id="shadowOne" class="checSection" checked onclick="shadowFontWindow()">
-						<label for="shadowOne" class="colorFon">Одна тень</label>
-					</td>
-					<td>
-						<input type="radio" name="shadowtext" id="shadowTwo" class="checSection" onclick="shadowFontWindow()">
-						<label for="shadowTwo" class="colorFon">Две тени</label>
-					</td>
-				</tr>
-			</table>
+			<div class="wrap-button-lin wid-2">
+				<input type="radio" name="shadowtext" id="shadowOne" class="checSection" checked onclick="shadowFontWindow()">
+				<label for="shadowOne" class="colorFon">Одна тень</label>
+				<input type="radio" name="shadowtext" id="shadowTwo" class="checSection" onclick="shadowFontWindow()">
+				<label for="shadowTwo" class="colorFon">Две тени</label>
+			</div>			
 			<label id="inquiryTextShadow" class="helpQuest" style="top: 35px;"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<div id="shadowbutton1">
-				<table class="tableSize">
-					<tr>
-						<td>
-				<span>Сдвиг по X</span>
-				<table class="tableSize">
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="fontShadowRangeX" oninput="myFunctionFontShadowOneColorRange()">
-							<input type="text" name="" value="0" id="fontShadowTextX" class="inputTextStyle" oninput="FontShadowOneX()">
-						</td>
-					</tr>
-				</table>
-				<span>Сдвиг по Y</span>
-				<table class="tableSize">
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="fontShadowRangeY" oninput="myFunctionFontShadowOneColorRange()">
-							<input type="text" name="" value="0" id="fontShadowTextY" class="inputTextStyle" oninput="FontShadowOneY()">
-						</td>
-					</tr>
-				</table>
-				<span>Размытие</span>
-				<table class="tableSize">
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="fontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange()">
-							<input type="text" name="" value="0" id="fontShadowTextBlur" class="inputTextStyle" oninput="FontShadowOneBlur()">
-						</td>
-					</tr>
-				</table>
-				<span>Цвет тени</span>
-				<input type="color" name="" id="fontShadowColor" oninput="myFunctionFontShadowOneColor()">
-						</td>
-					</tr>
-				</table>
+			<div id="shadowbutton1" class="p-t-10">
+				<div class="wrap-colum">
+					<h2 class="h2class">Сдвиг по X</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="fontShadowRangeX" oninput="myFunctionFontShadowOneColorRange()">
+						<input type="text" name="" value="0" id="fontShadowTextX" class="inputTextStyle" oninput="FontShadowOneX()">
+					</div>
+					<h2 class="h2class">Сдвиг по Y</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="fontShadowRangeY" oninput="myFunctionFontShadowOneColorRange()">
+						<input type="text" name="" value="0" id="fontShadowTextY" class="inputTextStyle" oninput="FontShadowOneY()">
+					</div>					
+					<h2 class="h2class">Размытие</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="fontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange()">
+						<input type="text" name="" value="0" id="fontShadowTextBlur" class="inputTextStyle" oninput="FontShadowOneBlur()">
+					</div>
+					<h2 class="h2class">Цвет тени</h2>
+					<input type="color" name="" id="fontShadowColor" oninput="myFunctionFontShadowOneColor()">
+				</div>
 			</div>
-			<div id="shadowbutton2">
-			<table style="width: 100%;">
-			<tr>
-				<td>
-				<span>Сдвиг по X</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="leftFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
-							<input type="text" name="" value="0" id="leftFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX()">
-						</td>
-					</tr>
-				</table>
-				<span>Сдвиг по Y</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="leftFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
-							<input type="text" name="" value="0" id="leftFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY()">
-						</td>
-					</tr>
-				</table>
-				<span>Размытие</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="leftFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
-							<input type="text" name="" value="0" id="leftFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur()">
-						</td>
-					</tr>
-				</table>
-				<span>Цвет тени</span>
-				<input type="color" name="" id="leftFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
-				</td>
-				<td>
-				<span>Сдвиг по X</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range"  name="" value="0" min="-50" max="50"  id="rightFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
-							<input type="text" name="" value="0" id="rightFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX2()">
-						</td>
-					</tr>
-				</table>
-				<span>Сдвиг по Y</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="-50" max="50"  id="rightFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
-							<input type="text" name="" value="0" id="rightFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY2()">
-						</td>
-					</tr>
-				</table>
-				<span>Размытие</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="rightFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
-							<input type="text" name="" value="0" id="rightFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur2()">
-						</td>
-					</tr>
-				</table>
-				<span>Цвет тени</span>
-				<input type="color" name="" id="rightFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
-				</td>
-			</tr>	
-			</table>
+			<div id="shadowbutton2" class="wrap-row2 p-t-10">
+				<div class="dis-tc">
+					<h2 class="h2class">Сдвиг по X</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="leftFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" name="" value="0" id="leftFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX()">
+					</div>		
+					<h2 class="h2class">Сдвиг по Y</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="leftFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" name="" value="0" id="leftFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY()">
+					</div>	
+					<h2 class="h2class">Размытие</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="leftFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" name="" value="0" id="leftFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur()">
+					</div>		
+					<h2 class="h2class">Цвет тени</h2>
+					<input type="color" name="" id="leftFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
+				</div>
+				<div class="dis-tc">
+					<h2 class="h2class">Сдвиг по X</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range"  name="" value="0" min="-50" max="50"  id="rightFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" name="" value="0" id="rightFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX2()">
+					</div>	
+					<h2 class="h2class">Сдвиг по Y</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="-50" max="50"  id="rightFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" name="" value="0" id="rightFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY2()">
+					</div>	
+					<h2 class="h2class">Размытие</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="rightFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" name="" value="0" id="rightFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur2()">
+					</div>	
+					<h2 class="h2class">Цвет тени</h2>
+					<input type="color" name="" id="rightFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
+				</div>
 			</div><br>
 				<input type="checkbox" name="" class="checSection" id="noneFontShadow" onclick="myFunctionNoneFontShadow()">
 				<label class="colorFon fontShadow" for="noneFontShadow">Удалить тень</label>
 				<article id="helpTextShadow" class="help"><h2>Тень текста - text-shadow CSS</h2><p class="pHelp">Параметры: цвет тени(rgb), смещение по горизонтали <br>(сдвиг по X), смещение по вертикали(сдвиг по Y) и радиус размытия. Чем больше радиус размытия, тем сильнее тень сглаживается, становится шире и светлее.</p></article>
 		</section>
-				<input id="sizeLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-				<label class="labelbutton" for="sizeLable"><h2 class="h2class">Размер и цвет заднего фона</h2></label>
+		<input id="sizeLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
+		<label class="labelbutton" for="sizeLable"><h2 class="h2class">Размер и цвет заднего фона</h2></label>
 		<section class="WindowSetting" id="sizeWrapper">
 			<label id="inquiryBackground" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<span>Ширина</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="width" type="range" name="" min="0" max="400" value="67" oninput="myFunctionSize()">
-						<input id="width2" class="inputTextStyle" type="text" name="" value="67" oninput="myTextWidth()">
-					</td>
-				</tr>
-			</table>
-			<span>Высота</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="height" type="range" name="" min="0" max="200" value="22" oninput="myFunctionSize()">
-						<input id="height2" class="inputTextStyle" type="text" name="" value="22" oninput="myTextHeight()">
-					</td>
-				</tr>
-			</table>
-			<span>Непрозрачность</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" type="range" id="opacityRange" name="" step="0.05" min="0" max="1" value="1" oninput="myFunctionOpacityRange()">
-						<input type="text" class="inputTextStyle" id="opacityText" name="" value="1" oninput="myFunctionOpacityText()">
-					</td>
-				</tr>
-			</table>
+			<h2 class="h2class">Ширина</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" id="width" type="range" name="" min="0" max="400" value="67" oninput="myFunctionSize()">
+				<input id="width2" class="inputTextStyle" type="text" name="" value="67" oninput="myTextWidth()">
+			</div>		
+			<h2 class="h2class">Высота</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" id="height" type="range" name="" min="0" max="200" value="22" oninput="myFunctionSize()">
+				<input id="height2" class="inputTextStyle" type="text" name="" value="22" oninput="myTextHeight()">
+			</div>		
+			<h2 class="h2class">Непрозрачность</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" type="range" id="opacityRange" name="" step="0.05" min="0" max="1" value="1" oninput="myFunctionOpacityRange()">
+				<input type="text" class="inputTextStyle" id="opacityText" name="" value="1" oninput="myFunctionOpacityText()">
+			</div>	
 			<hr>
-			<table style="width: 100%;">
-				<tr>
-					<td style="width: 32%;">
-						<input type="radio" name="colorGround" id="colorBackground" class="checSection" checked onclick="openBlockNone()">
-						<label for="colorBackground" class="colorFon"><h2 class="h2class">Цвет</h2></label>
-					</td>
-					<td>
-						<input type="radio" name="colorGround" id="colorGradient" class="checSection" onclick="openBlockNone()">
-						<label for="colorGradient" class="colorFon"><h2 class="h2class">Градиент</h2></label>
-					</td>
-					<td>
-						<input type="radio" name="colorGround" id="colorImage" class="checSection" onclick="openBlockNone()">
-						<label for="colorImage" class="colorFon"><h2 class="h2class">Изображение</h2></label>
-					</td>
-				</tr>
-			</table>
+			<div class="wrap-button-lin wid-3">
+				<input type="radio" name="colorGround" id="colorBackground" class="checSection" checked onclick="openBlockNone()">
+				<label for="colorBackground" class="colorFon"><h2 class="h2class">Цвет</h2></label>
+				<input type="radio" name="colorGround" id="colorGradient" class="checSection" onclick="openBlockNone()">
+				<label for="colorGradient" class="colorFon"><h2 class="h2class">Градиент</h2></label>
+				<input type="radio" name="colorGround" id="colorImage" class="checSection" onclick="openBlockNone()">
+				<label for="colorImage" class="colorFon"><h2 class="h2class">Изображение</h2></label>
+			</div>		
 			<div class="colorSelect" id="sizeColorDiv">
-				<table style="width: 100%;">
-					<tr>
-						<td style="width: 50%;">
 				<input id="sizeColor" type="color" value="#ffffff" name="" oninput="myFunctionBackgroundColor()">
-						</td>
-					</tr>
-				</table>
 			</div>
 			<div class="gradientSelect">
-				<div style="width: 200px; margin: auto;">
-				<span title="Deg">Угол</span>
-				<table>
-					<tr>
-						<td>
-							<input class="inputRange" type="range" name="" min="0" max="360" value="0" id="backgroundRangeID" oninput="myFunctionBackgroundGradient()">
-							<input type="text" name="" value="0" id="backgroundTextID" oninput="myTextDegBG()" class="inputTextStyle">
-						</td>
-					</tr>
-				</table>
+				<div class="wrap-colum">
+					<h2 title="Deg" class="h2class">Угол</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" type="range" name="" min="0" max="360" value="0" id="backgroundRangeID" oninput="myFunctionBackgroundGradient()">
+						<input type="text" name="" value="0" id="backgroundTextID" oninput="myTextDegBG()" class="inputTextStyle">
+					</div>		
 				</div>
 				<hr>
-				<table style="width: 100%;">
-					<tr>
-						<td style="width: 50%;">
-				<span>Процент цвета</span>
-						</td> 
-						<td>
-				<span>Процент цвета</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
-				<input type="color" name="" id="firstColor" value="#ffffff" oninput="myFunctionBackgroundGradient()">
-				<table>
-					<tr>
-						<td>
+				<div class="wrap-row2">
+					<div class="dis-tc">
+					<h2 class="h2class">Процент цвета</h2>
+						<input type="color" name="" id="firstColor" value="#ffffff" oninput="myFunctionBackgroundGradient()">
+						<div class="wrap-row1">
 							<input type="range" name="" min="0" max="100" value="0" id="backgroundRCPO" class="inputRange" oninput="myFunctionBackgroundGradient()">
 							<input type="text" name="" value="0" id="backgroundTCPO" class="inputTextStyle" oninput="myTextPercentL()">
-						</td>
-					</tr>
-				</table>
-						</td>
-						<td>
-				<input type="color" name="" id="secondColor" value="#000000" oninput="myFunctionBackgroundGradient()">
-				<table>
-					<tr>
-						<td>
+						</div>
+					</div>
+					<div class="dis-tc">
+						<h2 class="h2class">Процент цвета</h2>	
+						<input type="color" name="" id="secondColor" value="#000000" oninput="myFunctionBackgroundGradient()">
+						<div class="wrap-row1">
 							<input type="range" name="" min="0" max="100" value="100" id="backgroundRCPT" class="inputRange" oninput="myFunctionBackgroundGradient()">
 							<input type="text" name="" value="100" id="backgroundTCPT" class="inputTextStyle" oninput="myTextPercentR()">
-						</td>
-					</tr>
-				</table>
-						</td>
-					</tr>
-					</table>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="divImageBackground">
-				<span>URL изображения:</span>
+				<h2 class="h2class">URL изображения:</h2>
 				<input type="text" name="" id="imgTextBackground" placeholder="Вставьте URL изображения" style="width: 390px;" oninput="myFunctionBackgroundImg()"><hr>
-					<span>Расположение изображения</span>
-				<table class="tableSize">
-					<tr>
-						<td>
-							<span>По горизонтали</span>
-						</td>
-						<td>
-							<span>По вертикали</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
+				<h2 class="h2class">Расположение изображения</h2>
+				<br>
+				<div class="wrap-row2">
+					<div class="dis-tc">
+						<h2 class="h2class">По горизонтали</h2>
+						<div class="wrap-row1">
 							<input type="range" class="inputRange" id="backImagePosX" name="" value="0" min="-382" max="382" oninput="imgPos()">
 							<input type="text" name="" value="0" id="backImagePosXT" class="inputTextStyle" oninput="imgPosTextL()">
-						</td>
-						<td>
+						</div>
+					</div>
+					<div class="dis-tc">
+						<h2 class="h2class">По вертикали</h2>
+						<div class="wrap-row1">
 							<input type="range" class="inputRange" id="backImagePosY" name="" value="0" min="-200" max="200" oninput="imgPos()">
 							<input type="text" name="" value="0" id="backImagePosYT" class="inputTextStyle"oninput="imgPosTextR()">
-						</td>
-					</tr>
-				</table><hr>
-				<span>Размер изображения</span>
-				<table class="tableSize">
-					<tr>
-						<td>
-							<span>Ширина</span>
-						</td>
-						<td>
-							<span>Высота</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h2 class="h2class">Размер изображения</h2>
+				<div class="wrap-row2 p-b-10">
+					<div class="dis-tc">
+						<h2 class="h2class">Ширина</h2>
+						<div class="wrap-row1">
 							<input type="range" class="inputRange" id="backImageSizeX" name="" value="0" min="0" max="382" oninput="imgSize()">
 							<input type="text" name="" value="16" id="backImageSizeXT" class="inputTextStyle" oninput="imgSizerTextL()">
-						</td>
-						<td>
+						</div>
+					</div>
+					<div class="dis-tc">
+						<h2 class="h2class">Высота</h2>
+						<div class="wrap-row1">
 							<input type="range" class="inputRange" id="backImageSizeY" name="" value="0" min="0" max="200" oninput="imgSize()">
 							<input type="text" name="" value="16" id="backImageSizeYT" class="inputTextStyle" oninput="imgSizerTextR()">
-						</td>
-					</tr>
-				</table>
-
+						</div>
+					</div>
+				</div>
 				<input type="checkbox" name="" id="labelRepeatBack" class="checSection">
 				<label for="labelRepeatBack" class="colorFon">Повторение изображения</label>
 				<div id="repeatDivBack">
-				<table style="width: 100%;">
-					<tr>
-						<td style="width: 50%;">
-							<input type="radio" name="repeatBack" id="inputNoRepeatBack" class="checSection" checked onclick="imgRepeat('no-repeat')">
-							<label title="no-repeat" for="inputNoRepeatBack" class="colorFon">Без повторения</label>
-						</td>
-						<td>
-							<input type="radio" name="repeatBack" id="inputRepeatBack" class="checSection" onclick="imgRepeat('repeat')">
-							<label title="repeat" for="inputRepeatBack" class="colorFon">По горизонтали и вертикали</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="repeatBack" id="inputRepeatXBack" class="checSection" onclick="imgRepeat('repeat-x')">
-							<label title="repeat-x" for="inputRepeatXBack" class="colorFon">По горизонтали</label>
-						</td>
-						<td>
-							<input type="radio" name="repeatBack" id="inputRepeatYBack" class="checSection" onclick="imgRepeat('repeat-y')">
-							<label title="repeat-y" for="inputRepeatYBack" class="colorFon">По вертикали</label>
-						</td>
-					</tr>
-				</table>
+					<div class="wrap-row2 wid-2">
+						<input type="radio" name="repeatBack" id="inputNoRepeatBack" class="checSection" checked onclick="imgRepeat('no-repeat')">
+						<label title="no-repeat" for="inputNoRepeatBack" class="colorFon margin-r-l">Без повторения</label>
+						<input type="radio" name="repeatBack" id="inputRepeatBack" class="checSection" onclick="imgRepeat('repeat')">
+						<label title="repeat" for="inputRepeatBack" class="colorFon margin-r-l">По горизонтали и вертикали</label>
+					</div>
+					<div class="wrap-row2 wid-2">
+						<input type="radio" name="repeatBack" id="inputRepeatXBack" class="checSection" onclick="imgRepeat('repeat-x')">
+						<label title="repeat-x" for="inputRepeatXBack" class="colorFon margin-r-l">По горизонтали</label>
+						<input type="radio" name="repeatBack" id="inputRepeatYBack" class="checSection" onclick="imgRepeat('repeat-y')">
+						<label title="repeat-y" for="inputRepeatYBack" class="colorFon margin-r-l">По вертикали</label>
+					</div>
 				</div>
 				<hr>
 				<input type="checkbox" name="" id="deleteImage" class="checSection" onclick="imgDeath()">
 				<label for="deleteImage" title="Delete" class="colorFon hoverColorFon">Удалить изображения</label>
 			</div>
-			<article id="helpBackground" class="help"><h2>Ширина - width CSS.</h2><hr><h2>Высота - height CSS.</h2><hr><h2>Непрозрачность - opacity CSS </h2><p>Значение 0 соответствует прозрачности элемента, значение 1 - непрозрачности элемента.</p><hr><h2>Задний фон - background CSS</h2><p class="boldP">Устанавливает цвет заднего фона: <br> 1) сплошной цвет(rgb); <br> 2) градиент - linear-gradient(угол(deg), цвет(rgb) процент цвета(%), цвет(rgb) процент цвета(%)); <br> 3) Изображение для заднего фона может устанавливаться как в свойстве background-image, так и в свойстве background.</p><hr><p class="boldP"><span>background-position CSS</span> определяет расположение изображения внутри элемента по горизонтали и по вертикали. <br>
-<span>background-size CSS</span> задает ширину и высоту изображения внутри элемента. <br>
- <span>background-repeat CSS</span> указывает будет ли повторяться изображение.</p></article>
+			<article id="helpBackground" class="help"><h2>Ширина - width CSS.</h2><hr><h2>Высота - height CSS.</h2><hr><h2>Непрозрачность - opacity CSS </h2><p>Значение 0 соответствует прозрачности элемента, значение 1 - непрозрачности элемента.</p><hr><h2>Задний фон - background CSS</h2><p class="boldP">Устанавливает цвет заднего фона: <br> 1) сплошной цвет(rgb); <br> 2) градиент - linear-gradient(угол(deg), цвет(rgb) процент цвета(%), цвет(rgb) процент цвета(%)); <br> 3) Изображение для заднего фона может устанавливаться как в свойстве background-image, так и в свойстве background.</p><hr><p class="boldP"><span>background-position CSS</span> определяет расположение изображения внутри элемента по горизонтали и по вертикали. <br><span>background-size CSS</span> задает ширину и высоту изображения внутри элемента. <br><span>background-repeat CSS</span> указывает будет ли повторяться изображение.</p>
+			</article>
 		</section>
-				<input id="inputIcon" type="checkbox" name="" class="checSection" onclick="myFunctionChec()">
-				<label for="inputIcon" class="labelbutton"><h2 class="h2class">Иконка на кнопку</h2></label>
+		<input id="inputIcon" type="checkbox" name="" class="checSection" onclick="myFunctionChec()">
+		<label for="inputIcon" class="labelbutton"><h2 class="h2class">Иконка на кнопку</h2></label>
 		<section class="WindowSetting" id="iconButtonWrapper">
 			<label id="inquiryIcon" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-				<span title="CSS class for icon">Класс для иконки:</span><br>
-				<input type="text" id="classIcon" name="" value="" style="width: 370px;" placeholder="Введите название класса для иконки" oninput="myFunctionIconClass()"><hr>
-				<span>URL иконки:</span><br>
-				<input type="text" id="inputUrlIcon" name="" placeholder="Вставьте URL иконки" style="width: 370px;" oninput="myFunctionIconUrl()">
-				<div class="divOpenSettingIcon">
-					<hr>
-				<span>Расположение иконки</span>
-				<table style="width: 100%;">
-					<tr>
-						<td>
-							<span>По горизонтали</span><br>
-							<table>
-								<tr>
-									<td>
-										<input type="range" name="" min="0" value="0" max="360" class="inputRange iconSetting" oninput="iconPos()">
-										<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd0()">
-									</td>
-								</tr>
-							</table>
-						</td>
-						<td>
-							<span>По вертикали</span><br>
-							<table>
-								<tr>
-									<td>
-										<input type="range" name="" min="0" value="0" max="178" class="inputRange iconSetting" oninput="iconPos()">
-										<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd1()">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span>Ширина</span><br>
-							<table>
-								<tr>
-									<td>
-										<input type="range" name="" min="0" value="0" max="382" class="inputRange iconSetting" oninput="iconSize()">
-										<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd2()">
-									</td>
-								</tr>
-							</table>
-						</td>
-						<td>
-							<span>Высота</span><br>
-							<table>
-								<tr>
-									<td>
-										<input type="range" name="" min="0" value="0" max="200" class="inputRange iconSetting" oninput="iconSize()">
-										<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd3()">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table><hr>
+			<h2 title="CSS class for icon"  class="h2class">Класс для иконки:</h2>
+			<input type="text" id="classIcon" name="" value="" style="width: 90%;" placeholder="Введите название класса для иконки" oninput="myFunctionIconClass()"><hr>
+			<h2 class="h2class">URL иконки:</h2>
+			<input type="text" id="inputUrlIcon" name="" placeholder="Вставьте URL иконки" style="width: 90%;" oninput="myFunctionIconUrl()">
+			<div class="divOpenSettingIcon">
+				<hr>
+				<h2 class="h2class">Расположение иконки</h2>
+				<div>
+					<div class="dis-tc">
+						<h2 class="h2class">По горизонтали</h2>
+						<div class="wrap-row1">
+							<input type="range" name="" min="0" value="0" max="360" class="inputRange iconSetting" oninput="iconPos()">
+							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd0()">
+						</div>
+					</div>
+					<div class="dis-tc">
+						<h2 class="h2class">По вертикали</h2>
+						<div class="wrap-row1">
+							<input type="range" name="" min="0" value="0" max="178" class="inputRange iconSetting" oninput="iconPos()">
+							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd1()">
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="dis-tc">
+						<h2 class="h2class">Ширина</h2>
+						<div class="wrap-row1">
+							<input type="range" name="" min="0" value="0" max="382" class="inputRange iconSetting" oninput="iconSize()">
+							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd2()">
+						</div>
+					</div>
+					<div class="dis-tc">
+						<h2 class="h2class">Высота</h2>
+						<div class="wrap-row1">
+							<input type="range" name="" min="0" value="0" max="200" class="inputRange iconSetting" oninput="iconSize()">
+							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd3()">
+						</div>
+					</div>
+				</div>
+				<hr>
 				<input type="checkbox" name="" id="deleteIcon" class="checSection" onclick="delIcon()">
 				<label for="deleteIcon" title="Delete" class="colorFon hoverColorFon">Удалить иконку</label>
 				</div>
 				<article id="helpIcon" class="help"><h2>Тег img в HTML</h2><p class="boldP"><span>&ltimg class="Имя класса" src="Адрес изображения"&gt</span>. Чтобы стилизовать иконку, нужно добавить класс и адрес изображения.</p><p class="boldP">Свойство <span>position: absolute;</span> позволит изменить расположение картинки внутри элемента с помощью свойств left(от левого края) и top(от верхнего края).</p><hr><p class="boldP"><span>width CSS</span> задает ширину элемента. <br><span>height CSS</span> задает высоту элемента.</p></article>
 		</section>
-				<input id="borderRadiusLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-				<label class="labelbutton" for="borderRadiusLable"><h2 class="h2class">Закругление углов</h2></label>
+		<input id="borderRadiusLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
+		<label class="labelbutton" for="borderRadiusLable"><h2 class="h2class">Закругление углов</h2></label>
 		<section class="WindowSetting" id="borderRadiusWrapper">
 			<label id="inquiryBorderRadius" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<table style="width: 100%;">
-				<tr>
-					<td>	
-			<span>Верхний левый угол</span>
-			<table class="tableSize">
-				<tr>
-					<td>
+			<div>
+				<div class="dis-tc">
+					<h2 class="h2class">Верхний левый угол</h2>
+					<div class="wrap-row1">
 						<input class="inputRange" id="inp1" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
 						<input id="inp11" type="text" name="" value="0" class="inputTextStyle" oninput="borderTL()">
-					</td>
-				</tr>
-			</table>
-			<span>Нижний левый угол</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="inp4" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
-						<input id="inp44" type="text" name="" value="0" class="inputTextStyle" oninput="borderBL()">	
-					</td>
-				</tr>
-			</table>
-			</td>
-			<td>
-			<span>Верхний правый угол</span>
-			<table class="tableSize">
-				<tr>
-					<td>
+					</div>
+				</div>
+				<div class="dis-tc">
+					<h2 class="h2class">Верхний правый угол</h2>
+					<div class="wrap-row1">
 						<input class="inputRange" id="inp2" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
 						<input id="inp22" type="text" name="" value="0" class="inputTextStyle" oninput="borderTR()">
-					</td>
-				</tr>
-			</table>
-			<span>Нижний правый угол</span>
-			<table class="tableSize">
-				<tr>
-					<td>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="dis-tc">
+					<h2 class="h2class">Нижний левый угол</h2>
+					<div class="wrap-row1">
+						<input class="inputRange" id="inp4" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
+						<input id="inp44" type="text" name="" value="0" class="inputTextStyle" oninput="borderBL()">	
+					</div>
+				</div>
+				<div class="dis-tc">
+					<h2 class="h2class">Нижний правый угол</h2>
+					<div class="wrap-row1">
 						<input class="inputRange" id="inp3" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
 						<input id="inp33" type="text" name="" value="0" class="inputTextStyle" oninput="borderBR()">
-					</td>
-				</tr>
-			</table>
-					</td>
-				</tr>
-			</table>
+					</div>
+				</div>
+			</div>
 			<article id="helpBorderRadius" class="help"><h2>border-radius CSS</h2><p> устанавливает радиус скругления углов рамки. Если рамка не задана, то скругление также происходит и с фоном.</p></article>
 		</section>
-
-			<input id="borderLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-			<label class="labelbutton" for="borderLable"><h2 class="h2class">Рамка</h2></label>
+		<input id="borderLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
+		<label class="labelbutton" for="borderLable"><h2 class="h2class">Рамка</h2></label>
 		<section class="WindowSetting" id="borderWrapper">
 			<label id="inquiryBorder" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<span>Типы</span><br>
-			<select id="borderStyle" onclick="myFunctionBorder()">
+			<h2 class="h2class">Типы</h2>
+			<select id="borderStyle" class="p-b-10" onclick="myFunctionBorder()">
 				<option>solid</option>
 				<option>dotted</option>
 				<option>dashed</option>
@@ -696,215 +488,124 @@
 				<option>outset</option>
 			</select>
 			<br>
-			<span>Ширина рамки</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="borderWidth" type="range" name="" min="0" max="100" value="1" oninput="myFunctionBorder()">
-						<input id="borderWidth2" type="text" value="1" class="inputTextStyle" name="" oninput="myFunctionBorderText()">
-					</td>
-				</tr>
-			</table>
+			<h2 class="h2class">Ширина рамки</h2>
+				<div class="wrap-row1">
+					<input class="inputRange" id="borderWidth" type="range" name="" min="0" max="100" value="1" oninput="myFunctionBorder()">
+					<input id="borderWidth2" type="text" value="1" class="inputTextStyle" name="" oninput="myFunctionBorderText()">
+				</div>
 			<input type="radio" name="colorBorder" id="borderColorRadio" class="checSection" checked>
 			<label for="borderColorRadio" class="colorFon">Цвет рамки</label>
-			<!-- <input type="radio" name="colorBorder" id="borderColorGradient" class="checSection">
-			<label title="Linear-Gradient" for="borderColorGradient" class="colorFon">Линейный градиент</label><br><br> -->
 			<div id="borderTypeColorOne" class="borderTypeColor">
 				<input id="borderColor" type="color" name="" oninput="myFunctionBorderColor()">
 			</div>
-			<!-- <div id="borderTypeColorTwo" class="borderTypeColor">
-				<span title="Deg">Угол</span><br>
-				<input type="range" name="" min="0" max="360" value="0" id="borderRangeID" oninput="myFunctionBorderGradient()"><br>
-				<input type="text" name="" value="0" id="borderTextID" oninput="myFunctionBorderGradient()"><br><br>
-				<input type="color" name="" value="#ffffff" id="firstBorderColor" oninput="myFunctionBorderGradientColor()">
-				<input type="color" name="" value="#000000" id="secondBorderColor" oninput="myFunctionBorderGradientColor()">
-			</div> --><span></span>
 			<article id="helpBorder" class="help"><h2>border CSS</h2><p>Позволяет установить толщину, тип и цвет границы вокруг элемента.</p><img src="img/Dotted.PNG"><img src="img/Groove.PNG"></article>
 		</section>
-			<input id="transformLable" type="checkbox" class="checSection" name="" onclick="myFunctionChec()">
-			<label class="labelbutton" for="transformLable"><h2 class="h2class">Трансформация блока</h2></label>
+		<input id="transformLable" type="checkbox" class="checSection" name="" onclick="myFunctionChec()">
+		<label class="labelbutton" for="transformLable"><h2 class="h2class">Трансформация блока</h2></label>
 		<section class="WindowSetting" id="transformWrapper">
 			<label id="inquiryTransform" class="helpQuest helpQuestTrans"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<input type="checkbox" name="" id="rotateInput" class="checSection" onclick="openTransform()">
 			<label for="rotateInput" class="labelButtonFont"><h2 class="h2class">Вращение</h2></label>
 			<div id="rotateDiv">
-			<table style="width: 100%;">
-				<tr>
-					<td style="width: 50%;">
-						<input type="radio" name="Rotate" id="rotate2D" class="checSection" checked onclick="openTransform()">
-						<label for="rotate2D" class="colorFon">Двумерное вращение</label>
-					</td>
-					<td>
-						<input type="radio" name="Rotate" id="rotate3D" class="checSection" onclick="openTransform()">
-						<label for="rotate3D" class="colorFon">Трехмерное вращение</label>
-					</td>
-				</tr>
-			</table>
-			<div class="divRotate">
-				<table class="tableSize">
-					<tr>
-						<td>
-							<span title="Deg">Угол вращения</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
+				<div class="wrap-button-lin wid-2">
+					<input type="radio" name="Rotate" id="rotate2D" class="checSection" checked onclick="openTransform()">
+					<label for="rotate2D" class="colorFon">Двумерное вращение</label>
+					<input type="radio" name="Rotate" id="rotate3D" class="checSection" onclick="openTransform()">
+					<label for="rotate3D" class="colorFon">Трехмерное вращение</label>
+				</div>
+				<div class="divRotate p-t-10 p-b-10">
+					<h2 title="Deg" class="h2class">Угол вращения</h2>
+					<div class="wrap-row1">
 						<input type="range" name="" min="0" max="360" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR()">	
 						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="myFunctionMegoTransformT()">
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="divRotate">
-			<table class="tableSize">
-				<tr>
-					<td>
-						<span>Вращение по X</span><br>
+					</div>
+				</div>
+				<div class="divRotate p-t-10 p-b-10">
+					<h2 class="h2class">Вращение по X</h2>
+					<div class="wrap-row1">
 						<input type="range" name="" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
 						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateXTFunc()">
-					</td> 
-				</tr>
-				<tr>
-					<td>
-						<span>Вращение по Y</span><br>
+					</div> 
+					<h2 class="h2class">Вращение по Y</h2>
+					<div class="wrap-row1">
 						<input type="range" name="" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
 						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateYTFunc()">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span>Вращение по Z</span><br>
+					</div>
+					<h2 class="h2class">Вращение по Z</h2>
+					<div class="wrap-row1">
 						<input type="range" name="" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
 						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateZTFunc()">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span title="Deg">Угол вращения</span><br>
+					</div>
+					<h2 title="Deg" class="h2class">Угол вращения</h2>
+					<div class="wrap-row1">
 						<input type="range" name="" min="0" max="360" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
 						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateDegTFunc()">
-					</td>
-				</tr>
-			</table>
-			</div>
+					</div>
+				</div>
 			</div>
 			<input type="checkbox" name="" id="scaleInput" class="checSection" onclick="openTransform()">
 			<label for="scaleInput" class="labelButtonFont"><h2 class="h2class">Масштаб</h2></label>	
-			<div id="scaleDiv">
-		<!-- 		<table style="width: 100%;">
-					<tr>
-						<td style="width: 50%;">
-						<input type="radio" name="Scale" id="scale2D" class="checSection" checked onclick="openTransform()">
-						<label title="Scale 2D" for="scale2D" class="colorFon">Двумерное масштабирование</label>
-						</td>
-						<td>
-						<input type="radio" name="Scale" id="scale3D" class="checSection" onclick="openTransform()">
-						<label title="Scale 3D" for="scale3D" class="colorFon">Трехмерное масштабирование</label>
-						</td>
-					</tr>
-				</table> -->
-				<div class="scaleDiv">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<span title="ScaleX">X</span>
-								<table>
-									<tr>
-										<td>	
-											<input type="range" name="" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
-											<input type="text" name="" value="1" class="scaleT inputTextStyle" oninput="scaleT0Func()">
-										</td>
-									</tr>
-								</table>
-							</td>
-							<td>
-								<span title="ScaleY">Y</span>
-								<table>
-									<tr>
-										<td>
-											<input type="range" name="" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
-											<input type="text" name="" value="1" class="scaleT inputTextStyle" oninput="scaleT1Func()">
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
+			<div id="scaleDiv" class="p-t-10 p-b-10">
+				<div class="dis-tc">
+					<h2 title="ScaleX" class="h2class">Ширина</h2>
+					<div class="wrap-row1">	
+						<input type="range" name="" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
+						<input type="text" name="" value="1" class="scaleT inputTextStyle" oninput="scaleT0Func()">
+					</div>
+				</div>
+				<div class="dis-tc">
+					<h2 title="ScaleY" class="h2class">Высота</h2>
+					<div class="wrap-row1">
+						<input type="range" name="" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
+						<input type="text" name="" value="1" class="scaleT inputTextStyle" oninput="scaleT1Func()">
+					</div>
 				</div>
 			</div>
 			<input type="checkbox" name="" id="skewInput" class="checSection" onclick="openTransform()">
 			<label title="Skew" for="skewInput" class="labelButtonFont"><h2 class="h2class">Искажение</h2></label>
-			<div id="skewDiv">
-				<table style="width: 100%;">
-					<tr>
-						<td>
-							<span title="skewX">X</span>
-							<table>
-								<tr>
-									<td>
-										<input type="range" name="" value="0" min="-86" max="86" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
-										<input type="text" name="" value="0" class="inputTSkew inputTextStyle" oninput="skew0Func()">
-									</td>
-								</tr>
-							</table>
-						</td>
-						<td>
-							<span title="skewY">Y</span>
-							<table>
-								<tr>
-									<td>
-										<input type="range" name="" value="0" min="-76" max="76" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
-										<input type="text" name="" value="0" class="inputTSkew inputTextStyle" oninput="skew1Func()">
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
+			<div id="skewDiv" class="p-t-10 p-b-10">
+				<div class="dis-tc">
+					<h2 class="h2class" title="skewX">По горизонтали</h2>
+					<div class="wrap-row1">
+						<input type="range" name="" value="0" min="-86" max="86" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
+						<input type="text" name="" value="0" class="inputTSkew inputTextStyle" oninput="skew0Func()">
+					</div>
+				</div>
+				<div class="dis-tc">
+					<h2 class="h2class" title="skewY">По вертикали</h2>
+					<div class="wrap-row1">
+						<input type="range" name="" value="0" min="-76" max="76" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
+						<input type="text" name="" value="0" class="inputTSkew inputTextStyle" oninput="skew1Func()">
+					</div>
+				</div>
 			</div>
 			<article id="helpTransform" class="help"><h2>Вращение - transform: rotate (угол) CSS</h2><p>поворачивает элемент на заданный угол относительно точки трансформации.</p><hr><h2>Масштаб - transform: scale CSS</h2><p>масштабирует элемент по горизонтали и по вертикали.</p><hr><h2>Искажение - transform: skew (угол) CSS</h2><p>наклоняет элемент на заданный угол по вертикали и по горизонтали.</p></article>
 		</section>
-			<input id="boxShadowLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-			<label class="labelbutton" for="boxShadowLable" title="Box-shadow"><h2 class="h2class">Тень блока</h2></label>
+		<input id="boxShadowLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
+		<label class="labelbutton" for="boxShadowLable" title="Box-shadow"><h2 class="h2class">Тень блока</h2></label>
 		<section class="WindowSetting" id="boxShadowWrapper">
 			<label id="inquiryBoxShadow" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<span>Сдвиг по X</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="sdvigX" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
-						<input id="sdvigXInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextF()">
-					</td>
-				</tr>
-			</table>
-			<span>Сдвиг по Y</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="sdvigY" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
-						<input id="sdvigYInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextS()">
-					</td>
-				</tr>
-			</table>
-			<span>Размытие</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="blur" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBS()">
-						<input id="blurInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextT()">
-					</td>
-				</tr>
-			</table>
-			<span>Растяжение</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input class="inputRange" id="whidblur" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
-						<input id="whidblurInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextFo()">
-					</td>
-				</tr>
-			</table>
-			<span>Цвет</span><br>
+			<h2 class="h2class">Сдвиг по X</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" id="sdvigX" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
+				<input id="sdvigXInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextF()">
+			</div>
+			<h2 class="h2class">Сдвиг по Y</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" id="sdvigY" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
+				<input id="sdvigYInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextS()">
+			</div>
+			<h2 class="h2class">Размытие</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" id="blur" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBS()">
+				<input id="blurInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextT()">
+			</div>
+			<h2 class="h2class">Растяжение</h2>
+			<div class="wrap-row1">
+				<input class="inputRange" id="whidblur" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
+				<input id="whidblurInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextFo()">
+			</div>
+			<h2 class="h2class">Цвет</h2>
 			<input id="boxShadowColor" type="color" name="" oninput="myFunctionBS()"><hr>
 			<input id="shadowInset" type="checkbox" class="checSection" name="" onclick="myFunctionBS()">
 			<label for="shadowInset" class="colorFon">Внутренняя тень</label>
@@ -927,215 +628,83 @@
 			<table style="width: 100%;">
 				<tr>
 					<td style="width: 50%;">
-			<input type="radio" name="function" id="functionsTransition" class="checSection" checked>
-			<label for="functionsTransition" class="labelButtonFont">Стандартные функции</label>
+						<input type="radio" name="function" id="functionsTransition" class="checSection" checked>
+						<label for="functionsTransition" class="labelButtonFont">Стандартные функции</label>
 					</td>
-				<!-- 	<td>
-			<input type="radio" name="function" id="functionTransition" class="checSection">
-			<label for="functionTransition" class="labelButtonFont" title="Cubic-bezier">Свои настройки</label>
-					</td> -->
 				</tr>
 			</table>
 			<div>
-				<table style="width: 100%;">
-					<tr>
-						<td>
 				<input type="radio" name="transition" id="inputNone" class="checSection inputTransition" value="" checked onclick="testCheckTransist()">
-				<label for="inputNone" class="labelTransition" id="labelNone">none</label><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
+				<label for="inputNone" class="labelTransition" id="labelNone">none</label>
 				<input type="radio" name="transition" id="inputEase" class="checSection inputTransition" value="ease" onclick="testCheckTransist()">
-				<label for="inputEase" class="labelTransition" id="labelEase">ease</label><br>
-						</td>
-					</tr>
-					<tr>
-						<td>	
+				<label for="inputEase" class="labelTransition" id="labelEase">ease</label>
 				<input type="radio" name="transition" id="inputLinear" class="checSection inputTransition" value="linear" onclick="testCheckTransist()">
-				<label for="inputLinear" class="labelTransition" id="labelLinear">linaer</label><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
+				<label for="inputLinear" class="labelTransition" id="labelLinear">linaer</label>
 				<input type="radio" name="transition" id="inputEaseIn" class="checSection inputTransition" value="ease-in" onclick="testCheckTransist()">
-				<label for="inputEaseIn" class="labelTransition" id="labelEaseIn">ease-in</label><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
+				<label for="inputEaseIn" class="labelTransition" id="labelEaseIn">ease-in</label>
 				<input type="radio" name="transition" id="inputEaseOut" class="checSection inputTransition" value="ease-out" onclick="testCheckTransist()">
-				<label for="inputEaseOut" class="labelTransition" id="labelEaseOut">ease-out</label><br>
-						</td>
-					</tr>
-					<tr>
-						<td>
+				<label for="inputEaseOut" class="labelTransition" id="labelEaseOut">ease-out</label>
 				<input type="radio" name="transition" id="inputEaseInOut" class="checSection inputTransition" value="ease-in-out" onclick="testCheckTransist()">
 				<label for="inputEaseInOut" class="labelTransition" id="labelEaseInOut">ease-in-out</label>
-						</td>
-					</tr>
-				</table>
+
 				<input type="checkbox" name="" id="functionTransition" class="checSection">
-				<label for="functionTransition" class="labelButtonFont newFunctionLable">Other functions</label>
-			<div class="divNewFunction">
-				<table style="width: 100%;">
-					<tr>
-						<td>
-							<input type="radio" name="transition" id="inputEaseInSine" class="checSection inputTransition" value="cubic-bezier(0.47, 0, 0.745, 0.715)" onclick="testCheckTransist()">
-							<label for="inputEaseInSine" class="labelTransition" id="labelEaseInSine">ease-in-sine</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" id="inputEaseOutSine" class="checSection inputTransition" value="cubic-bezier(0.39, 0.575, 0.565, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseOutSine" class="labelTransition" id="labelEaseOutSine">ease-out-sine</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" id="inputEaseInOutSine" class="checSection inputTransition" value="cubic-bezier(0.445, 0.05, 0.55, 0.95)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutSine" class="labelTransition" id="labelEaseInOutSine">ease-in-out-sine</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInQuad" value="cubic-bezier(0.55, 0.085, 0.68, 0.53)" onclick="testCheckTransist()">
-							<label for="inputEaseInQuad" id="labelEaseInQuad" class="labelTransition">ease-in-quad</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutQuad" value="cubic-bezier(0.25, 0.46, 0.45, 0.94)" onclick="testCheckTransist()">
-							<label for="inputEaseOutQuad" id="labelEaseOutQuad" class="labelTransition">ease-out-quad</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutQuad" value="cubic-bezier(0.455, 0.03, 0.515, 0.955)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutQuad" id="labelEaseInOutQuad" class="labelTransition">ease-in-out-quad</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInCubic" value="cubic-bezier(0.55, 0.055, 0.675, 0.19)" onclick="testCheckTransist()">
-							<label for="inputEaseInCubic" id="labelEaseInCubic" class="labelTransition">ease-in-cubic</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutCubic" value="cubic-bezier(0.215, 0.61, 0.355, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseOutCubic" id="labelEaseOutCubic" class="labelTransition">ease-out-cubic</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutCubic" value="cubic-bezier(0.645, 0.045, 0.355, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutCubic" id="labelEaseInOutCubic" class="labelTransition">ease-in-out-cubic</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInQuart" value="cubic-bezier(0.895, 0.03, 0.685, 0.22)" onclick="testCheckTransist()">
-							<label for="inputEaseInQuart" id="labelEaseInQuart" class="labelTransition">ease-in-quart</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutQuart" value="cubic-bezier(0.165, 0.84, 0.44, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseOutQuart" id="labelEaseOutQuart" class="labelTransition">ease-out-quart</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutQuart" value="cubic-bezier(0.77, 0, 0.175, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutQuart" id="labelEaseInOutQuart" class="labelTransition">ease-in-out-quart</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInQuint" value="cubic-bezier(0.755, 0.05, 0.855, 0.06)" onclick="testCheckTransist()">
-							<label for="inputEaseInQuint" id="labelEaseInQuint" class="labelTransition">ease-in-quint</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutQuint" value="cubic-bezier(0.23, 1, 0.32, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseOutQuint" id="labelEaseOutQuint" class="labelTransition">ease-out-quint</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutQuint" value="cubic-bezier(0.86, 0, 0.07, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutQuint" id="labelEaseInOutQuint" class="labelTransition">ease-in-out-quint</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInExpo" value="cubic-bezier(0.95, 0.05, 0.795, 0.035)" onclick="testCheckTransist()">
-							<label for="inputEaseInExpo" id="labelEaseInExpo" class="labelTransition">ease-in-expo</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutExpo" value="cubic-bezier(0.19, 1, 0.22, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseOutExpo" id="labelEaseOutExpo" class="labelTransition">ease-out-expo</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutExpo" value="cubic-bezier(1, 0, 0, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutExpo" id="labelEaseInOutExpo" class="labelTransition">ease-in-out-expo</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInCirc" value="cubic-bezier(0.6, 0.04, 0.98, 0.335)" onclick="testCheckTransist()">
-							<label for="inputEaseInCirc" id="labelEaseInCirc" class="labelTransition">ease-in-circ</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutCirc" value="cubic-bezier(0.075, 0.82, 0.165, 1)" onclick="testCheckTransist()">
-							<label for="inputEaseOutCirc" id="labelEaseOutCirc" class="labelTransition">ease-out-circ</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutCirc" value="cubic-bezier(0.785, 0.135, 0.15, 0.86)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutCirc" id="labelEaseInOutCirc" class="labelTransition">ease-in-out-circ</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInBack" value="cubic-bezier(0.6, -0.28, 0.735, 0.045)" onclick="testCheckTransist()">
-							<label for="inputEaseInBack" id="labelEaseInBack" class="labelTransition">ease-in-back</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutBack" value="cubic-bezier(0.175, 0.885, 0.32, 1.275)" onclick="testCheckTransist()">
-							<label for="inputEaseOutBack" id="labelEaseOutBack" class="labelTransition">ease-out-back</label>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutBack" value="cubic-bezier(0.68, -0.55, 0.265, 1.55)" onclick="testCheckTransist()">
-							<label for="inputEaseInOutBack" id="labelEaseInOutBack" class="labelTransition">ease-in-out-back</label>
-						</td>
-					</tr>
-				</table>
+				<label for="functionTransition" class="labelButtonFont newFunctionLable">Other functions</label>	
+				<div class="divNewFunction">
+					<input type="radio" name="transition" id="inputEaseInSine" class="checSection inputTransition" value="cubic-bezier(0.47, 0, 0.745, 0.715)" onclick="testCheckTransist()">
+					<label for="inputEaseInSine" class="labelTransition" id="labelEaseInSine">ease-in-sine</label>
+					<input type="radio" name="transition" id="inputEaseOutSine" class="checSection inputTransition" value="cubic-bezier(0.39, 0.575, 0.565, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseOutSine" class="labelTransition" id="labelEaseOutSine">ease-out-sine</label>
+					<input type="radio" name="transition" id="inputEaseInOutSine" class="checSection inputTransition" value="cubic-bezier(0.445, 0.05, 0.55, 0.95)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutSine" class="labelTransition" id="labelEaseInOutSine">ease-in-out-sine</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInQuad" value="cubic-bezier(0.55, 0.085, 0.68, 0.53)" onclick="testCheckTransist()">
+					<label for="inputEaseInQuad" id="labelEaseInQuad" class="labelTransition">ease-in-quad</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutQuad" value="cubic-bezier(0.25, 0.46, 0.45, 0.94)" onclick="testCheckTransist()">
+					<label for="inputEaseOutQuad" id="labelEaseOutQuad" class="labelTransition">ease-out-quad</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutQuad" value="cubic-bezier(0.455, 0.03, 0.515, 0.955)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutQuad" id="labelEaseInOutQuad" class="labelTransition">ease-in-out-quad</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInCubic" value="cubic-bezier(0.55, 0.055, 0.675, 0.19)" onclick="testCheckTransist()">
+					<label for="inputEaseInCubic" id="labelEaseInCubic" class="labelTransition">ease-in-cubic</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutCubic" value="cubic-bezier(0.215, 0.61, 0.355, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseOutCubic" id="labelEaseOutCubic" class="labelTransition">ease-out-cubic</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutCubic" value="cubic-bezier(0.645, 0.045, 0.355, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutCubic" id="labelEaseInOutCubic" class="labelTransition">ease-in-out-cubic</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInQuart" value="cubic-bezier(0.895, 0.03, 0.685, 0.22)" onclick="testCheckTransist()">
+					<label for="inputEaseInQuart" id="labelEaseInQuart" class="labelTransition">ease-in-quart</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutQuart" value="cubic-bezier(0.165, 0.84, 0.44, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseOutQuart" id="labelEaseOutQuart" class="labelTransition">ease-out-quart</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutQuart" value="cubic-bezier(0.77, 0, 0.175, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutQuart" id="labelEaseInOutQuart" class="labelTransition">ease-in-out-quart</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInQuint" value="cubic-bezier(0.755, 0.05, 0.855, 0.06)" onclick="testCheckTransist()">
+					<label for="inputEaseInQuint" id="labelEaseInQuint" class="labelTransition">ease-in-quint</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutQuint" value="cubic-bezier(0.23, 1, 0.32, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseOutQuint" id="labelEaseOutQuint" class="labelTransition">ease-out-quint</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutQuint" value="cubic-bezier(0.86, 0, 0.07, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutQuint" id="labelEaseInOutQuint" class="labelTransition">ease-in-out-quint</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInExpo" value="cubic-bezier(0.95, 0.05, 0.795, 0.035)" onclick="testCheckTransist()">
+					<label for="inputEaseInExpo" id="labelEaseInExpo" class="labelTransition">ease-in-expo</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutExpo" value="cubic-bezier(0.19, 1, 0.22, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseOutExpo" id="labelEaseOutExpo" class="labelTransition">ease-out-expo</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutExpo" value="cubic-bezier(1, 0, 0, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutExpo" id="labelEaseInOutExpo" class="labelTransition">ease-in-out-expo</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInCirc" value="cubic-bezier(0.6, 0.04, 0.98, 0.335)" onclick="testCheckTransist()">
+					<label for="inputEaseInCirc" id="labelEaseInCirc" class="labelTransition">ease-in-circ</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutCirc" value="cubic-bezier(0.075, 0.82, 0.165, 1)" onclick="testCheckTransist()">
+					<label for="inputEaseOutCirc" id="labelEaseOutCirc" class="labelTransition">ease-out-circ</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutCirc" value="cubic-bezier(0.785, 0.135, 0.15, 0.86)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutCirc" id="labelEaseInOutCirc" class="labelTransition">ease-in-out-circ</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInBack" value="cubic-bezier(0.6, -0.28, 0.735, 0.045)" onclick="testCheckTransist()">
+					<label for="inputEaseInBack" id="labelEaseInBack" class="labelTransition">ease-in-back</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseOutBack" value="cubic-bezier(0.175, 0.885, 0.32, 1.275)" onclick="testCheckTransist()">
+					<label for="inputEaseOutBack" id="labelEaseOutBack" class="labelTransition">ease-out-back</label>
+					<input type="radio" name="transition" class="checSection inputTransition" id="inputEaseInOutBack" value="cubic-bezier(0.68, -0.55, 0.265, 1.55)" onclick="testCheckTransist()">
+					<label for="inputEaseInOutBack" id="labelEaseInOutBack" class="labelTransition">ease-in-out-back</label>
+				</div>
 			</div>
+			<h2 class="h2class">Время анимации</h2>
+			<div class="wrap-row1">
+				<input type="range" name="" value="1" min="0" max="3" step="0.1" class="rangeTransitTime inputRange" oninput="transitionRange()">
+				<input type="text" name="" value="1" class="inputTextStyle textTransitTime" oninput="transitionText()">
 			</div>
-			<br>
-			<span>Время анимации</span>
-			<table class="tableSize">
-				<tr>
-					<td>
-						<input type="range" name="" value="1" min="0" max="3" step="0.1" class="rangeTransitTime inputRange" oninput="transitionRange()">
-						<input type="text" name="" value="1" class="inputTextStyle textTransitTime" oninput="transitionText()">
-					</td>
-				</tr>
-			</table>
 			<article id="helpTransition" class="help"><h2>Анимация перехода - transition CSS</h2><p class="boldP">устанавливает эффект перехода между двумя состояниями элемента. <br><span>transition:</span> тип, время анимации, функция;</p></article>
 		</section>
 
@@ -1152,7 +721,7 @@
 		
 		
 	</main><div id="divFuter"></div>
-	<div id="rezbr">
+	<aside id="rezbr">
 		<!-- <div id="block"></div> -->
 		<div class="invisButton">
 		<button id="wh1skasGenerator" title="Button"><span id="textButton">Кнопка</span></button>
@@ -1166,7 +735,7 @@
 		<div class="invisButton">
 		<button id="wh1skasGeneratorActive" title="Button"><span id="textButtonActive">Кнопка</span></button>
 		</div>
-	</div>
+	</aside>
 
 	<footer style="bottom: 0; width: 100%;">
 		<div>
@@ -1212,3 +781,4 @@
 	</div>
 </body>
 </html>
+<!-- 1229 -->

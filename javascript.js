@@ -1152,7 +1152,7 @@ function shadowFontWindow(){
 		shadowbutton1.style.display = 'block';
 		shadowbutton2.style.display = 'none';
 	} else if(shadowTwo.checked) {
-		shadowbutton2.style.display = 'block';
+		shadowbutton2.style.display = 'table';
 		shadowbutton1.style.display = 'none';
 	}
 	//if(textShadowLabel.checked){
@@ -1461,11 +1461,11 @@ function myFunctionFontShadowOneColorText2(){
 function myFunctionNoneFontShadow(){
 
 	if(celectStandartInput.checked){
-		blockStandart.style.textShadow = 'none';
+		blockStandart.style.textShadow = '';
 	} else if(celectHoverInput.checked){
-		blockHover.style.textShadow = 'none';
+		blockHover.style.textShadow = '';
 	} else if(celectActiveInput.checked){
-		blockActive.style.textShadow = 'none';
+		blockActive.style.textShadow = '';
 	}
 	timeCod();
 }
@@ -2908,8 +2908,8 @@ function GradientRange(Hash){
 	var value = (hashValue / maxmin) * 100;  //((max + min)*Hash.value)%100;
 
 	//var rezal = value;
-	Hash.style.background = 'linear-gradient(to right, #D73B77 '+value+'%, white 0%)';
-	// console.log(Hash);
+	Hash.style.background = 'linear-gradient(to right, #D73B77 '+value+'%, #ffffff 0%)';
+	// console.log(Hash);, url(img/range.png)
 	// console.log(value);
 	//console.log((hashValue / maxmin) *100); // Hash.value);
 	//console.log(min+max);
