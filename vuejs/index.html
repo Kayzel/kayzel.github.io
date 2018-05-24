@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS CODE MAKER</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/javascript.js" defer></script>
+</head>
+<body>
+  <h1><span class="logo-left">CSS CODE</span><span class="logo-right">MAKER</span></h1>
+  <div id="bossPandel">
+    <main class="boss-Pandel in-block" >
+      <section>
+        <h2 v-on:click="stateDor">STATS {{status}}</h2>
+        <div class="tabel-f padd-t-5" v-if="openState">
+          <div  class="wid-3"><label v-bind:class="{ activeStatus:status==0, deactiv:status!=0 }"><input type="radio" v-on:input="state(0)" name="status" class="invis" checked>STANDART</label></div>
+          <div class="wid-3"><label v-bind:class="{ activeStatus:status==1, deactiv:status!=1 }"><input type="radio" v-on:input="state(1)" name="status" class="invis">HOVER</label></div>
+          <div class="wid-3"><label v-bind:class="{ activeStatus:status==2, deactiv:status!=2 }"><input type="radio" v-on:input="state(2)" name="status" class="invis">ACTIVE</label></div>
+        </div>
+      </section>
+      <section>
+        <h2 v-on:click="fontDor">FONT</h2>
+        <div  class="tabel-f padd-t-5" v-if="openFont">
+          <h3>Font-Size</h3>
+          <div class="pos-center">
+            <input type="range" v-model="fonts[status][0]" v-bind:step="fonts[status][1]=='em'?0.1:1" v-bind:max="fonts[status][1]=='em'?10:100">
+            <input type="text" v-model="fonts[status][0]">
+            <Selec v-model:is="fonts[status][1]"></Selec>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 v-on:click="borderRadiusDor">BORDER-RADIUS</h2>
+        <div class="tabel-f padd-t-5" v-if="openBoredrRadius">
+          <div>
+            <div class="pos-center">
+              <input type="range" v-model="borderRadius[status][0]" v-bind:step="borderRadius[status][1]=='em'?0.1:1" v-bind:max="borderRadius[status][1]=='em'?10:100">
+              <input type="text" v-model="borderRadius[status][0]">
+              <Selec v-model:is="borderRadius[status][1]"></Selec>
+            </div>
+            <div class="pos-center">
+              <input type="range" v-model="borderRadius[status][2]" v-bind:step="borderRadius[status][3]=='em'?0.1:1" v-bind:max="borderRadius[status][3]=='em'?10:100">
+              <input type="text" v-model="borderRadius[status][2]">
+              <Selec v-model="borderRadius[status][3]"></Selec>
+            </div>
+          </div>
+          <div>
+            <div class="pos-center">
+              <input type="range" v-model="borderRadius[status][4]" v-bind:step="borderRadius[status][5]=='em'?0.1:1" v-bind:max="borderRadius[status][5]=='em'?10:100">
+              <input type="text" v-model="borderRadius[status][4]">
+            <Selec v-model="borderRadius[status][5]"></Selec>
+            </div>
+            <div class="pos-center">
+              <input type="range" v-model="borderRadius[status][6]" v-bind:step="borderRadius[status][7]=='em'?0.1:1" v-bind:max="borderRadius[status][7]=='em'?10:100">
+              <input type="text" v-model="borderRadius[status][6]">
+              <Selec v-model="borderRadius[status][7]"></Selec>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 v-on:click="backgroundDor">BACKGROUND</h2>
+        <div class="tabel-f padd-t-5" v-if="openBackground">
+          <div class="pos-center">
+            <h4>WIDTH</h4>
+            <input type="range" v-model="widthSize[status][0]">
+            <input type="text" v-model="widthSize[status][0]">
+            <Selec v-model="widthSize[status][1]"></Selec>
+          </div>
+          <div class="pos-center">
+            <h4>HEIGHT</h4>
+            <input type="range" v-model="heightSize[status][0]">
+            <input type="text" v-model="heightSize[status][0]">
+            <Selec v-model="heightSize[status][1]"></Selec>
+          </div>
+          <div class="tabel-f padd-t-5">
+            <div  class="wid-3"><label v-bind:class="{ activeStatus:typeColor==0, deactiv:typeColor!=0 }"><input type="radio" name="colorButton" v-on:input="colorСhoice(0)" class="invis" checked>COLOR</label></div>
+            <div  class="wid-3"><label v-bind:class="{ activeStatus:typeColor==1, deactiv:typeColor!=1 }"><input type="radio" name="colorButton" v-on:input="colorСhoice(1)" class="invis">GRADIENT</label></div>
+            <div  class="wid-3"><label v-bind:class="{ activeStatus:typeColor==2, deactiv:typeColor!=2 }"><input type="radio" name="colorButton" v-on:input="colorСhoice(2)" class="invis">IMG</label></div>
+          </div>
+          <div class="padd-t-5" v-if="typeColor==0">
+            <input type="color" class="pos-center" v-model="backgroundColor[status][0]">
+          </div>
+          <div v-else-if="typeColor==1">
+            <div class="tabel-f padd-t-5">
+              <div class="wid-3"><label v-bind:class="{ activeStatus:colorOl[status][2]=='0', deactiv:colorOl[status][2]!='0' }"><input type="radio" name="typeGradient" v-on:input="gradientСhoice(0)" v-model="colorOl[status][2]" value="0" class="invis" checked>LINEAR</label></div>
+              <div class="wid-3"><label v-bind:class="{ activeStatus:colorOl[status][2]=='1', deactiv:colorOl[status][2]!='1' }"><input type="radio" name="typeGradient" v-on:input="gradientСhoice(1)" v-model="colorOl[status][2]" value="1" class="invis">RADIAL</label></div>
+              <div class="wid-3"><label v-bind:class="{ activeStatus:colorOl[status][2]=='2', deactiv:colorOl[status][2]!='2' }"><input type="radio" name="typeGradient" v-on:input="gradientСhoice(2)" v-model="colorOl[status][2]" value="2" class="invis">REPEATEING</label></div>
+            </div>
+            <div>
+              <div class="pos-center" v-if="colorOl[status][2]!=='1'">
+                <input type="range" v-model="colorOl[status][1]" max="360"><input type="text" v-model="colorOl[status][1]"><Delec></Delec>
+              </div>
+              <ol class="numList">
+                <Colorlist v-for="(item,index) in colorOl[status][0]" v-model="colorOl[status][0][index]"></Colorlist>
+              </ol>
+              <div class="pos-center  padd-t-5">
+                <button v-on:click="addGradientColor()">Add</button><button v-on:click="RemoveGradientColor()">Remove</button>
+              </div>
+            </div>
+          </div>
+          <div v-else>
+            <div><label> URL: </label><input type="url" style="width: 90%;" v-model="imgIteam[status][2]" placeholder="enter the url of the image"></div>
+            <div class="tabel-f padd-t-5">
+              <div class="wid-4"><label class="f14" v-bind:class="{activeStatus:imgIteam[status][1]=='0', deactiv:imgIteam[status][1]!='0'}"><input type="radio" name="repeating" v-on:input="repeatСhoice(0)" v-model="imgIteam[status][1]" value="0" class="invis">REPEAT</label></div>
+              <div class="wid-4"><label class="f14" v-bind:class="{activeStatus:imgIteam[status][1]=='1', deactiv:imgIteam[status][1]!='1'}"><input type="radio" name="repeating" v-on:input="repeatСhoice(1)" v-model="imgIteam[status][1]" value="1" class="invis">NO-REPEAT</label></div>
+              <div class="wid-4"><label class="f14" v-bind:class="{activeStatus:imgIteam[status][1]=='2', deactiv:imgIteam[status][1]!='2'}"><input type="radio" name="repeating" v-on:input="repeatСhoice(2)" v-model="imgIteam[status][1]" value="2" class="invis">REPEAT-X</label></div>
+              <div class="wid-4"><label class="f14" v-bind:class="{activeStatus:imgIteam[status][1]=='3', deactiv:imgIteam[status][1]!='3'}"><input type="radio" name="repeating" v-on:input="repeatСhoice(3)" v-model="imgIteam[status][1]" value="3" class="invis">REPEAT-Y</label></div>
+            </div>
+            <div class="pos-center">
+              <h4>Size</h4>
+              <label>WIDTH</label>
+              <input type="range" v-model="imgIteam[status][0][0]">
+              <input type="text" v-model="imgIteam[status][0][0]">
+              <Selec v-model="imgIteam[status][0][1]"></Selec>
+            </div>
+            <div class="pos-center">
+              <label>HEIGHT</label>
+              <input type="range" v-model="imgIteam[status][0][2]">
+              <input type="text" v-model="imgIteam[status][0][2]">
+              <Selec v-model="imgIteam[status][0][3]"></Selec>
+            </div>
+            <div class="pos-center">
+              <h4>Position</h4>
+              <label>X</label>
+              <input type="range" v-model="imgIteam[status][0][4]">
+              <input type="text" v-model="imgIteam[status][0][4]">
+              <Selec v-model="imgIteam[status][0][5]"></Selec>
+            </div>
+            <div class="pos-center">
+              <label>Y</label>
+              <input type="range" v-model="imgIteam[status][0][6]">
+              <input type="text" v-model="imgIteam[status][0][6]">
+              <Selec v-model="imgIteam[status][0][7]"></Selec>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 v-on:click="codeDor">CODE NOTE</h2>
+        <div class="tabel-f padd-t-5" v-if="openCode">
+          <textarea v-model="textCode"></textarea>
+        </div>
+      </section>
+    </main>
+    <div class="in-block">
+      <button v-bind:style="styles">Button</button>
+    </div>
+  </div> 
+</body>
+</html>

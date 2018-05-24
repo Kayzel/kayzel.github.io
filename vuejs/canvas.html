@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      canvas.width = 1000;
+      canvas.height = 200;
+
+      
+
+      var obj = {
+        maxHei: 90,
+        pi: Math.PI*2,
+        wid: 25,
+        dist: 0,
+        radius: 15,
+        hei: 100,
+        speed: Math.PI/360*2
+      }
+
+      var arry = new Array(obj.wid).fill().map(function(value, index){
+        return {
+          y: obj.pi/obj.wid*index,
+          x: obj.pi/obj.wid*index//(obj.dist+obj.radius)*index
+        };
+      });
+      var posX = 0;
+      function draw(){
+
+      ctx.fillStyle = '#000000';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      //posX =posX<canvas.width-obj.radius?+50
+
+        for (var i = 0; i < arry.length; i++) {
+         // ctx.fillStyle = '#ffffff';
+          ctx.fillStyle = 'hsl('+arry[i]['y']*50+',50%,50%)';
+          arry[i]['y'] += obj.speed;
+          ctx.fillRect(Math.cos(arry[i]['y'])*obj.maxHei+canvas.width/2-obj.radius/2, Math.sin(arry[i]['y'])*obj.maxHei+canvas.height/2-obj.radius/2, obj.radius, obj.radius);
+        }
+        requestAnimationFrame(draw);
+      }
+
+      draw();
+
+//Math.sin(arry[i]['y'])*obj.maxHei+canvas.height/2-obj.dist/2
+  </script>
+</body>
+</html>
