@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,15 +44,16 @@
 	<div class="windowShow">
 		
 	<main id="br">
-		<input id="textButtonLable" class="checSection"  type="checkbox" name="" onclick="myFunctionChec()">
-		<label class="labelbutton" for="textButtonLable" title="Text and CSS class button"><h2 class="h2class">Текст и CSS класс кнопки</h2></label>
+			<input id="textButtonLable" class="checSection"  type="checkbox" onclick="myFunctionChec()">
+			<label class="labelbutton h2class" for="textButtonLable" title="Text and CSS class button">Текст и CSS класс кнопки</label>
 		<section class="WindowSetting" id="textButtonWrapper">
+			<h2 class="checSection">Текст и CSS класс кнопки</h2>
 			<label id="inquiryClass" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span title="Text button">Текст:</span>
-			<input id="textButtonFont" type="text" name="" title="Enter the name of the button" placeholder="Введите название кнопки" oninput="myFunction4()"><hr>
+			<input id="textButtonFont" type="text" title="Enter the name of the button" placeholder="Введите название кнопки" oninput="myFunction4()"><hr>
 			<span title="CSS class for button">Класс:</span>
-			<input type="text" name="" id="textClassName" title="Enter the name of the class" value="" placeholder="Введите название класса" oninput="myFunction4()">
-			<article id="helpClass" class="help"><h2>Классы</h2><p class="pHelp">используются, когда необходимо определить стиль для отдельного элемента веб-страницы.</p> <p class="pHelp">Имена классов должны начинаться с латинского символа и могут содержать символ дефиса (-) и подчеркивания (_).</p> <p class="pHelp">Чтобы указать в HTML-коде, что тег используется с определенным классом, атрибут добавляется в тег class = "Имя класса".</p> </article>
+			<input type="text" id="textClassName" title="Enter the name of the class" value="" placeholder="Введите название класса" oninput="myFunction4()">
+			<article id="helpClass" class="help"><h2>Классы</h2><p class="pHelp">используются, когда необходимо определить стиль для отдельного элемента веб-страницы.</p> <p class="pHelp">Имена классов должны начинаться с латинского символа и могут содержать символ дефиса (-) и подчеркивания (_).</p> <p class="pHelp">Чтобы указать в HTML-коде, что тег используется с определенным классом, в тег добавляется атрибут class="имя-класса".</p> </article>
 		</section>
 	<div class="buttonMenu">
 		<input id="celectStandartInput" type="radio" name="style" checked onclick="saveSetting('load')">
@@ -62,24 +63,24 @@
 		<input id="celectActiveInput" type="radio" name="style" onclick="saveSetting('load')">
 		<label class="buttonSelect" id="celectActive" for="celectActiveInput">При нажатии</label>
 	</div>
-		<input type="checkbox" name="" id="styleFontLable" class="checSection">
-		<label class="labelbutton" for="styleFontLable"><h2 class="h2class">Стиль шрифта</h2></label>
+		<input type="checkbox" id="styleFontLable" class="checSection">
+		<label class="labelbutton" for="styleFontLable">Стиль шрифта</label>
 		<section class="WindowSetting" id="styleFontWrapper">
+			<h2 class="checSection">Стиль шрифта</h2>
 			<label id="inquiryStyleFont" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<h2 class="h2class">Насыщенность</h2>
 			<div class="wrap-pos">
-				
-				<input class="inputRange" type="range" id="fontSaturation" name="" min="100" max="900" value="400" step="100" oninput="myFunctionFontStyle(this)">
-				<input type="text" id="fontSaturationText" name="" value="400" class="inputTextStyle" oninput="myFunctionFontStyleText()">
+				<input class="inputRange" type="range" id="fontSaturation" min="100" max="900" value="400" step="100" oninput="myFunctionFontStyle(this)">
+				<input type="text" id="fontSaturationText" value="400" class="inputTextStyle" oninput="myFunctionFontStyleText()">
 			</div>		
 			<table style="width: 100%;">
 			<tr>
 				<td style="width: 50%;">
-			<input type="checkbox" class="checSection" name="" id="italicStyle" onclick="myFunctionFontStyleItalic()">
+			<input type="checkbox" class="checSection" id="italicStyle" onclick="myFunctionFontStyleItalic()">
 			<label title="Italic font" for="italicStyle" class="labelInline colorFon">Курсив</label>
 				</td>
 				<td >
-			<input type="checkbox" name="" class="checSection" id="underlineStyle" onclick="myFunctionFontStyleUnderline()">
+			<input type="checkbox" class="checSection" id="underlineStyle" onclick="myFunctionFontStyleUnderline()">
 			<label title="Underline font" for="underlineStyle" class="labelInline colorFon">Подчеркивание</label>
 				</td>	
 			</tr>
@@ -101,9 +102,10 @@
 					</tr>
 				</table>
 			</div>
-			<input type="checkbox" name="" id="googleFontStyle" class="checSection">
-			<label title="Font" for="googleFontStyle" class="labelButtonFont"><h2 class="h2class">Шрифт</h2></label>
+			<input type="checkbox" id="googleFontStyle" class="checSection">
+			<label title="Font" for="googleFontStyle" class="labelButtonFont">Шрифт</label>
 			<div class="googleFont">
+				<h2 class="checSection">Шрифт</h2>
 				<div>
 					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()" checked>Arial</label>
 					<span class="spanFont pFont1">Кнопка</span>
@@ -136,63 +138,65 @@
 					<span class="spanFont pFont8">Кнопка</span>
 				</div>	
 				<div>
-						<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Verdana</label>
-						<span class="spanFont pFont9">Кнопка</span>
+					<label class="fonts"><input type="radio" class="fontFamilyStyle" name="font" onclick="myFunctionFontFamilyStyle()">Verdana</label>
+					<span class="spanFont pFont9">Кнопка</span>
 				</div>	
 			</div>
 			<article id="helpStyleFont" class="help"><h2>Насыщенность - font-weight CSS</h2><p class="pHelp">Устанавливает насыщенность(жирность) шрифта. Стандартная жирность шрифта равна 400.</p><hr><h2>Курсив - font-style CSS</h2><hr><h2>Подчеркивание - text-decoration CSS</h2><p class="pHelp">
  			Добавляет оформление текста в виде его подчеркивания(underline), перечеркивания(line-through) и линии над текстом(overline).</p>
 			</article>
 		</section>
-	<input type="checkbox" name="" class="checSection" id="sizeColorFont" onclick="myFunctionChec()">	
-	<label class="labelbutton" for="sizeColorFont"><h2 class="h2class">Размер, цвет и градиент шрифта</h2></label>
+	<input type="checkbox" class="checSection" id="sizeColorFont" onclick="myFunctionChec()">	
+	<label class="labelbutton" for="sizeColorFont">Размер, цвет и градиент шрифта</label>
 		<section class="WindowSetting" id="SACWrapper">
+			<h2 class="checSection">Размер, цвет и градиент шрифта</h2>
 			<label id="inquirySCG" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<h2  class="h2class">Размер шрифта</h2>
 			<div class="wrap-pos">
-				<input id="fontSizeRange" type="range" class="inputRange" name="" min="0" max="100" value="16" oninput="myFunctionFontSize()">
-				<input id="fontSizeText" type="text" name="" value="16" class="inputTextStyle" oninput="myFunctionFontSize2()">
+				<input id="fontSizeRange" type="range" class="inputRange" min="0" max="100" value="16" oninput="myFunctionFontSize()">
+				<input id="fontSizeText" type="text" value="16" class="inputTextStyle" oninput="myFunctionFontSize2()">
 			</div>
 			<div class="wrap-button-lin wid-2">
 				<input type="radio" name="textSelect" id="intupColorRACF" class="checSection" checked onclick="blockColorFont()">
-				<label class="colorFon" for="intupColorRACF"><h2 class="h2class">Цвет текста</h2></label>
+				<label class="colorFon" for="intupColorRACF">Цвет текста</label>
 				<input type="radio" name="textSelect" id="inputGradientRACF" class="checSection" onclick="blockColorFont()">
-				<label class="colorFon" id="LonGradientTEST" for="inputGradientRACF"><h2 class="h2class">Градиент текста</h2></label>
+				<label class="colorFon" id="LonGradientTEST" for="inputGradientRACF">Градиент текста</label>
 			</div>
 			<div class="colorSelect" id="selectorColorOpen">
-				<input id="fontColor" type="color" value="#000000" name="" oninput="myFunctionFontColor()" onclick="myFunctionFontColor()">
+				<input id="fontColor" type="color" value="#000000" oninput="myFunctionFontColor()" onclick="myFunctionFontColor()">
 			</div>
 			<div class="gradientFont">
 				<h2 title="Deg" class="h2class">Угол</h2>
 				<div class="wrap-pos">
-					<input class="inputRange" type="range" name="" min="0" max="360" value="0" id="fontRangeID" oninput="myFunctionFontGradient()">
-					<input type="text" name="" value="0" id="fontTextID" class="inputTextStyle" oninput="textGradDeg()">
+					<input class="inputRange" type="range" min="0" max="360" value="0" id="fontRangeID" oninput="myFunctionFontGradient()">
+					<input type="text" value="0" id="fontTextID" class="inputTextStyle" oninput="textGradDeg()">
 				</div>
 				<hr>
 				<div class="wrap-row2">
 					<div class="wrap-colum">
 						<h2 class="h2class">Процент цвета</h2>
-						<input type="color" name="" id="firstColorfont" value="#ffffff" oninput="myFunctionFontGradient()">
+						<input type="color" id="firstColorfont" value="#ffffff" oninput="myFunctionFontGradient()">
 						<div class="wrap-row1">
-							<input class="inputRange" type="range" name="" min="0" max="100" value="0" id="fontRCPO" class="inputRangeColorPer" oninput="myFunctionFontGradient()">
-							<input type="text" name="" value="0" id="fontTCPO" class="inputTextStyle" oninput="textGradFirst()">
+							<input class="inputRange inputRangeColorPer" type="range" min="0" max="100" value="0" id="fontRCPO" oninput="myFunctionFontGradient()">
+							<input type="text" value="0" id="fontTCPO" class="inputTextStyle" oninput="textGradFirst()">
 						</div>
 					</div>
 					<div class="wrap-colum">
 						<h2 class="h2class">Процент цвета</h2>
-						<input type="color" name="" id="secondColorFont" value="#000000" oninput="myFunctionFontGradient()">	
+						<input type="color" id="secondColorFont" value="#000000" oninput="myFunctionFontGradient()">	
 						<div class="wrap-row1">
-							<input class="inputRange" type="range" name="" min="0" max="100" value="100" id="fontRCPT" class="inputRangeColorPer" oninput="myFunctionFontGradient()">
-							<input type="text" name="" value="100" id="fontTCPT" class="inputTextStyle" oninput="textGradSecond()">			
+							<input class="inputRange inputRangeColorPer" type="range" min="0" max="100" value="100" id="fontRCPT" oninput="myFunctionFontGradient()">
+							<input type="text" value="100" id="fontTCPT" class="inputTextStyle" oninput="textGradSecond()">			
 						</div>		
 					</div>
 				</div>		
 			</div>
 			<article id="helpSCG" class="help"><h2>Размер шрифта - font-size CSS</h2><hr><h2>Цвет текста - color CSS</h2><hr><h2>Градиент текста - CSS background: linear-gradient</h2><p class="boldP"><span>background: linear-gradient</span>(угол градиента(deg), <br>первый цвет градиента(rgb) процент первого цвета(%), второй цвет градиента(rgb) процент второго цвета(%)); <br> Свойство <span>-webkit-background-clip: text;</span> обрезает любой  <br>фон(в том числе градиентный) по границе текста. <br>Используется в сочетании с css-свойством <br> <span>-webkit-text-fill-color: transparent;</span> которое обеспечивает прозрачность букв текста, за счет чего фон проглядывает через него.</p></article>
 		</section>
-		<input type="checkbox" name="" class="checSection" id="textShadowLabel" onclick="myFunctionChec()">
-		<label class="labelbutton" for="textShadowLabel"><h2 class="h2class">Тень текста</h2></label>
+		<input type="checkbox" class="checSection" id="textShadowLabel" onclick="myFunctionChec()">
+		<label class="labelbutton" for="textShadowLabel">Тень текста</label>
 		<section class="WindowSetting" id="textShadowWrapper">
+			<h2 class="checSection">Тень текста</h2>
 			<div class="wrap-button-lin wid-2">
 				<input type="radio" name="shadowtext" id="shadowOne" class="checSection" checked onclick="shadowFontWindow()">
 				<label for="shadowOne" class="colorFon">Одна тень</label>
@@ -204,144 +208,145 @@
 				<div class="wrap-colum">
 					<h2 class="h2class">Сдвиг по X</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="fontShadowRangeX" oninput="myFunctionFontShadowOneColorRange()">
-						<input type="text" name="" value="0" id="fontShadowTextX" class="inputTextStyle" oninput="FontShadowOneX()">
+						<input class="inputRange" type="range" value="0" min="-50" max="50" id="fontShadowRangeX" oninput="myFunctionFontShadowOneColorRange()">
+						<input type="text" value="0" id="fontShadowTextX" class="inputTextStyle" oninput="FontShadowOneX()">
 					</div>
 					<h2 class="h2class">Сдвиг по Y</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="fontShadowRangeY" oninput="myFunctionFontShadowOneColorRange()">
-						<input type="text" name="" value="0" id="fontShadowTextY" class="inputTextStyle" oninput="FontShadowOneY()">
+						<input class="inputRange" type="range" value="0" min="-50" max="50" id="fontShadowRangeY" oninput="myFunctionFontShadowOneColorRange()">
+						<input type="text" value="0" id="fontShadowTextY" class="inputTextStyle" oninput="FontShadowOneY()">
 					</div>					
 					<h2 class="h2class">Размытие</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="fontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange()">
-						<input type="text" name="" value="0" id="fontShadowTextBlur" class="inputTextStyle" oninput="FontShadowOneBlur()">
+						<input class="inputRange" type="range" value="0" min="0" max="50" id="fontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange()">
+						<input type="text" value="0" id="fontShadowTextBlur" class="inputTextStyle" oninput="FontShadowOneBlur()">
 					</div>
 					<h2 class="h2class">Цвет тени</h2>
-					<input type="color" name="" id="fontShadowColor" oninput="myFunctionFontShadowOneColor()">
+					<input type="color" id="fontShadowColor" oninput="myFunctionFontShadowOneColor()">
 				</div>
 			</div>
 			<div id="shadowbutton2" class="wrap-row2 p-t-10">
 				<div class="dis-tc">
 					<h2 class="h2class">Сдвиг по X</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="leftFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
-						<input type="text" name="" value="0" id="leftFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX()">
+						<input class="inputRange" type="range" value="0" min="-50" max="50" id="leftFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" value="0" id="leftFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX()">
 					</div>		
 					<h2 class="h2class">Сдвиг по Y</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="-50" max="50" id="leftFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
-						<input type="text" name="" value="0" id="leftFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY()">
+						<input class="inputRange" type="range" value="0" min="-50" max="50" id="leftFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" value="0" id="leftFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY()">
 					</div>	
 					<h2 class="h2class">Размытие</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="leftFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
-						<input type="text" name="" value="0" id="leftFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur()">
+						<input class="inputRange" type="range" value="0" min="0" max="50" id="leftFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" value="0" id="leftFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur()">
 					</div>		
 					<h2 class="h2class">Цвет тени</h2>
-					<input type="color" name="" id="leftFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
+					<input type="color" id="leftFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
 				</div>
 				<div class="dis-tc">
 					<h2 class="h2class">Сдвиг по X</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range"  name="" value="0" min="-50" max="50"  id="rightFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
-						<input type="text" name="" value="0" id="rightFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX2()">
+						<input class="inputRange" type="range" value="0" min="-50" max="50"  id="rightFontShadowRangeX" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" value="0" id="rightFontShadowTextX" class="inputTextStyle" oninput="FontShadowTwoX2()">
 					</div>	
 					<h2 class="h2class">Сдвиг по Y</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="-50" max="50"  id="rightFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
-						<input type="text" name="" value="0" id="rightFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY2()">
+						<input class="inputRange" type="range" value="0" min="-50" max="50"  id="rightFontShadowRangeY" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" value="0" id="rightFontShadowTextY" class="inputTextStyle" oninput="FontShadowTwoY2()">
 					</div>	
 					<h2 class="h2class">Размытие</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" value="0" min="0" max="50" id="rightFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
-						<input type="text" name="" value="0" id="rightFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur2()">
+						<input class="inputRange" type="range" value="0" min="0" max="50" id="rightFontShadowRangeBlur" oninput="myFunctionFontShadowOneColorRange2()">
+						<input type="text" value="0" id="rightFontShadowTextBlur" class="inputTextStyle" oninput="FontShadowTwoBlur2()">
 					</div>	
 					<h2 class="h2class">Цвет тени</h2>
-					<input type="color" name="" id="rightFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
+					<input type="color" id="rightFontShadowColor" oninput="myFunctionFontShadowOneColor2()">
 				</div>
 			</div><br>
-				<input type="checkbox" name="" class="checSection" id="noneFontShadow" onclick="myFunctionNoneFontShadow()">
+				<input type="checkbox" class="checSection" id="noneFontShadow" onclick="myFunctionNoneFontShadow()">
 				<label class="colorFon fontShadow" for="noneFontShadow">Удалить тень</label>
 				<article id="helpTextShadow" class="help"><h2>Тень текста - text-shadow CSS</h2><p class="pHelp">Параметры: цвет тени(rgb), смещение по горизонтали <br>(сдвиг по X), смещение по вертикали(сдвиг по Y) и радиус размытия. Чем больше радиус размытия, тем сильнее тень сглаживается, становится шире и светлее.</p></article>
 		</section>
-		<input id="sizeLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-		<label class="labelbutton" for="sizeLable"><h2 class="h2class">Размер и цвет заднего фона</h2></label>
+		<input id="sizeLable" class="checSection" type="checkbox" onclick="myFunctionChec()">
+		<label class="labelbutton" for="sizeLable">Размер и цвет заднего фона</label>
 		<section class="WindowSetting" id="sizeWrapper">
+			<h2 class="checSection">Размер и цвет заднего фона</h2>
 			<label id="inquiryBackground" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<h2 class="h2class">Ширина</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" id="width" type="range" name="" min="0" max="400" value="67" oninput="myFunctionSize()">
-				<input id="width2" class="inputTextStyle" type="text" name="" value="67" oninput="myTextWidth()">
+				<input class="inputRange" id="width" type="range" min="0" max="400" value="67" oninput="myFunctionSize()">
+				<input id="width2" class="inputTextStyle" type="text" value="67" oninput="myTextWidth()">
 			</div>		
 			<h2 class="h2class">Высота</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" id="height" type="range" name="" min="0" max="200" value="22" oninput="myFunctionSize()">
-				<input id="height2" class="inputTextStyle" type="text" name="" value="22" oninput="myTextHeight()">
+				<input class="inputRange" id="height" type="range" min="0" max="200" value="22" oninput="myFunctionSize()">
+				<input id="height2" class="inputTextStyle" type="text" value="22" oninput="myTextHeight()">
 			</div>		
 			<h2 class="h2class">Непрозрачность</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" type="range" id="opacityRange" name="" step="0.05" min="0" max="1" value="1" oninput="myFunctionOpacityRange()">
-				<input type="text" class="inputTextStyle" id="opacityText" name="" value="1" oninput="myFunctionOpacityText()">
+				<input class="inputRange" type="range" id="opacityRange" step="0.05" min="0" max="1" value="1" oninput="myFunctionOpacityRange()">
+				<input type="text" class="inputTextStyle" id="opacityText" value="1" oninput="myFunctionOpacityText()">
 			</div>	
 			<hr>
 			<div class="wrap-button-lin wid-3">
 				<input type="radio" name="colorGround" id="colorBackground" class="checSection" checked onclick="openBlockNone()">
-				<label for="colorBackground" class="colorFon"><h2 class="h2class">Цвет</h2></label>
+				<label for="colorBackground" class="colorFon h2class">Цвет</label>
 				<input type="radio" name="colorGround" id="colorGradient" class="checSection" onclick="openBlockNone()">
-				<label for="colorGradient" class="colorFon"><h2 class="h2class">Градиент</h2></label>
+				<label for="colorGradient" class="colorFon h2class">Градиент</label>
 				<input type="radio" name="colorGround" id="colorImage" class="checSection" onclick="openBlockNone()">
-				<label for="colorImage" class="colorFon"><h2 class="h2class">Изображение</h2></label>
+				<label for="colorImage" class="colorFon h2class">Изображение</label>
 			</div>		
 			<div class="colorSelect" id="sizeColorDiv">
-				<input id="sizeColor" type="color" value="#ffffff" name="" oninput="myFunctionBackgroundColor()">
+				<input id="sizeColor" type="color" value="#ffffff" oninput="myFunctionBackgroundColor()">
 			</div>
 			<div class="gradientSelect">
 				<div class="wrap-colum">
 					<h2 title="Deg" class="h2class">Угол</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" type="range" name="" min="0" max="360" value="0" id="backgroundRangeID" oninput="myFunctionBackgroundGradient()">
-						<input type="text" name="" value="0" id="backgroundTextID" oninput="myTextDegBG()" class="inputTextStyle">
+						<input class="inputRange" type="range" min="0" max="360" value="0" id="backgroundRangeID" oninput="myFunctionBackgroundGradient()">
+						<input type="text" value="0" id="backgroundTextID" oninput="myTextDegBG()" class="inputTextStyle">
 					</div>		
 				</div>
 				<hr>
 				<div class="wrap-row2">
 					<div class="dis-tc">
 					<h2 class="h2class">Процент цвета</h2>
-						<input type="color" name="" id="firstColor" value="#ffffff" oninput="myFunctionBackgroundGradient()">
+						<input type="color" id="firstColor" value="#ffffff" oninput="myFunctionBackgroundGradient()">
 						<div class="wrap-row1">
-							<input type="range" name="" min="0" max="100" value="0" id="backgroundRCPO" class="inputRange" oninput="myFunctionBackgroundGradient()">
-							<input type="text" name="" value="0" id="backgroundTCPO" class="inputTextStyle" oninput="myTextPercentL()">
+							<input type="range" min="0" max="100" value="0" id="backgroundRCPO" class="inputRange" oninput="myFunctionBackgroundGradient()">
+							<input type="text" value="0" id="backgroundTCPO" class="inputTextStyle" oninput="myTextPercentL()">
 						</div>
 					</div>
 					<div class="dis-tc">
 						<h2 class="h2class">Процент цвета</h2>	
-						<input type="color" name="" id="secondColor" value="#000000" oninput="myFunctionBackgroundGradient()">
+						<input type="color" id="secondColor" value="#000000" oninput="myFunctionBackgroundGradient()">
 						<div class="wrap-row1">
-							<input type="range" name="" min="0" max="100" value="100" id="backgroundRCPT" class="inputRange" oninput="myFunctionBackgroundGradient()">
-							<input type="text" name="" value="100" id="backgroundTCPT" class="inputTextStyle" oninput="myTextPercentR()">
+							<input type="range" min="0" max="100" value="100" id="backgroundRCPT" class="inputRange" oninput="myFunctionBackgroundGradient()">
+							<input type="text" value="100" id="backgroundTCPT" class="inputTextStyle" oninput="myTextPercentR()">
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="divImageBackground">
 				<h2 class="h2class">URL изображения:</h2>
-				<input type="text" name="" id="imgTextBackground" placeholder="Вставьте URL изображения" style="width: 390px;" oninput="myFunctionBackgroundImg()"><hr>
+				<input type="text" id="imgTextBackground" placeholder="Вставьте URL изображения" style="width: 390px;" oninput="myFunctionBackgroundImg()"><hr>
 				<h2 class="h2class">Расположение изображения</h2>
 				<br>
 				<div class="wrap-row2">
 					<div class="dis-tc">
 						<h2 class="h2class">По горизонтали</h2>
 						<div class="wrap-row1">
-							<input type="range" class="inputRange" id="backImagePosX" name="" value="0" min="-382" max="382" oninput="imgPos()">
-							<input type="text" name="" value="0" id="backImagePosXT" class="inputTextStyle" oninput="imgPosTextL()">
+							<input type="range" class="inputRange" id="backImagePosX" value="0" min="-382" max="382" oninput="imgPos()">
+							<input type="text" value="0" id="backImagePosXT" class="inputTextStyle" oninput="imgPosTextL()">
 						</div>
 					</div>
 					<div class="dis-tc">
 						<h2 class="h2class">По вертикали</h2>
 						<div class="wrap-row1">
-							<input type="range" class="inputRange" id="backImagePosY" name="" value="0" min="-200" max="200" oninput="imgPos()">
-							<input type="text" name="" value="0" id="backImagePosYT" class="inputTextStyle"oninput="imgPosTextR()">
+							<input type="range" class="inputRange" id="backImagePosY" value="0" min="-200" max="200" oninput="imgPos()">
+							<input type="text" value="0" id="backImagePosYT" class="inputTextStyle" oninput="imgPosTextR()">
 						</div>
 					</div>
 				</div>
@@ -351,19 +356,19 @@
 					<div class="dis-tc">
 						<h2 class="h2class">Ширина</h2>
 						<div class="wrap-row1">
-							<input type="range" class="inputRange" id="backImageSizeX" name="" value="0" min="0" max="382" oninput="imgSize()">
-							<input type="text" name="" value="16" id="backImageSizeXT" class="inputTextStyle" oninput="imgSizerTextL()">
+							<input type="range" class="inputRange" id="backImageSizeX" value="0" min="0" max="382" oninput="imgSize()">
+							<input type="text" value="16" id="backImageSizeXT" class="inputTextStyle" oninput="imgSizerTextL()">
 						</div>
 					</div>
 					<div class="dis-tc">
 						<h2 class="h2class">Высота</h2>
 						<div class="wrap-row1">
-							<input type="range" class="inputRange" id="backImageSizeY" name="" value="0" min="0" max="200" oninput="imgSize()">
-							<input type="text" name="" value="16" id="backImageSizeYT" class="inputTextStyle" oninput="imgSizerTextR()">
+							<input type="range" class="inputRange" id="backImageSizeY" value="0" min="0" max="200" oninput="imgSize()">
+							<input type="text" value="16" id="backImageSizeYT" class="inputTextStyle" oninput="imgSizerTextR()">
 						</div>
 					</div>
 				</div>
-				<input type="checkbox" name="" id="labelRepeatBack" class="checSection">
+				<input type="checkbox" id="labelRepeatBack" class="checSection">
 				<label for="labelRepeatBack" class="colorFon">Повторение изображения</label>
 				<div id="repeatDivBack">
 					<div class="wrap-row2 wid-2">
@@ -380,20 +385,21 @@
 					</div>
 				</div>
 				<hr>
-				<input type="checkbox" name="" id="deleteImage" class="checSection" onclick="imgDeath()">
+				<input type="checkbox" id="deleteImage" class="checSection" onclick="imgDeath()">
 				<label for="deleteImage" title="Delete" class="colorFon hoverColorFon">Удалить изображения</label>
 			</div>
 			<article id="helpBackground" class="help"><h2>Ширина - width CSS.</h2><hr><h2>Высота - height CSS.</h2><hr><h2>Непрозрачность - opacity CSS </h2><p>Значение 0 соответствует прозрачности элемента, значение 1 - непрозрачности элемента.</p><hr><h2>Задний фон - background CSS</h2><p class="boldP">Устанавливает цвет заднего фона: <br> 1) сплошной цвет(rgb); <br> 2) градиент - linear-gradient(угол(deg), цвет(rgb) процент цвета(%), цвет(rgb) процент цвета(%)); <br> 3) Изображение для заднего фона может устанавливаться как в свойстве background-image, так и в свойстве background.</p><hr><p class="boldP"><span>background-position CSS</span> определяет расположение изображения внутри элемента по горизонтали и по вертикали. <br><span>background-size CSS</span> задает ширину и высоту изображения внутри элемента. <br><span>background-repeat CSS</span> указывает будет ли повторяться изображение.</p>
 			</article>
 		</section>
-		<input id="inputIcon" type="checkbox" name="" class="checSection" onclick="myFunctionChec()">
-		<label for="inputIcon" class="labelbutton"><h2 class="h2class">Иконка на кнопку</h2></label>
+		<input id="inputIcon" type="checkbox" class="checSection" onclick="myFunctionChec()">
+		<label for="inputIcon" class="labelbutton">Иконка на кнопку</label>
 		<section class="WindowSetting" id="iconButtonWrapper">
+			<h2 class="checSection">Иконка на кнопку</h2>
 			<label id="inquiryIcon" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<h2 title="CSS class for icon"  class="h2class">Класс для иконки:</h2>
-			<input type="text" id="classIcon" name="" value="" style="width: 90%;" placeholder="Введите название класса для иконки" oninput="myFunctionIconClass()"><hr>
+			<h2 title="CSS class for icon" class="h2class">Класс для иконки:</h2>
+			<input type="text" id="classIcon" value="" style="width: 90%;" placeholder="Введите название класса для иконки" oninput="myFunctionIconClass()"><hr>
 			<h2 class="h2class">URL иконки:</h2>
-			<input type="text" id="inputUrlIcon" name="" placeholder="Вставьте URL иконки" style="width: 90%;" oninput="myFunctionIconUrl()">
+			<input type="text" id="inputUrlIcon" placeholder="Вставьте URL иконки" style="width: 90%;" oninput="myFunctionIconUrl()">
 			<div class="divOpenSettingIcon">
 				<hr>
 				<h2 class="h2class">Расположение иконки</h2>
@@ -401,15 +407,15 @@
 					<div class="dis-tc">
 						<h2 class="h2class">По горизонтали</h2>
 						<div class="wrap-row1">
-							<input type="range" name="" min="0" value="0" max="360" class="inputRange iconSetting" oninput="iconPos()">
-							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd0()">
+							<input type="range" min="0" value="0" max="360" class="inputRange iconSetting" oninput="iconPos()">
+							<input type="text" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd0()">
 						</div>
 					</div>
 					<div class="dis-tc">
 						<h2 class="h2class">По вертикали</h2>
 						<div class="wrap-row1">
-							<input type="range" name="" min="0" value="0" max="178" class="inputRange iconSetting" oninput="iconPos()">
-							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd1()">
+							<input type="range"  min="0" value="0" max="178" class="inputRange iconSetting" oninput="iconPos()">
+							<input type="text" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd1()">
 						</div>
 					</div>
 				</div>
@@ -417,41 +423,42 @@
 					<div class="dis-tc">
 						<h2 class="h2class">Ширина</h2>
 						<div class="wrap-row1">
-							<input type="range" name="" min="0" value="0" max="382" class="inputRange iconSetting" oninput="iconSize()">
-							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd2()">
+							<input type="range" min="0" value="0" max="382" class="inputRange iconSetting" oninput="iconSize()">
+							<input type="text" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd2()">
 						</div>
 					</div>
 					<div class="dis-tc">
 						<h2 class="h2class">Высота</h2>
 						<div class="wrap-row1">
-							<input type="range" name="" min="0" value="0" max="200" class="inputRange iconSetting" oninput="iconSize()">
-							<input type="text" name="" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd3()">
+							<input type="range" min="0" value="0" max="200" class="inputRange iconSetting" oninput="iconSize()">
+							<input type="text" value="0" class="inputTextStyle iconSettingT" oninput="iconTextTrTd3()">
 						</div>
 					</div>
 				</div>
 				<hr>
-				<input type="checkbox" name="" id="deleteIcon" class="checSection" onclick="delIcon()">
+				<input type="checkbox" id="deleteIcon" class="checSection" onclick="delIcon()">
 				<label for="deleteIcon" title="Delete" class="colorFon hoverColorFon">Удалить иконку</label>
 				</div>
-				<article id="helpIcon" class="help"><h2>Тег img в HTML</h2><p class="boldP"><span>&ltimg class="Имя класса" src="Адрес изображения"&gt</span>. Чтобы стилизовать иконку, нужно добавить класс и адрес изображения.</p><p class="boldP">Свойство <span>position: absolute;</span> позволит изменить расположение картинки внутри элемента с помощью свойств left(от левого края) и top(от верхнего края).</p><hr><p class="boldP"><span>width CSS</span> задает ширину элемента. <br><span>height CSS</span> задает высоту элемента.</p></article>
+				<article id="helpIcon" class="help"><h2>Тег img в HTML</h2><p class="boldP"><span>&lt;img class="Имя класса" src="Адрес изображения"&gt;</span>. Чтобы стилизовать иконку, нужно добавить класс и адрес изображения.</p><p class="boldP">Свойство <span>position: absolute;</span> позволит изменить расположение картинки внутри элемента с помощью свойств left(от левого края) и top(от верхнего края).</p><hr><p class="boldP"><span>width CSS</span> задает ширину элемента. <br><span>height CSS</span> задает высоту элемента.</p></article>
 		</section>
-		<input id="borderRadiusLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-		<label class="labelbutton" for="borderRadiusLable"><h2 class="h2class">Закругление углов</h2></label>
+		<input id="borderRadiusLable" class="checSection" type="checkbox" onclick="myFunctionChec()">
+		<label class="labelbutton" for="borderRadiusLable">Закругление углов</label>
 		<section class="WindowSetting" id="borderRadiusWrapper">
+			<h2 class="checSection">Закругление углов</h2>
 			<label id="inquiryBorderRadius" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<div>
 				<div class="dis-tc">
 					<h2 class="h2class">Верхний левый угол</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" id="inp1" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
-						<input id="inp11" type="text" name="" value="0" class="inputTextStyle" oninput="borderTL()">
+						<input class="inputRange" id="inp1" type="range" min="0" max="100" value="0" oninput="myFunctionBR()">
+						<input id="inp11" type="text" value="0" class="inputTextStyle" oninput="borderTL()">
 					</div>
 				</div>
 				<div class="dis-tc">
 					<h2 class="h2class">Верхний правый угол</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" id="inp2" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
-						<input id="inp22" type="text" name="" value="0" class="inputTextStyle" oninput="borderTR()">
+						<input class="inputRange" id="inp2" type="range" min="0" max="100" value="0" oninput="myFunctionBR()">
+						<input id="inp22" type="text" value="0" class="inputTextStyle" oninput="borderTR()">
 					</div>
 				</div>
 			</div>
@@ -459,23 +466,24 @@
 				<div class="dis-tc">
 					<h2 class="h2class">Нижний левый угол</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" id="inp4" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
-						<input id="inp44" type="text" name="" value="0" class="inputTextStyle" oninput="borderBL()">	
+						<input class="inputRange" id="inp4" type="range" min="0" max="100" value="0" oninput="myFunctionBR()">
+						<input id="inp44" type="text" value="0" class="inputTextStyle" oninput="borderBL()">	
 					</div>
 				</div>
 				<div class="dis-tc">
 					<h2 class="h2class">Нижний правый угол</h2>
 					<div class="wrap-row1">
-						<input class="inputRange" id="inp3" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBR()">
-						<input id="inp33" type="text" name="" value="0" class="inputTextStyle" oninput="borderBR()">
+						<input class="inputRange" id="inp3" type="range" min="0" max="100" value="0" oninput="myFunctionBR()">
+						<input id="inp33" type="text" value="0" class="inputTextStyle" oninput="borderBR()">
 					</div>
 				</div>
 			</div>
 			<article id="helpBorderRadius" class="help"><h2>border-radius CSS</h2><p> устанавливает радиус скругления углов рамки. Если рамка не задана, то скругление также происходит и с фоном.</p></article>
 		</section>
-		<input id="borderLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-		<label class="labelbutton" for="borderLable"><h2 class="h2class">Рамка</h2></label>
+		<input id="borderLable" class="checSection" type="checkbox" onclick="myFunctionChec()">
+		<label class="labelbutton" for="borderLable">Рамка</label>
 		<section class="WindowSetting" id="borderWrapper">
+			<h2 class="checSection">Рамка</h2>
 			<label id="inquiryBorder" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<h2 class="h2class">Типы</h2>
 			<select id="borderStyle" class="p-b-10" onclick="myFunctionBorder()">
@@ -491,23 +499,25 @@
 			<br>
 			<h2 class="h2class">Ширина рамки</h2>
 				<div class="wrap-row1">
-					<input class="inputRange" id="borderWidth" type="range" name="" min="0" max="100" value="1" oninput="myFunctionBorder()">
-					<input id="borderWidth2" type="text" value="1" class="inputTextStyle" name="" oninput="myFunctionBorderText()">
+					<input class="inputRange" id="borderWidth" type="range" min="0" max="100" value="1" oninput="myFunctionBorder()">
+					<input id="borderWidth2" type="text" value="1" class="inputTextStyle" oninput="myFunctionBorderText()">
 				</div>
 			<input type="radio" name="colorBorder" id="borderColorRadio" class="checSection" checked>
 			<label for="borderColorRadio" class="colorFon">Цвет рамки</label>
 			<div id="borderTypeColorOne" class="borderTypeColor">
-				<input id="borderColor" type="color" name="" oninput="myFunctionBorderColor()">
+				<input id="borderColor" type="color" oninput="myFunctionBorderColor()">
 			</div>
-			<article id="helpBorder" class="help"><h2>border CSS</h2><p>Позволяет установить толщину, тип и цвет границы вокруг элемента.</p><img src="img/Dotted.PNG"><img src="img/Groove.PNG"></article>
+			<article id="helpBorder" class="help"><h2>border CSS</h2><p>Позволяет установить толщину, тип и цвет границы вокруг элемента.</p><img src="img/Dotted.PNG" alt="Тип рамки solid, dotted, dashed, double"><img src="img/Groove.PNG" alt="Тип рамки groove, ridge, inset, outset"></article>
 		</section>
-		<input id="transformLable" type="checkbox" class="checSection" name="" onclick="myFunctionChec()">
-		<label class="labelbutton" for="transformLable"><h2 class="h2class">Трансформация блока</h2></label>
+		<input id="transformLable" type="checkbox" class="checSection" onclick="myFunctionChec()">
+		<label class="labelbutton" for="transformLable">Трансформация блока</label>
 		<section class="WindowSetting" id="transformWrapper">
+			<h2 class="checSection">Трансформация блока</h2>
 			<label id="inquiryTransform" class="helpQuest helpQuestTrans"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
-			<input type="checkbox" name="" id="rotateInput" class="checSection" onclick="openTransform()">
-			<label for="rotateInput" class="labelButtonFont"><h2 class="h2class">Вращение</h2></label>
+			<input type="checkbox" id="rotateInput" class="checSection" onclick="openTransform()">
+			<label for="rotateInput" class="labelButtonFont h2class">Вращение</label>
 			<div id="rotateDiv">
+				<h2 class="checSection">Вращение</h2>
 				<div class="wrap-button-lin wid-2">
 					<input type="radio" name="Rotate" id="rotate2D" class="checSection" checked onclick="openTransform()">
 					<label for="rotate2D" class="colorFon">Двумерное вращение</label>
@@ -517,104 +527,108 @@
 				<div class="divRotate p-t-10 p-b-10">
 					<h2 title="Deg" class="h2class">Угол вращения</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" min="0" max="360" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR()">	
-						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="myFunctionMegoTransformT()">
+						<input type="range" min="0" max="360" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR()">	
+						<input type="text" value="0" class="inputTextStyle leftTransformT2d" oninput="myFunctionMegoTransformT()">
 					</div>
 				</div>
 				<div class="divRotate p-t-10 p-b-10">
 					<h2 class="h2class">Вращение по X</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
-						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateXTFunc()">
+						<input type="range" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
+						<input type="text" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateXTFunc()">
 					</div> 
 					<h2 class="h2class">Вращение по Y</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
-						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateYTFunc()">
+						<input type="range" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
+						<input type="text" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateYTFunc()">
 					</div>
 					<h2 class="h2class">Вращение по Z</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
-						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateZTFunc()">
+						<input type="range" min="0" max="180" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
+						<input type="text" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateZTFunc()">
 					</div>
 					<h2 title="Deg" class="h2class">Угол вращения</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" min="0" max="360" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
-						<input type="text" name="" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateDegTFunc()">
+						<input type="range" min="0" max="360" value="0" class="leftTransformR2d inputRange" oninput="myFunctionMegoTransformR2()">
+						<input type="text" value="0" class="inputTextStyle leftTransformT2d" oninput="rotateDegTFunc()">
 					</div>
 				</div>
 			</div>
-			<input type="checkbox" name="" id="scaleInput" class="checSection" onclick="openTransform()">
-			<label for="scaleInput" class="labelButtonFont"><h2 class="h2class">Масштаб</h2></label>	
+			<input type="checkbox" id="scaleInput" class="checSection" onclick="openTransform()">
+			<label for="scaleInput" class="labelButtonFont h2class">Масштаб</label>	
 			<div id="scaleDiv" class="p-t-10 p-b-10">
+				<h2 class="checSection">Масштаб</h2>
 				<div class="dis-tc">
 					<h2 title="ScaleX" class="h2class">Ширина</h2>
 					<div class="wrap-row1">	
-						<input type="range" name="" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
-						<input type="text" name="" value="1" class="scaleT inputTextStyle" oninput="scaleT0Func()">
+						<input type="range" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
+						<input type="text" value="1" class="scaleT inputTextStyle" oninput="scaleT0Func()">
 					</div>
 				</div>
 				<div class="dis-tc">
 					<h2 title="ScaleY" class="h2class">Высота</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
-						<input type="text" name="" value="1" class="scaleT inputTextStyle" oninput="scaleT1Func()">
+						<input type="range" min="-10" max="10" value="1" step="0.1" class="scaleR inputRange" oninput="myFunctionMegoScale2DR()">
+						<input type="text" value="1" class="scaleT inputTextStyle" oninput="scaleT1Func()">
 					</div>
 				</div>
 			</div>
-			<input type="checkbox" name="" id="skewInput" class="checSection" onclick="openTransform()">
-			<label title="Skew" for="skewInput" class="labelButtonFont"><h2 class="h2class">Искажение</h2></label>
+			<input type="checkbox" id="skewInput" class="checSection" onclick="openTransform()">
+			<label title="Skew" for="skewInput" class="labelButtonFont h2class">Искажение</label>
 			<div id="skewDiv" class="p-t-10 p-b-10">
+				<h2 class="checSection">Искажение</h2>
 				<div class="dis-tc">
 					<h2 class="h2class" title="skewX">По горизонтали</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" value="0" min="-86" max="86" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
-						<input type="text" name="" value="0" class="inputTSkew inputTextStyle" oninput="skew0Func()">
+						<input type="range" value="0" min="-86" max="86" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
+						<input type="text" value="0" class="inputTSkew inputTextStyle" oninput="skew0Func()">
 					</div>
 				</div>
 				<div class="dis-tc">
 					<h2 class="h2class" title="skewY">По вертикали</h2>
 					<div class="wrap-row1">
-						<input type="range" name="" value="0" min="-76" max="76" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
-						<input type="text" name="" value="0" class="inputTSkew inputTextStyle" oninput="skew1Func()">
+						<input type="range" value="0" min="-76" max="76" class="inputRSkew inputRange" oninput="myFunctionMegoSkewR()">
+						<input type="text" value="0" class="inputTSkew inputTextStyle" oninput="skew1Func()">
 					</div>
 				</div>
 			</div>
 			<article id="helpTransform" class="help"><h2>Вращение - transform: rotate (угол) CSS</h2><p>поворачивает элемент на заданный угол относительно точки трансформации.</p><hr><h2>Масштаб - transform: scale CSS</h2><p>масштабирует элемент по горизонтали и по вертикали.</p><hr><h2>Искажение - transform: skew (угол) CSS</h2><p>наклоняет элемент на заданный угол по вертикали и по горизонтали.</p></article>
 		</section>
-		<input id="boxShadowLable" class="checSection" type="checkbox" name="" onclick="myFunctionChec()">
-		<label class="labelbutton" for="boxShadowLable" title="Box-shadow"><h2 class="h2class">Тень блока</h2></label>
+		<input id="boxShadowLable" class="checSection" type="checkbox" onclick="myFunctionChec()">
+		<label class="labelbutton" for="boxShadowLable" title="Box-shadow">Тень блока</label>
 		<section class="WindowSetting" id="boxShadowWrapper">
+			<h2 class="checSection">Тень блока</h2>
 			<label id="inquiryBoxShadow" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<h2 class="h2class">Сдвиг по X</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" id="sdvigX" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
-				<input id="sdvigXInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextF()">
+				<input class="inputRange" id="sdvigX" type="range" min="-100" max="100" value="0" oninput="myFunctionBS()">
+				<input id="sdvigXInp" type="text" value="0" class="inputTextStyle" oninput="boxShadowTextF()">
 			</div>
 			<h2 class="h2class">Сдвиг по Y</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" id="sdvigY" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
-				<input id="sdvigYInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextS()">
+				<input class="inputRange" id="sdvigY" type="range" min="-100" max="100" value="0" oninput="myFunctionBS()">
+				<input id="sdvigYInp" type="text" value="0" class="inputTextStyle" oninput="boxShadowTextS()">
 			</div>
 			<h2 class="h2class">Размытие</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" id="blur" type="range" name="" min="0" max="100" value="0" oninput="myFunctionBS()">
-				<input id="blurInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextT()">
+				<input class="inputRange" id="blur" type="range" min="0" max="100" value="0" oninput="myFunctionBS()">
+				<input id="blurInp" type="text" value="0" class="inputTextStyle" oninput="boxShadowTextT()">
 			</div>
 			<h2 class="h2class">Растяжение</h2>
 			<div class="wrap-row1">
-				<input class="inputRange" id="whidblur" type="range" name="" min="-100" max="100" value="0" oninput="myFunctionBS()">
-				<input id="whidblurInp" type="text" name="" value="0" class="inputTextStyle" oninput="boxShadowTextFo()">
+				<input class="inputRange" id="whidblur" type="range" min="-100" max="100" value="0" oninput="myFunctionBS()">
+				<input id="whidblurInp" type="text" value="0" class="inputTextStyle" oninput="boxShadowTextFo()">
 			</div>
 			<h2 class="h2class">Цвет</h2>
-			<input id="boxShadowColor" type="color" name="" oninput="myFunctionBS()"><hr>
-			<input id="shadowInset" type="checkbox" class="checSection" name="" onclick="myFunctionBS()">
+			<input id="boxShadowColor" type="color" oninput="myFunctionBS()"><hr>
+			<input id="shadowInset" type="checkbox" class="checSection" onclick="myFunctionBS()">
 			<label for="shadowInset" class="colorFon">Внутренняя тень</label>
 			<article id="helpBoxShadow" class="help"><h2>Тень элемента - box-shadow CSS</h2><p class="boldP"><span>box-shadow:</span> сдвиг по X, сдвиг по Y, радиус размытия, растяжение, цвет; <br><span>inset CSS</span> добавляет тень внутри элемента.</p></article>
 		</section>
-			<input class="checSection" type="checkbox" name="" id="transitionInput">
-			<label class="labelbutton" for="transitionInput"><h2 class="h2class">Анимация кнопки</h2></label>
+			<input class="checSection" type="checkbox" id="transitionInput">
+			<label class="labelbutton" for="transitionInput">Анимация кнопки</label>
 		<section class="WindowSetting" id="transitionWrapper">
+			<h2 class="checSection">Анимация кнопки</h2>
 			<label id="inquiryTransition" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>Тип</span>
 			<select id="styleTransist" onclick="testCheckTransist()">
@@ -648,7 +662,7 @@
 				<input type="radio" name="transition" id="inputEaseInOut" class="checSection inputTransition" value="ease-in-out" onclick="testCheckTransist()">
 				<label for="inputEaseInOut" class="labelTransition" id="labelEaseInOut">ease-in-out</label>
 
-				<input type="checkbox" name="" id="functionTransition" class="checSection">
+				<input type="checkbox" id="functionTransition" class="checSection">
 				<label for="functionTransition" class="labelButtonFont newFunctionLable">Other functions</label>	
 				<div class="divNewFunction">
 					<input type="radio" name="transition" id="inputEaseInSine" class="checSection inputTransition" value="cubic-bezier(0.47, 0, 0.745, 0.715)" onclick="testCheckTransist()">
@@ -703,24 +717,22 @@
 			</div>
 			<h2 class="h2class">Время анимации</h2>
 			<div class="wrap-row1">
-				<input type="range" name="" value="1" min="0" max="3" step="0.1" class="rangeTransitTime inputRange" oninput="transitionRange()">
-				<input type="text" name="" value="1" class="inputTextStyle textTransitTime" oninput="transitionText()">
+				<input type="range" value="1" min="0" max="3" step="0.1" class="rangeTransitTime inputRange" oninput="transitionRange()">
+				<input type="text" value="1" class="inputTextStyle textTransitTime" oninput="transitionText()">
 			</div>
 			<article id="helpTransition" class="help"><h2>Анимация перехода - transition CSS</h2><p class="boldP">устанавливает эффект перехода между двумя состояниями элемента. <br><span>transition:</span> тип, время анимации, функция;</p></article>
 		</section>
-
-			<input type="checkbox" name="" id="inputCode" class="checSection" checked>
-			<label for="inputCode" class="labelbutton"><h2 class="h2class">HTML и CSS код</h2></label>
+			<input type="checkbox" id="inputCode" class="checSection" checked>
+			<label for="inputCode" class="labelbutton">HTML и CSS код</label>
 		<section class="WindowSetting" id="codeWrapper">
+			<h2 class="checSection">HTML и CSS код</h2>
 			<label id="inquiryHTML" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span>HTML код</span>
 			<textarea id="htmltag"></textarea><hr><label id="inquiryCSS" class="helpQuest" style="top: 105px;"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label><span>CSS код</span>
 			<textarea id="codgener"></textarea>
-			<article id="helpHTML" class="help"><p class="pHelp">Чтобы перенести кнопку на свой сайт, в файле «file-name.html» вам нужно добавить тег и назначить подходящий класс. Вы можете использовать тег из формы «HTML код».</p></article>
-			<article id="helpCSS" class="help helpcss"><p class="pHelp">Вы можете назначить свойства элементу сайта несколькими способами:</p><p class="pHelp">1. Создайте файл «file-name.css» и добавьте содержимое формы «CSS-код»</p><p class="pHelp">2. В файле «file-name.html» добавьте все свойства из формы в тег &ltstyle&gt here &lt/style&gt</p></article>
+			<article id="helpHTML" class="help"><h2 class="h2class">HTML</h2><p class="pHelp">Чтобы перенести кнопку на свой сайт, в файле «file-name.html» вам нужно добавить тег и назначить подходящий класс. Вы можете использовать тег из формы «HTML код».</p></article>
+			<article id="helpCSS" class="help helpcss"><h2 class="h2class">CSS</h2><p class="pHelp">Вы можете назначить свойства элементу сайта несколькими способами:</p><p class="pHelp">1. Создайте файл «file-name.css» и добавьте содержимое формы «CSS-код»</p><p class="pHelp">2. В файле «file-name.html» добавьте все свойства из формы в тег &lt;style&gt; here &lt;/style&gt;</p></article>
 			</section>
-		
-		
 	</main><div id="divFuter"></div>
 	<aside id="rezbr">
 		<!-- <div id="block"></div> -->
@@ -751,7 +763,7 @@
 		<!-- Yandex.Metrika informer -->
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script>
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
