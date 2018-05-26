@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/index.js" defer></script>
+  <script src="js/javascript.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113908395-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113908395-1');
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
+  <title>HTML Верстка</title>
+</head>
+<body>
+  <div id="bossPandel">
+    <div class="bg"></div>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="logo col-3">LOGO</div>
+        <input type="checkbox" id="burger-Menu" class="d-none">
+        <label for="burger-Menu" class="d-block d-sm-none col-9 burger">Бургер</label>
+        <nav class="d-sm-block col-12 col-sm-9" id="menu-top">
+          <ul>
+            <li class="d-block d-sm-inline-block"><a href="#">Главная</a></li>
+            <li class="d-block d-sm-inline-block"><a href="#">Обо мне</a></li>
+            <li class="d-block d-sm-inline-block"><a href="#">Портфолио</a></li>
+            <li class="d-block d-sm-inline-block"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid first-section">
+      <div class="row">
+        <article>
+          <h1>СОВРЕМЕННАЯ ВЕРСТКА САЙТОВ НА ЗАКАЗ</h1>
+          <a href="#" class="button">ЗАКАЗАТЬ</a>
+        </article>
+      </div>
+    </section>
+    <section class="container-fluid second-section">
+      <div class="row">
+        <article class="portfolio">
+          <h2>ПОРТФОЛИО</h2>
+          <div class="portfolio-block"><canvas id="canvas1"></canvas></div>
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+          <img src="http://uralkafel.ru/uploadedFiles/eshopimages/big/5182_2.jpg" alt="">
+        </article>
+      </div>
+    </section>
+    <div class="three-section"></div>
+    <section class="container-fluid second-section">
+      <div class="row">
+        <article class="listSkill">
+          <h2>НАВЫКИ</h2>
+          <article class="skills">
+            <h3>HTML5</h3>
+            <p>Семантическая верстка, теги &lt;header/&gt;, &lt;nav/&gt;, &lt;section/&gt;, &lt;aticle/&gt;, &lt;main/&gt;, &lt;aside/&gt;, &lt;footer/&gt;</p>
+          </article>
+          <article class="skills">
+            <h3>CSS3</h3>
+            <p>Адаптивная верстка, фреймворк Bootstrap, @media запросы, flex, grid, кроссбраузерность</p>
+          </article>
+          <article class="skills">
+            <h3>JAVASCRIPT</h3>
+            <p>Работа с простыми элементами Canvas, основы ReactJS, основы VueJS, сам Javascript</p>
+          </article>
+          <article class="skills">
+            <h3>ВАЛИДНОСТЬ</h3>
+            <p>Проверка кода через сайт <a href="https://validator.w3.org">validator.w3.org</a></p>
+          </article>
+        </article>
+      </div>
+    </section>
+    <div class="three-section"></div>
+  </div>
+  <div style="position: none;">
+  <!-- Yandex.Metrika counter -->
+    <script>
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter46090248 = new Ya.Metrika({
+                        id:46090248,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/46090248" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  </div>
+</body>
+</html>
