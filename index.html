@@ -24,7 +24,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="stylesheet" type="text/css" href="styleHelp.css"/>
 	<link rel="canonical" href="https://mastersite24.ru"/>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<style>
 		#wh1skasGenerator{
 			position: absolute;
@@ -46,8 +45,8 @@
 		
 	<main id="br">
 			<input id="textButtonLable" class="checSection"  type="checkbox" onclick="myFunctionChec()">
-			<label class="labelbutton h2class" for="textButtonLable" title="Text and CSS class button" v-if="burger">Текст и CSS класс кнопки</label>
-		<section class="WindowSetting" id="textButtonWrapper" v-if="burger">
+			<label class="labelbutton h2class" for="textButtonLable" title="Text and CSS class button">Текст и CSS класс кнопки</label>
+		<section class="WindowSetting" id="textButtonWrapper">
 			<h2 class="checSection">Текст и CSS класс кнопки</h2>
 			<label id="inquiryClass" class="helpQuest"><i class="fa fa-question-circle-o" aria-hidden="true"></i></label>
 			<span title="Text button">Текст:</span>
@@ -793,20 +792,6 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/46090248" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 	</div>
-	<script>
-		var app = new Vue({
-		  el: '#br',
-		  data:{
-		  	burger: false,
-		  	menuBurger: false,
-		  	slider: '0',
-		  	slider2: '0',
-		  	lefts: '0',
-		  	lefts2: '0',
-		  	radioServic: '0'
-		  },
-		});
-	</script>
 </body>
 </html>
 <!-- 1229 -->
