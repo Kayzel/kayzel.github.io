@@ -1,4 +1,4 @@
-Host: https://mastersite24.ru
+Host: https://kayzel.github.io/
 
 User-agent: Yandex
 Disallow: /NewMobileSnake
