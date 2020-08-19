@@ -5,8 +5,9 @@ body{
 .blog{
     background-color: #1b1b1b;
 }
-aside{
+.aside-blog{
     background-color: #2a2a2a;
+    padding: 1px 25px 19px;
 }
 a{
     color:#ffdd62
