@@ -720,9 +720,9 @@ hr{
 .checSection:checked ~ #textButtonWrapper{
 	display: block;
 }*/
-.margin-tb{
+/* .margin-tb{
 	margin
-}
+} */
 .tableSize{
 	margin: 0 auto;
 }
