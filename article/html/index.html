@@ -64,38 +64,44 @@
                     &ensp; Узкий пробел (еn-шириной в букву n)
                     &emsp; Широкий пробел (em-шириной в букву m)
                     -->
-                    <code>
-                        &lt;!DOCTYPE html&gt; <br>
-                        &lt;html lang="ru"&gt; <br>
-                        &lt;head&gt; <br>
-                        &emsp;    &lt;meta charset="UTF-8"&gt; <br>
-                        &emsp;    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
-                        &emsp;    &lt;title&gt;Document&lt;/title&gt; <br>
-                        &lt;/head&gt; <br>
-                        &lt;body&gt; <br>
-                        &emsp;    &lt;h1&gt;Hello World!&lt;/h1&gt; <br>
-                        &lt;/body&gt; <br>
-                        &lt;/html&gt; <br>
-                    </code>
+                    <div class="code-block">
+                        <code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html lang="ru"&gt; <br>
+                            &lt;head&gt; <br>
+                            &emsp;    &lt;meta charset="UTF-8"&gt; <br>
+                            &emsp;    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+                            &emsp;    &lt;title&gt;Document&lt;/title&gt; <br>
+                            &lt;/head&gt; <br>
+                            &lt;body&gt; <br>
+                            &emsp;    &lt;h1&gt;Hello World!&lt;/h1&gt; <br>
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                        </code>
+                    </div>
                     <p>
                         Давайте разберем что написано в html коде. 
-                        <code>&lt;!DOCTYPE html&gt;</code> для начала достаточно знать что это обозначает тип документа.
-                        <code>&lt;html lang="ru"&gt;&lt;/html&gt;</code> является контейнером в котором находится содержимоей всей вашей страницы сайта. Обратите внимание, что тег html состоит из двух частей <code>&lt;html lang="ru"&gt;</code> и <code>&lt;/html&gt;</code> так обозначаются теги вида контейнеров, открывающий и закрывающий тег. 
+                        <div class="code-block"><code>&lt;!DOCTYPE html&gt;</code></div> для начала достаточно знать что это обозначает тип документа.
+                        <div class="code-block">
+                            <code>&lt;html lang="ru"&gt;&lt;/html&gt;</code>
+                        </div> является контейнером в котором находится содержимоей всей вашей страницы сайта. Обратите внимание, что тег html состоит из двух частей <div class="code-block">
+                            <code>&lt;html lang="ru"&gt;</code> и <code>&lt;/html&gt;</code>
+                        </div> так обозначаются теги вида контейнеров, открывающий и закрывающий тег. 
                     </p>
                     <p>      
                         Внутри подобные теги, как правило содержат либо другие теги либо текст.
-                        Большинство тегов html как правило имею такойже вид, но есть и исключения. далее идет контейнер <code>&lt;head&gt;&lt;/head&gt;</code> данный тег служит помощью для браузера, чаще всего тут указываются данные как должна отображаться страница, например кодировка текста, <code>&lt;meta charset="UTF-8"&gt;</code> информация как должна отображаться страница в мобильном устройстве <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
-                        следующим на очереди идет title <code>&lt;title&gt;Document&lt;/title&gt;</code> - это заголовок вашей страницы, наведя на вкладку браузера можно увидеть этот текст, это достаточно важный тег и не стоит его игнорировать. 
+                        Большинство тегов html как правило имею такойже вид, но есть и исключения. далее идет контейнер <div class="code-block"><code>&lt;head&gt;&lt;/head&gt;</code></div> данный тег служит помощью для браузера, чаще всего тут указываются данные как должна отображаться страница, например кодировка текста, <div class="code-block"><code>&lt;meta charset="UTF-8"&gt;</code></div> информация как должна отображаться страница в мобильном устройстве <div class="code-block"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></div>
+                        следующим на очереди идет title <div class="code-block"><code>&lt;title&gt;Document&lt;/title&gt;</code></div> - это заголовок вашей страницы, наведя на вкладку браузера можно увидеть этот текст, это достаточно важный тег и не стоит его игнорировать. 
                     </p>    
                     <p>    
-                        Например для "СЕО" продвижения, в кратце поисковые системы используют этот тег для отображения заголовка в своем поиске или определении подходит ли ваша страница по поисковому запросу. Далее тег head закрывается и открывается следующий тег <code>&lt;body&gt;&lt;/body&gt;</code> - в этом теге находится все что будет отображаться на вашей странице. То есть тело документа html. В нашем случае, это <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code> так же можно увидеть тег <code>&lt;h1&gt;&lt;/h1&gt;</code> это тег заголовка. Заголовки суещствуют 6 видов, 1 верхнего уорвня и по лестнице до самого низкого уровня 6.
+                        Например для "СЕО" продвижения, в кратце поисковые системы используют этот тег для отображения заголовка в своем поиске или определении подходит ли ваша страница по поисковому запросу. Далее тег head закрывается и открывается следующий тег <div class="code-block"><code>&lt;body&gt;&lt;/body&gt;</code></div> - в этом теге находится все что будет отображаться на вашей странице. То есть тело документа html. В нашем случае, это <div class="code-block"><code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code></div> так же можно увидеть тег <div class="code-block"><code>&lt;h1&gt;&lt;/h1&gt;</code></div> это тег заголовка. Заголовки суещствуют 6 видов, 1 верхнего уорвня и по лестнице до самого низкого уровня 6.
                     </p>
                     <p>
                         Существует огромное можество тегов, каждый отвечает за свою часть на сайте. Лучше всего перед тем как продолжить обучение и переходить уже к css изучить как можно больше тегов и из свойства. 
-                        Например тег a <code>&lt;a href="url"&gt;Текст ссылки&lt;/a&gt;</code> это тег ссылки на другой документ / веб страницу. 
-                        тег <code>&lt;img src="url" alt=""&gt;</code> это тег отвечает за отображение картинок (изображений)
+                        Например тег a <div class="code-block"><code>&lt;a href="url"&gt;Текст ссылки&lt;/a&gt;</code></div> это тег ссылки на другой документ / веб страницу. 
+                        тег <div class="code-block"><code>&lt;img src="url" alt=""&gt;</code></div> это тег отвечает за отображение картинок (изображений)
                         то что я указал как "url" - это путь до документа на вашем или другом сервере. Вы можете подтягивать на свой документ изображения с других сайтов если это необходимо. Вот например. 
-                        <code>&lt;img src="https://hotgeo.ru/uploads/posts/2017-10/1509441205_gctv-google.jpg" alt="Изображение офиса Google" style="max-width:300px"&gt;</code>
+                        <div class="code-block"><code>&lt;img src="https://hotgeo.ru/uploads/posts/2017-10/1509441205_gctv-google.jpg" alt="Изображение офиса Google" style="max-width:300px"&gt;</code></div>
                         и как это отображается в веб странице:  
                     </p>
                     <center>
@@ -115,14 +121,14 @@
                     <p>
                         Некоторые атрибуты, значительно изменяют внешний вид и смысл использования тега, понимание этого поможет в работе с html. Приведем еще пример тега input
                     </p>
-                    <p>
+                    <h3>Атрибут type для тега input</h3>
+                    <div class="code-block">
                         <code>
                             &lt;input type="text"&gt;<br>
                             &lt;input type="checkbox"&gt;<br>
                             &lt;input type="range"&gt;
                         </code>
-                    </p>
-                    <h3>Атрибут type для тега input</h3>
+                    </div>
                     <ul>
                         <li>свойство "текст" <input type="text"></li>
                         <li>свойство "чекбокс" <input type="checkbox"></li>

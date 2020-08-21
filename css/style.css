@@ -20,3 +20,9 @@ footer{
 code{
     color: #ff6262;
 }
+.code-block{
+    background: #2a2a2a;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 black inset;
+}
