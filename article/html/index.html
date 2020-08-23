@@ -58,7 +58,7 @@
                     &emsp; Широкий пробел (em-шириной в букву m)
                     -->
                     <div class="code-block">
-                        <code>
+                        <code class="html">
                             &lt;!DOCTYPE html&gt; <br>
                             &lt;html lang="ru"&gt; <br>
                             &lt;head&gt; <br>
@@ -74,45 +74,45 @@
                     </div>
                     <p>
                         Давайте разберем что написано в html коде: 
-                        <div class="code-block"><code>&lt;!DOCTYPE html&gt;</code></div> 
+                        <div class="code-block"><code class="html">&lt;!DOCTYPE html&gt;</code></div> 
                         Обозначает тип документа.
                         <div class="code-block">
-                            <code>&lt;html lang="ru"&gt;&lt;/html&gt;</code>
+                            <code class="html">&lt;html lang="ru"&gt;&lt;/html&gt;</code>
                         </div> 
                         это контейнер, в котором находится содержимое всей вашей страницы. Обратите внимание, что тег html состоит из двух частей. Открывающийся тег 
                         <div class="code-block">
-                            <code>&lt;html lang="ru"&gt;</code> 
+                            <code class="html">&lt;html lang="ru"&gt;</code> 
                             и закрывающийся 
-                            <code>&lt;/html&gt;</code>
+                            <code class="html">&lt;/html&gt;</code>
                         </div>
                     </p>
                     <p>      
                         Чаще всего подобные теги внутри содержат либо другие теги, либо текст. Большинство тегов html, как правило, имею такой же вид, но есть и исключения.
-                        <div class="code-block"><code>&lt;head&gt;&lt;/head&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;head&gt;&lt;/head&gt;</code></div>
                         Данный тег служит помощью для браузера.  Чаще всего тут указывается как должна отображаться страница (например, кодировка текста) 
-                        <div class="code-block"><code>&lt;meta charset="UTF-8"&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;meta charset="UTF-8"&gt;</code></div>
                         Так выглядит кодировка текста.
-                        <div class="code-block"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></div>
                         Информация о том, как должна отображаться страница в мобильном устройстве.
                         
-                        <div class="code-block"><code>&lt;title&gt;Document&lt;/title&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;title&gt;Document&lt;/title&gt;</code></div>
                         Title - это заголовок вашей страницы. Вы можете увидеть этот текст наведя на вкладку браузера.
                     </p>    
                     <p>    
                         Это достаточно важный тег (например, для СЕО продвижения) и не стоит его игнорировать. Если кратко, то поисковые системы используют этот тег для отображения заголовка в поиске или определении, подходит ли ваша страница по поисковому запросу или нет. Далее тег head закрывается и открывается следующий тег &lt;body&gt;
-                        <div class="code-block"><code>&lt;body&gt;&lt;/body&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;body&gt;&lt;/body&gt;</code></div>
                         Именно в этом теге находится все, что будет отображаться на вашей странице. То есть тело документа html. В нашем случае, это 
-                        <div class="code-block"><code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code></div> Так же можно увидеть тег &lt;h1&gt; 
-                        <div class="code-block"><code>&lt;h1&gt;&lt;/h1&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;h1&gt;Hello World!&lt;/h1&gt;</code></div> Так же можно увидеть тег &lt;h1&gt; 
+                        <div class="code-block"><code class="html">&lt;h1&gt;&lt;/h1&gt;</code></div>
                         Это тег заголовка. Существуют 6 видов заголовков. Уровень 1 - самый верхний, уровень 6 - самый нижний.
                     </p>
                     <p>
                         Существует огромное множество тегов и каждый отвечает за свою часть на сайте. Лучше всего изучите сначала как можно больше html-тегов и их свойства, а потом переходите к CSS. Например тег &lt;a&gt;
-                        <div class="code-block"><code>&lt;a href="url"&gt;Текст ссылки&lt;/a&gt;</code></div> 
+                        <div class="code-block"><code class="html">&lt;a href="url"&gt;Текст ссылки&lt;/a&gt;</code></div> 
                         Это тег "ссылки" на другой документ / веб-страницу 
-                        <div class="code-block"><code>&lt;img src="url" alt=""&gt;</code></div> 
+                        <div class="code-block"><code class="html">&lt;img src="url" alt=""&gt;</code></div> 
                         Тег &lt;img&gt; отвечает за отображение картинок (изображений).  "url" - это путь до документа на вашем или другом сервере. Вы можете вставлять на свой документ изображения с других сайтов, если это необходимо. Например: 
-                        <div class="code-block"><code>&lt;img src="https://hotgeo.ru/uploads/posts/2017-10/1509441205_gctv-google.jpg" alt="Изображение офиса Google" style="max-width:300px"&gt;</code></div>
+                        <div class="code-block"><code class="html">&lt;img src="https://hotgeo.ru/uploads/posts/2017-10/1509441205_gctv-google.jpg" alt="Изображение офиса Google" style="max-width:300px"&gt;</code></div>
                         и как это отображается в веб-странице:
                     </p>
                     <center>
@@ -134,7 +134,7 @@
                     </p>
                     <h3>Атрибут type для тега input</h3>
                     <div class="code-block">
-                        <code>
+                        <code class="html">
                             &lt;input type="text"&gt;<br>
                             &lt;input type="checkbox"&gt;<br>
                             &lt;input type="range"&gt;
