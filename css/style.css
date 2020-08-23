@@ -4,6 +4,9 @@ body{
     font-family: sans-serif;
     margin:0;
 }
+article{
+    padding-bottom: 25px;
+}
 .blog{
     background-color: #1b1b1b;
     margin-bottom: 15px;
@@ -18,10 +21,19 @@ a{
 footer{
     height: 100px;
 }
-code{
+.html{
     color: #ff6262;
 }
+.css{
+    color: #1eabef;
+}
 .code-block{
+    background: #2a2a2a;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 black inset;
+}
+.css-block{
     background: #2a2a2a;
     padding: 14px;
     border-radius: 5px;
