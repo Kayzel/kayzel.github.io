@@ -2,9 +2,22 @@
     "workbench.colorCustomizations":{
 
         "activityBar.background": "#1f1f1f",
-        "editor.background": "#25241f"
+        "editor.background": "#252525"//181b1f"#21252b"
     },
     "editor.tokenColorCustomizations": {
+    //     "textMateRules": [
+    //         {
+    //             "scope": "variable.other.constant",
+    //             "settings": {
+    //                 "foreground": "#ABB2BF"
+    //             }
+    //         },
+    //         {
+    //             "scope": "variable.other.object",
+    //             "settings": { "foreground": "#5cc7b0" }
+    //         }
+    //     ]
+    // }
         "strings": "#d8cf7d", // #F9CC6C
         "textMateRules": [
             {
