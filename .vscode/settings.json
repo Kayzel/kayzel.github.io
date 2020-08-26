@@ -1,0 +1,51 @@
+{   
+    "workbench.colorCustomizations":{
+
+        "activityBar.background": "#1f1f1f",
+        "editor.background": "#25241f"
+    },
+    "editor.tokenColorCustomizations": {
+        "strings": "#d8cf7d", // #F9CC6C
+        "textMateRules": [
+            {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#F92672"
+                }
+            },
+            {
+                "scope":"meta.block", 
+                "settings": {
+                    "foreground": "#c2c2c2",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.name.function",// entity.name.function { "foreground": "#7BD88F" }
+                "settings": {
+                    "foreground": "#7BD88F"
+                } 
+            },
+            {
+                "scope": "support.function",
+                "settings": { 
+                    "fontStyle": "", 
+                    "foreground": "#7BD88F" //#66D9EF
+                }
+            },
+            {
+                "scope": "storage.type",
+                "settings": { 
+                    "foreground": "#71d6c0",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "entity.other.attribute-name",
+                "settings": { "foreground": "#c0ee63", "fontStyle": "" }
+            },
+            
+        ]
+        
+    }
+}
