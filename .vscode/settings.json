@@ -2,7 +2,7 @@
     "workbench.colorCustomizations":{
 
         "activityBar.background": "#1f1f1f",
-        "editor.background": "#252525"//181b1f"#21252b"
+        // "editor.background": "#252525"//181b1f"#21252b"
     },
     "editor.tokenColorCustomizations": {
     //     "textMateRules": [
